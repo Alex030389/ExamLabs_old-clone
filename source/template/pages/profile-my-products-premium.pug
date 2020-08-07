@@ -1,0 +1,303 @@
+extends ../_template
+
+block variables
+    - var title = 'Profile My Products Premium'
+
+block content
+    .wrapper
+        section.section.profile-my-prod-premium
+            header.header.header--vendor-page
+                    .header__first.header__first--padding
+                        .container.container--flex-align
+                            .header__first-left.header__first-left--width
+                                .search-responsive-element#search-element
+                                    .search-responsive-pic
+                                        img(src="./assets/img/search-responsive.png").search-responsive-img
+                                .toggle-btn#toggle-btn
+                                    span.toggle-class.toggle-class-top
+                                    span.toggle-class.toggle-class-middle
+                                    span.toggle-class.toggle-class-bottom
+                                .header__first-logo.header__first-logo--margin-left
+                                    a(href="index.html").header__first__link
+                                        img(src="./assets/img/logo-png2.png").header__first-img
+                                .header__first-search
+                                    form.header__first-form
+                                        label.header__first-label
+                                            input.header__first-input(type="search" placeholder="Search")
+                                            .header__first-search-img
+                                                img(src="assets/img/search.png")
+                            .header__first-right.header__first-right--width
+                                a(href="#").header__first-vendor-link 
+                                    .header__first-vendor-page
+                                        .header__first-enter-picture
+                                            .header__first-enter-image
+                                                .header__first-enter-img-second-header
+                                        .header__first-enter-name
+                                            p
+                                                | My Account
+                                a(href="sign-in.html").sign-ing
+                                    .header__first-enter-pic
+                                        img(src="./assets/img/entry.png").header__first-enter-img
+                                    .header__first-enter-pic-entry
+                                        img(src="./assets/img/entry.png").header__first-enter-pic-entry-img
+                                .header__first-general
+                                    .header__first-general
+                                        .header__first-basket
+                                            svg.header__first-pic
+                                                use(xlink:href="assets/img/sprite.svg#icon-cart")
+                                        .header__first-cart
+                                            h4 Cart (1)
+                    .container
+                        .header__second
+                            include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search
+            .content
+                .practice__info
+                    .container
+                        .practice__info-general.practice__info-general--position
+                            .practice__info-left
+                                .practice__info-title
+                                    h2 You need Avanset VCE Software To Open Exam Files!
+                                .practice__info-text
+                                    h4 Avanset VCE Software available on the Windows, MacOS, iOS and Android.
+                            .practice__info-right
+                                .button.button--files
+                                    a(href="#").button__link Download
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 My Account
+                            .breadcrumbs__text
+                                h3 My Products
+            .product
+                .container.container--width--100-phones
+                    .product__title
+                        h6 My Product
+                    .registration-page-mobile 
+                        .registration-page-mobile__header 
+                            .container
+                                .registration-page-mobile__title 
+                                    h3 My Product 
+                        .container                    
+                            .practice__content-right__title-responsive 
+                                h3 Current Subscription
+                    .product__general.product__general--my-prod-subsc-page
+                        .product__left.product__left--padding
+                            aside.sidebar
+                                ul.sidebar__list
+                                    li.sidebar__item.sidebar__item--active
+                                        svg.sidebar__pic-bag
+                                            use(xlink:href="./assets/img/sprite.svg#icon-shop").sidebar__img
+                                        .sidebar__text
+                                            a(href="#").sidebar__link.sidebar__link--active My Products
+                                    li.sidebar__item
+                                        svg.sidebar__pic-star
+                                            use(xlink:href="./assets/img/sprite.svg#star-copy-2").sidebar__img
+                                        .sidebar__text
+                                            a(href="#").sidebar__link Training Courses
+                                    li.sidebar__item
+                                        .sidebar__pic
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='14', height='10', viewbox='0 0 14 10').sidebar__pic-order
+                                                g(fill-rule='evenodd')
+                                                    path(d='M0 0h2v2H0zM0 4h2v2H0zM0 8h2v2H0zM4 0h10v2H4zM4 4h10v2H4zM4 8h10v2H4z')
+                                        .sidebar__text
+                                            a(href="#").sidebar__link Order / Invoices
+                                    li.sidebar__item
+                                        .sidebar__pic
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='18', height='18', viewbox='0 0 18 18').sidebar__pic-settings
+                                                g(fill-rule='evenodd')
+                                                    path( d='M18 8.242v1.516c0 .707-.508 1.307-1.205 1.424l-.984.164c-.093.27-.205.54-.336.807l.582.816c.409.575.342 1.36-.156 1.858l-1.074 1.074a1.435 1.435 0 0 1-1.02.424c-.302 0-.595-.094-.839-.269l-.811-.58c-.261.127-.53.239-.808.334l-.167.985A1.441 1.441 0 0 1 9.758 18h-1.52a1.442 1.442 0 0 1-1.424-1.205l-.164-.985a7.189 7.189 0 0 1-.77-.317l-.826.588a1.435 1.435 0 0 1-1.856-.155l-1.072-1.072a1.44 1.44 0 0 1-.156-1.861l.574-.8a7.052 7.052 0 0 1-.339-.804l-1-.17A1.442 1.442 0 0 1 0 9.793V8.278C0 7.57.508 6.97 1.204 6.854l.97-.164c.093-.278.203-.548.33-.81l-.59-.828a1.444 1.444 0 0 1 .157-1.858l1.074-1.07a1.428 1.428 0 0 1 1.022-.427c.303 0 .596.093.84.269l.803.578c.261-.13.53-.243.805-.339l.17-1A1.442 1.442 0 0 1 8.21 0h1.517c.706 0 1.307.508 1.424 1.204l.163.97c.289.097.573.214.851.35l.814-.58a1.435 1.435 0 0 1 1.856.154l1.073 1.073a1.44 1.44 0 0 1 .156 1.86l-.58.812c.127.261.239.53.334.807l.986.168c.699.117 1.207.72 1.197 1.424zm-1.72 1.14l.004-.902-1.273-.215a.854.854 0 0 1-.697-.635c-.13-.5-.326-.974-.587-1.413a.863.863 0 0 1 .04-.94l.751-1.054-.736-.737-1.05.755a.864.864 0 0 1-.939.039 5.47 5.47 0 0 0-1.445-.594.864.864 0 0 1-.641-.696l-.213-1.266h-1.04l-.219 1.29a.873.873 0 0 1-.634.69 5.344 5.344 0 0 0-1.41.594.871.871 0 0 1-.942-.04L4.2 3.511l-.737.737.757 1.064c.2.276.217.643.044.938-.255.435-.449.912-.575 1.413a.865.865 0 0 1-.696.641l-1.267.212v1.04l1.29.22c.332.057.6.303.69.634.127.489.327.964.595 1.41a.871.871 0 0 1-.04.942l-.748 1.048.737.737 1.06-.754a.85.85 0 0 1 .506-.164c.15 0 .3.039.433.114.439.252.905.444 1.382.567.33.084.578.355.636.693l.213 1.277H9.52l.215-1.273a.854.854 0 0 1 .635-.696c.5-.13.974-.326 1.413-.587a.864.864 0 0 1 .94.04l1.055.75.737-.736-.753-1.061a.865.865 0 0 1-.037-.94c.26-.436.456-.91.585-1.41a.861.861 0 0 1 .693-.635l1.277-.213v-.138z')
+                                                    path(stroke-width='.7', d='M9 6.353A2.649 2.649 0 0 0 6.353 9 2.649 2.649 0 0 0 9 11.647 2.649 2.649 0 0 0 11.647 9 2.649 2.649 0 0 0 9 6.353zm0 4.602a1.956 1.956 0 0 1 0-3.91c1.079 0 1.955.876 1.955 1.955A1.956 1.956 0 0 1 9 10.955z')
+                                        .sidebar__text
+                                            a(href="#").sidebar__link Settings
+                                    li.sidebar__item
+                                        .sidebar__textFmy
+                                            a(href="#").sidebar__link Log out
+                        .my-product__right-profile-my-prod-premium-page
+                            include ../common/_responsive-my-prod-premium
+                            .my-product__right-block-general
+                                .my-product__right-title-prof-prem-page
+                                    h3 Current Subscription
+                                .my-product__right-table.my-product__right-table--display
+                                    .my-product__right-table-first
+                                        .my-product__right-table-title
+                                            h4 Name
+                                    .my-product__right-table-second
+                                        .my-product__right-table-title
+                                            h4 Invoice number
+                                    .my-product__right-table-third
+                                        .my-product__right-table-title
+                                            h4 Order Date
+                                    .my-product__right-table-fourth
+                                        .my-product__right-table-title
+                                            h4 Next Billing Date
+                                    .my-product__right-table-fifth
+                                        .my-product__right-table-title
+                                            h4 Subscription Status
+                                .my-product__right-table.my-product__right-table--border-top.my-product__right-table--color.my-product__right-table--display
+                                    .my-product__right-table-first
+                                        .my-product__right-table-title
+                                            h3 Unlimited Access to VIP Membership
+                                    .my-product__right-table-second
+                                        .my-product__right-table-title
+                                            h5 #36805125
+                                    .my-product__right-table-third
+                                        .my-product__right-table-title
+                                            h6 Mar 05,18
+                                    .my-product__right-table-fourth
+                                        .my-product__right-table-title
+                                            h6 Apr 02,18
+                                    .my-product__right-table-fifth
+                                        .my-product__right-table-url
+                                            a(href="#").my-product__right-table-link Activate
+                                            a(href="#").my-product__right-table-link-size Deactivate
+                            .upper-part-of-responsive-element
+                                .upper-part-of-responsive-element-bottom
+                                     .content-questions__slider 
+                                        .content-questions__slider-wrapper-for-title
+                                            .content-questions__slider-title 
+                                                h4 Verified by experts
+                                            .upper-part-of-responsive-element-title
+                                                h4 Limited Time Offer    
+                                        .content-questions__title-mobile 
+                                            h4 70-743: Premium VCE File 
+                                        .content-questions__slider-mobile 
+                                            .content-microsoft__block-left
+                                                .content-microsoft__container-slider-down-page
+                                                    .content-microsoft__pic-down-image
+                                                        img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                    .content-microsoft__pic-down-image
+                                                        img(src="../assets/img/left-offer.png").content-microsoft__img
+                                                    .content-microsoft__pic-down-image
+                                                        img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                    .content-microsoft__pic-down-image
+                                                        img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                    .content-microsoft__pic-down-image
+                                                        img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                    .content-microsoft__pic-down-image
+                                                        img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                span.text-info 4 products
+                                                .slider-arrows
+                                                    a(href="#").arrow-link-left
+                                                        .nextArrow.arrow-next
+                                                            img(src="./assets/img/icon-single-arrow-right.png")
+                                                    a(href="#").arrow-link-right
+                                                        .prevArrow.arrow-prev
+                                                            img(src="./assets/img/icon-single-arrow-left.png") 
+                                        .content-questions__text 
+                                            .content-questions__text-left 
+                                                ul.content-microsoft__block-list
+                                                    li.content-microsoft__block-item
+                                                        .content-microsoft__block-pic
+                                                            img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                        .content-microsoft__block-title
+                                                                h4 243 Questions & Answers
+                                                    li.content-microsoft__block-item
+                                                        .content-microsoft__block-pic
+                                                            img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                        .content-microsoft__block-title
+                                                            h4 100% Accurate Answers
+                                                    li.content-microsoft__block-item
+                                                        .content-microsoft__block-pic
+                                                            img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                        .content-microsoft__block-title
+                                                            h4 Instant Downloads  
+                                            .content-questions__text-right   
+                                                .content-questions__text-square.content-questions__text-square--direction 
+                                                    h4 $69.99  
+                                                    .content-questions__text-discount 
+                                                        h4 $112    
+                                        .content-questions__button-wrapper            
+                                            .content-questions__button               
+                                                button(type="submit").content-microsoft__block-link Add to Cart       
+                            include ../common/_responsive-my-prod-page-second-table
+                            .purchased-files
+                                .purchased-files__title
+                                    h2 Purchased Files
+                                table.table.table-prem-pro-page
+                                    col.table-prem-pro-page__col-1
+                                    col.table-prem-pro-page__col-2
+                                    col.table-prem-pro-page__col-3
+                                    col.table-prem-pro-page__col-4
+                                    col.table-prem-pro-page__col-5
+                                    thead.table__padding
+                                        tr
+                                            th
+                                                h5 Name
+                                            th
+                                                h5 Invoice Number
+                                            th
+                                                h4 Order Date
+                                            th
+                                                h5 Expiry Date
+                                            th
+                                                h5 Download
+                                    tbody
+                                        tr.border-bottom
+                                            td.purchased-files__table-content-premium-page
+                                                .purchased-files__table-heading
+                                                    h3 010-111 : ACSM Certified Personal Trainer
+                                            td
+                                                .my-product__right-table-title
+                                                    h5 #32164612
+                                            td
+                                                .my-product__right-table-title
+                                                    h6 Mar 02,18
+                                            td
+                                                .my-product__right-table-title
+                                                    h6 Apr 02,18
+                                            td
+                                                .purchased-files__table-download-url
+                                                    a(href="#" download="#").purchased-files__table-download-link-color .VCE
+                                                    a(href="#" download="#").purchased-files__table-download-link-color .ZIP
+                                        tr.border-bottom
+                                            td.purchased-files__table-content-premium-page
+                                                .purchased-files__table-heading
+                                                    h3 ASVAB Section 1: Word Knowledge : ASVAB Section <br> One: Word Knowledge
+                                            td
+                                                .my-product__right-table-title
+                                                    h5 #32164612
+                                            td
+                                                .my-product__right-table-title
+                                                    h6 Mar 04,18
+                                            td
+                                                .my-product__right-table-title
+                                                    h6 Apr 02,18
+                                            td
+                                                .purchased-files__table-download-url
+                                                    a(href="#" download="#").purchased-files__table-download-link-color .VCE
+                                                    a(href="#" download="#").purchased-files__table-download-link-color .ZIP
+                                        tr.vertica-align
+                                            td.padding-top
+                                                .purchased-files__table-heading.purchased-files__table-heading--padding-left
+                                                    h3 Microsoft 70-410 Tests
+                                            td.padding-top
+                                                .my-product__right-table-title
+                                                    h5 #32164612
+                                            td.padding-top
+                                                .my-product__right-table-title
+                                                    h6 Mar 02,17
+                                            td.table-flex-prof-subs-premium-page.padding-top
+                                                .my-product__right-table-title
+                                                    h6 Apr 02,17
+                                                .purchased-files__table-button
+                                                    a(href="#").purchased-files__table-link Extend
+                                                .purchased-files__table-discount
+                                                    p 30% off until <br> May 05, 2018
+                                            td.padding-top
+                                                .purchased-files__table-download-url
+                                                    a(href="#" download="#").purchased-files__table-download-link-color .VCE
+                                                    a(href="#" download="#").purchased-files__table-download-link-color .ZIP
+        include ../common/_footer
+    include ../common/_sidebar        
+    include ../common/_modal-download
+    include ../common/_search-responsive-element
+    include ../common/_modal-how-it-works

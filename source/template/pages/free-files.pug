@@ -1,0 +1,173 @@
+extends ../_template
+
+block variables
+  - var title = 'Free Files'
+
+block content
+  .wrapper
+      section.section(style="margin-bottom: 550px;")
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        header.header
+            include ../common/_header
+        .header-search-element.visually-hidden 
+          .container
+              form.information__input
+                input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search  
+        .container
+          .header__second
+            include ../common/_nav         
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line
+        .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home     
+                            .breadcrumbs__text
+                                h3 Free Files
+        .files__content
+            .container
+                .files__table-general.files__table-general--padding-bottom
+                    .files__table-left-vendor
+                        .files__table-cell.free-files__table-cell--border
+                            table.free-files__table
+                                colgroup
+                                    col.col-1
+                                    col.col-2
+                                    col.col-3
+                                    col.col-4
+                                thead.free-files__table-header
+                                    tr.free-files__table-row
+                                        th.free-files__title Vendor
+                                        th.free-files__title Exam
+                                        th.free-files__title.free-files__title--file-name File Name
+                                        th.free-files__title
+                                tbody.free-files__table-body
+                                    tr.free-files__table-row
+                                        td.free-files__vendor-logo
+                                            .logo__width
+                                                img(src="assets/img/logo-alcatel-lucent.png" alt="Vendor Name")
+                                        td.free-files__exam-name-cell
+                                            a.free-files__exam-name-desktop.color(href="#") 9L0-012
+                                        td.free-files__file-name-cell
+                                            a.free-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce
+                                        td.free-files__info
+                                            ul.free-files__info-list
+                                                li.free-files__info-item 19239 downloads
+                                                li.free-files__info-item 300 Questions & Answers
+                                                li.free-files__info-item Last update: Feb 20, 2018
+                                    tr.free-files__table-row
+                                        td.free-files__vendor-logo
+                                            .logo__width
+                                                img(src="assets/img/logo-alcatel-lucent.png" alt="Vendor Name")
+                                        td.free-files__exam-name-cell
+                                            a.free-files__exam-name-desktop.color(href="#") 9L0-012
+                                        td.free-files__file-name-cell
+                                            a.free-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100
+                                        td.free-files__info
+                                            ul.free-files__info-list
+                                                li.free-files__info-item 19239 downloads
+                                                li.free-files__info-item 300 Questions & Answers
+                                                li.free-files__info-item Last update: Feb 20, 2018
+                                    tr.free-files__table-row
+                                        td.free-files__vendor-logo
+                                            .logo__width
+                                                img(src="assets/img/logo-alcatel-lucent.png" alt="Vendor Name")
+                                        td.free-files__exam-name-cell
+                                            a.free-files__exam-name-desktop.color(href="#") 9L0-012
+                                        td.free-files__file-name-cell
+                                            a.free-files__file-name-desktop(href="#") apple.156.9l0-012.v1.by.emily.vce
+                                        td.free-files__info
+                                            ul.free-files__info-list
+                                                li.free-files__info-item 19239 downloads
+                                                li.free-files__info-item 300 Questions & Answers
+                                                li.free-files__info-item Last update: Feb 20, 2018
+
+                        .files__table-cell--mobile
+                            ul.free-files__list
+                                li.free-files__item
+                                    .free-files__exam-wrapper
+                                        h4.free-files__exam-title Exam
+                                        a.free-files__exam-name.color(href="#") 9L0-012
+                                    .free-files__file-wrapper
+                                        h4.free-files__file-title File Name
+                                        a.free-files__file-name(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce
+                                    ul.free-files__info-list
+                                        li.free-files__info-item.free-files__info-item--downloads 19239 <span class="mobile-hidden">downloads</span>
+                                        li.free-files__info-item.free-files__info-item--questions 300 <span class="mobile-hidden">Questions & Answers</span> Q&A
+                                        li.free-files__info-item.free-files__info-item--update <span class="mobile-hidden">Last update: </span>Feb 20, 2018
+                                li.free-files__item
+                                    .free-files__exam-wrapper
+                                        h4.free-files__exam-title Exam
+                                        a.free-files__exam-name.color(href="#") 9L0-012
+                                    .free-files__file-wrapper
+                                        h4.free-files__file-title File Name
+                                        a.free-files__file-name(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce
+                                    ul.free-files__info-list
+                                        li.free-files__info-item.free-files__info-item--downloads 19239 <span class="mobile-hidden">downloads</span>
+                                        li.free-files__info-item.free-files__info-item--questions 300 <span class="mobile-hidden">Questions & Answers</span> Q&A
+                                        li.free-files__info-item.free-files__info-item--update <span class="mobile-hidden">Last update: </span>Feb 20, 2018
+
+                    .vendor__table-right
+                            .first-screen__title-exam-det
+                                h3 Hot Training Courses
+                            ul.practice__content-right-list-index
+                                li.practice__content-right-item-elem
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)                        
+                            .content-microsoft__right-pic
+                                a(href="#").content-microsoft__right-link
+                                    img(src="./assets/img/avanset-new.png").content-microsoft__right-img       
+            include ../common/adv                           
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                
+
+
+               
+                      

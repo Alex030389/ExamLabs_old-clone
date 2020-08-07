@@ -1,0 +1,147 @@
+.wrapper{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: calc(320px - 40px);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1570px;
+  width: 95%;
+
+  @include desktop-1600 {
+    width: 95%;
+  }
+
+  @include desktop {
+    width: 95%;
+  }
+
+  @include laptop {
+    width: 95%;
+  }
+
+  @include tablets {
+    width: 95%;
+  }
+
+  @include phones {
+    width: 90%;
+  }
+}
+
+.container--changed-all-providers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 570px;
+}
+
+.container--changed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--width-90 {
+  @include phones {
+    width: 90%;
+  }
+}
+
+.container--width-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.container--width--100 {
+
+  @include desktop {
+    width: 100%;
+  }
+
+  @include laptop {
+    width:  100%;
+  }
+
+  @include tablets {
+    width: 100%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.container--width--100-phones {
+  @include phones {
+    width: 100%;
+  }
+}
+
+.container--width-95 {
+  width: 95%;
+}
+
+.container--flex-second {
+  display: flex;
+  justify-content: space-between;
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+.container--flex-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+
+  @include laptop {
+    flex-direction: column;
+  }
+
+  @include apple6 {
+    flex-direction: column;;
+  }
+}
+
+.container--flex-another {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.section {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+

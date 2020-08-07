@@ -1,0 +1,208 @@
+extends ../_template
+
+block variables
+    - var title = 'Upload ete files'
+
+block content
+    .wrapper
+        section.section.upload-ete-files
+            header.header
+              include ../common/_header
+              .container
+                .header__second
+                  include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search        
+            .content-first-page
+                include ../common/_practice-line         
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 Upload Ete Files
+            .free-registration
+            .container
+                .files__table-general.files__table-general--margin-bottom
+                    .upload-vce__general-block
+                        .modal-vacancy__header
+                            .modal-vacancy__title.modal-vacancy__title--padding-top
+                                h2 Upload.vce Files
+                        .upload-ete-files-general-block
+                            .modal-vacancy__sub-header.modal-vacancy__sub-header--padding
+                                p If you have.vce or PDF exam file - Share it with others. Thank you for your help in advance!
+                            .modal-vacancy__submit
+                                form.modal-vacancy__form#formFiles
+                                    .modal-vacancy__line-general-upload-ete-files
+                                        .modal-vacancy__line-ete-files
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 Your Name
+                                                        span *
+                                                input(type="text").modal-vacancy__input#userName
+                                                #userNameError
+                                        .modal-vacancy__line-ete-files
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 Your Email
+                                                        span *
+                                                input(type="email").modal-vacancy__input#email
+                                                #emailError
+                                    .modal-vacancy__line-supplier
+                                        .modal-vacancy__line-supplier-left
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 Vendor
+                                                        span *
+                                                .cart__form-input-line.cart__form-input-line--padding
+                                                    .categories__select
+                                                        .categories__select-wrapper-card
+                                                            .categories__border-card
+                                                            .categories__triangle
+                                                            select.selectize
+                                                                option(value='1') Microsoft
+                                                                option(value='2') Microsoft
+                                                                option(value='3') Microsoft
+                                                                option(value='4') Microsoft
+                                                            #selectError
+                                        .modal-vacancy__line-supplier-center
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 Supplier of questions (e.g. PractiseTest)
+                                                        span *
+                                                input(type="text").modal-vacancy__input#supplier
+                                                #supplierError
+                                        .modal-vacancy__line-supplier-right
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 Exam Code / Number
+                                                        span *
+                                                .cart__form-input-line.cart__form-input-line--padding
+                                                    .categories__select
+                                                        .categories__select-wrapper-card
+                                                            .categories__border-card
+                                                            .categories__triangle
+                                                            select.selectize
+                                                                option(value='1') Microsoft
+                                                                option(value='2') Microsoft
+                                                                option(value='3') Microsoft
+                                                                option(value='4') Microsoft
+                                                            #selectErrorSecond
+                                    .modal-vacancy__line-version
+                                        .modal-vacancy__line-supplier-left.modal-vacancy__line-supplier-left--margin
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 File version or date (e.g. 2013-10-08)
+                                                input(type="text").modal-vacancy__input#file
+                                                #fileError
+                                        .modal-vacancy__line-supplier-right
+                                            label.modal-vacancy__label
+                                                .modal-vacancy__title.modal-vacancy__title--padding-top
+                                                    h4 Number of questions
+                                                input(type="text").modal-vacancy__input#number
+                                                #numberError
+                                    .modal-vacancy__add-file
+                                        .button-add-file
+                                            label.button-add-file__label(for='files') + Add File
+                                            input(type='file').button-add-file__input#files
+                                        .button-add-file__size
+                                            h3 Max Size
+                                            h4 60 Mb
+                                        span.upload-files-name param-pam-pam.vce
+                                    #filesError    
+                                    .comments__form-verification
+                                        label.comments__form-label
+                                            .comments__title-general
+                                                h4 Verification
+                                                span *
+                                            .comments__form-verification-general
+                                                .comments__form-verification-left
+                                                    input(type="text").comments__form-verification-input#verificationInput
+                                                .comments__form-verification-right
+                                                    .comments__form-verification-circle
+                                                        img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                                    .comments__form-verification-pic
+                                                        .comments__form-verification-bitmap
+                                                            img(src="./assets/img/bitmap-1.png")
+                                            #verificationError            
+                                    .button-submit-form.button-submit-form--position
+                                        button(type="submit").button-submit-form__info.button-submit-form__info--img Upload
+                                    .sharing-options
+                                        .sharing-options__title 
+                                            h3 Other Sharing Options
+                                        .sharing-options__text 
+                                            p Got more certification content to share? Email it to #[a(href="mailto:support@Prepaway.com") support@Prepaway.com]: Prepaway team will format it and publish.
+                    .free-registration__right-section
+                        .free-registration__title-width
+                            h4 Hot training courses
+                        .free-registration__title-right-sec
+                            h3 Hot training courses
+                        .practice__content-right-sign-in-page
+                            ul.practice__content-right-list-sing-in-page
+                                li.practice__content-right-item-sign-in-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/block-1.png").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+                        .content-microsoft__right-pic-sign-in
+                            a(href="#").content-microsoft__right-link
+                                img(src="./assets/img/avanset-new.png").content-microsoft__right-img
+            .sharing-options-responsive 
+                .container
+                    .sharing-options__title 
+                        h3 Other Sharing Options
+                    .sharing-options__text 
+                        p Got more certification content to share? Email it to #[a(href="mailto:support@Prepaway.com") support@Prepaway.com]: Prepaway team will format it and publish.
+            .avanset-adv 
+                .container
+                    .avanset-adv__wrapper
+                        .avanset-adv__left 
+                            .avanset-adv__title
+                                h3 Download Avanset VCE Software to Open Exam Files
+                        .avanset-adv__right    
+                            .avanset-adv__button
+                                .avanset-adv__url 
+                                    a(href="#").avanset-adv__link Download                       
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works
+
+

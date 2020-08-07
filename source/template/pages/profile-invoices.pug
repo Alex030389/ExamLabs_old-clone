@@ -1,0 +1,93 @@
+extends ../_template
+
+block variables
+    - var title = 'Profile Invoices'
+
+block content
+    .wrapper
+        section.section.profile-invoices
+            header.header.header--vendor-page
+                    .header__first.header__first--padding
+                        .container.container--flex-align
+                            .header__first-left.header__first-left--width
+                                .search-responsive-element#search-element
+                                    .search-responsive-pic
+                                        img(src="./assets/img/search-responsive.png").search-responsive-img
+                                .toggle-btn#toggle-btn
+                                    span.toggle-class.toggle-class-top
+                                    span.toggle-class.toggle-class-middle
+                                    span.toggle-class.toggle-class-bottom
+                                .header__first-logo.header__first-logo--margin-left
+                                    a(href="index.html").header__first__link
+                                        img(src="./assets/img/logo-png2.png").header__first-img
+                                .header__first-search
+                                    form.header__first-form
+                                        label.header__first-label
+                                            input.header__first-input(type="search" placeholder="Search")
+                                            .header__first-search-img
+                                                img(src="assets/img/search.png")
+                            .header__first-right.header__first-right--width
+                                a(href="#").header__first-vendor-link 
+                                    .header__first-vendor-page
+                                        .header__first-enter-picture
+                                            .header__first-enter-image
+                                                .header__first-enter-img-second-header
+                                        .header__first-enter-name
+                                            p
+                                                | My Account
+                                a(href="sign-in.html").sign-ing
+                                    .header__first-enter-pic
+                                        img(src="./assets/img/entry.png").header__first-enter-img
+                                    .header__first-enter-pic-entry
+                                        img(src="./assets/img/entry.png").header__first-enter-pic-entry-img
+                                .header__first-general
+                                    .header__first-general
+                                        .header__first-basket
+                                            svg.header__first-pic
+                                                use(xlink:href="assets/img/sprite.svg#icon-cart")
+                                        .header__first-cart
+                                            h4 Cart (1)
+                    .container
+                        .header__second
+                            include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search
+            .content
+                .practice__info
+                    .container
+                        .practice__info-general.practice__info-general--position
+                            .practice__info-left
+                                .practice__info-title
+                                    h2 You need Avanset VCE Software To Open Exam Files!
+                                .practice__info-text
+                                    h4 Avanset VCE Software available on the Windows, MacOS, iOS and Android.
+                            .practice__info-right
+                                .button.button--files
+                                    a(href="#").button__link Download
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 My Account
+                            .breadcrumbs__text
+                                h3 My Products
+            .product-profile-invoices-responsive
+                .product-profile-invoices-responsive__title
+                    .container
+                        h2 Orders
+                .container
+                    .product-profile-invoices-responsive__subtitle 
+                        h2 Invoices    
+                    .product__general-profile-invoices-page
+                        .my-product__right-prof-inv-page.my-product__right-prof-inv-page--margin-bottom
+                            include ../common/_responsive-profile-invoices
+        include ../common/_footer
+    include ../common/_sidebar        
+    include ../common/_search-responsive-element
+    include ../common/_modal-how-it-works

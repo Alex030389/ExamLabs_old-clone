@@ -1,0 +1,36 @@
+.modal-contact-form
+    .modal-contact-form__content
+        .comments__title.comments__title--center
+            h2 Contact Form
+            span.modal-sign-up__header-btn &times
+        .modal-contact-form-general
+            .modal-contact-form__heading
+                h4 Please, use this form If you have any specific question.
+            form.modal-contact__form(name="v-form" method="post")
+                .modal-contact__form-all
+                    .comments__form-lines.comments__form-lines--width
+                        label.contact__form-label
+                            h4 Name <span>*</span>
+                            input.comments__form-input.comments__form-input--width(type="text" placeholder="Andrew Romanenko")
+                            .val_error#name_error
+                    .comments__form-lines.comments__form-lines--width
+                        label.contact__form-label
+                            h4 Email <span>*</span>
+                            input.comments__form-input.comments__form-input--width(type="email")
+                            .val_error#email_error
+                .modal-contact__form-field
+                    label.contact__form-label
+                        h4 Comments <span>*</span>
+                        textarea.comments__textarea-field
+                .comments__form-verification--center
+                    label.contact__form-label
+                        h4 Verification Code <span>*</span>
+                        .comments__form-verification-general.comments__form-verification-general--width
+                            .comments__form-verification-left
+                                input(type="text").comments__form-verification-input.comments__form-verification-input--width
+                            .comments__form-verification-right
+                                .comments__form-verification-circle
+                                .comments__form-verification-pic
+                                    .comments__form-verification-bitmap
+                .button-modal
+                    button(type="submit").button-modal__submit Submit

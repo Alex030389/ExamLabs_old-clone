@@ -1,0 +1,73 @@
+extends ../_template
+
+block variables
+    - var title = 'Sign up'
+
+block content
+    .wrapper
+        section.section.vendor
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-first-page
+                include ../common/_practice-line
+            .registration-page-mobile 
+                .registration-page-mobile__header 
+                    .container
+                        .registration-page-mobile__title 
+                            h3 Free Registration 
+                .registration-page-mobile__body 
+                        .container
+                            .registration__position
+                                .registration__wrapper
+                                    .registration__title
+                                        h2 Free Registration 
+                                    form.registration-page-mobile__form#form 
+                                        .registration-page-mobile__form-input
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__heading
+                                                    h3 Email 
+                                                    span *
+                                                input.registration-page-mobile__input(type="email")
+                                        .registration-page-mobile__form-input        
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__heading
+                                                    h3 Password 
+                                                    span *
+                                                input.registration-page-mobile__input(type="password") 
+                                        .registration-page-mobile__form-input    
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__heading
+                                                    h3 Repeat Password 
+                                                    span *
+                                                input.registration-page-mobile__input(type="password")  
+                                        .checkbox
+                                            .checkbox-line
+                                                label.checkbox-label
+                                                    input.checkbox-input(type='checkbox', name='checkbox-test')
+                                                    span.checkbox-img
+                                                    .checkbox-desc
+                                                        p Include me on ExamLabs IT mailing list
+                                        .val_error
+                                        .val_error 
+                                        .val_error       
+                                        .registration-page-mobile__wrapper-elem        
+                                            .registration-page-mobile__submit.registration-page-mobile__submit--width
+                                                button(type="submit").registration-page-mobile__button Sign Up 
+                                        .registration-page-mobile__border-top 
+                                            .registration-page-mobile__wrapper-elem   
+                                                .registration-page-mobile__account.registration-page-mobile__submit--width
+                                                    a.registration-page-mobile__account-button(href="#")  I don't have an account                         
+        include ../common/_footer
+    include ../common/_search-responsive-element
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works
+
+

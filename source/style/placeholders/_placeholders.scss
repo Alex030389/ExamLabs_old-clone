@@ -1,0 +1,7 @@
+%btn {
+  background: $white;
+  border-radius: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include GothamPro-Medium();
+}

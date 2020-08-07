@@ -1,0 +1,851 @@
+extends ../_template
+
+block variables
+    - var title = 'Tutorial details'
+
+block content
+    .wrapper
+        section.section.tutorial-details
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 New Files
+                .content-first
+                    .container
+                        .content__general
+                            .content__left
+                                .content__left-pic
+                                    img(src="./assets/img/code.png").content__left-img
+                            .content__right
+                                .content__right-number
+                                    h4 210-060
+                                .content__right-title
+                                    h2 CCNA Collaboration Implementing Cisco<br> Collaboration Devices (CICD)
+                                .content__right-general
+                                    .content__right-price
+                                        .content__right-wrapper
+                                            .content__right-amount
+                                                h3 $29.99
+                                        form.content__right-form
+                                            .content__right-form-button
+                                                button(type="submit").content__right-form-input Add to Cart
+                                                .content__right-form-button-circle
+                                                    .content__right-form-button-image
+                                    .content__right-price-second
+                                        ul.content__right-list
+                                            li.content__right-item.content__right-item--center
+                                                .content__right-pic
+                                                    i.spritesheet-icons.spritesheet-icon-user
+                                                .content__right-text
+                                                    h4 43 students
+                                            li.content__right-item.content__right-item--start
+                                                .content__right-pic
+                                                    i.spritesheet-icons.spritesheet-icon-timer-hours
+                                                .content__right-text
+                                                    h4 43 hours
+                                            li.content__right-item.content__right-item--right
+                                                .content__right-pic
+                                                    i.spritesheet-icons.spritesheet-star-orange
+                                                .content__right-text
+                                                    h4 4.9 (125)
+                .about
+                    .container
+                        .about__title
+                            h3 About Course
+                        .about__text
+                            p AWS Certified Solutions Architect is a certification and training program, which is currently among the top IT certifications. The examination course is <br> designed for the individuals that come with some good experience in designing applications, along with systems… #[a(href="#") Read more]
+                .structure
+                    .container
+                        .structure__title
+                            h2 Course Structure
+                        .structure__blocks
+                            ul.structure__blocks-list
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle 1
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Domain 3 : Information Security Program Development and Management
+                                    .structure__blocks-bottom
+                                        h3 1 lecture / -2 hours
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Domain 4 : Information Security Incident Management
+                                    .structure__blocks-bottom
+                                        h3 24 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Databeses
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 15 minutes
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 SQL Server <br> 2016
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 13 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Basic Select Statements
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 59 minutes
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Advanced<br> Select<br> Statements
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 10 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Querying<br> Multiple<br> Tables
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 4 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Grouping<br> Data
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Modifying<br> Data
+                                    .structure__blocks-bottom
+                                        h3 1 lecture
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Programming<br> Objects With T-SQL
+                                    .structure__blocks-bottom
+                                        h3 4 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 User-Defined<br> Functions
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Understanding <br> Subqueries
+                                    .structure__blocks-bottom
+                                        h3 5 lectures
+                                li.structure__blocks-item.open-course
+                                    .structure__blocks-circle
+                                    .structure__blocks-general
+                                        .structure__blocks-burger
+                                            .structure__blocks-img
+                                        .structure__blocks-hours
+                                            h4 2 hours
+                                    .structure__blocks-all
+                                        .structure__blocks-heading
+                                            h3 Course <br> Summary
+                                    .structure__blocks-bottom
+                                        h3 1 lecture
+                        .structure__blocks-wrapper-slider
+                            .swiper-container.s4
+                                ul.swiper-wrapper
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle 1
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Welcome
+                                        .structure__blocks-bottom
+                                            h3 1 lecture / -2 hours
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Getting <br> Started
+                                        .structure__blocks-bottom
+                                            h3 24 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Databeses
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 15 minutes
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 SQL Server <br> 2016
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 13 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Basic Select Statements
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 59 minutes
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Advanced<br> Select<br> Statements
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 10 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Querying<br> Multiple<br> Tables
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 4 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Grouping<br> Data
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Modifying<br> Data
+                                        .structure__blocks-bottom
+                                            h3 1 lecture
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Programming<br> Objects With T-SQL
+                                        .structure__blocks-bottom
+                                            h3 4 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 User-Defined<br> Functions
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Understanding <br> Subqueries
+                                        .structure__blocks-bottom
+                                            h3 5 lectures
+                                    li.structure__blocks-item.structure__blocks-item--addModal.swiper-slide.open-course
+                                        .structure__blocks-circle
+                                        .structure__blocks-general
+                                            .structure__blocks-burger
+                                                img(src="./assets/img/icon-playlist.png").structure__blocks-img
+                                            .structure__blocks-hours
+                                                h4 2 hours
+                                        .structure__blocks-all
+                                            .structure__blocks-heading
+                                                h3 Course <br> Summary
+                                        .structure__blocks-bottom
+                                            h3 1 lecture
+                .practice__general-responsive.practice__general-responsive--tut-details-page
+                    .container.container--width--100
+                        .structure__title-responsive
+                            h2 Course Test
+                        .practice__general-all
+                            .practice__general-responsive-header
+                                .practice__general-responsive-picture
+                                    img(src="./assets/img/icon-microsoft.png").practice__general-responsive-img
+                            .practice__general-responsive-body.practice__general-responsive-body--padding-top
+                                .practice__general-responsive-body-left 
+                                    - for (let i = 0; i < 7; i++)
+                                        .practice__general-responsive-body-title 
+                                            h4 9A0-389
+                                .practice__general-responsive-body-right 
+                                    - for (let i = 0; i < 7; i++)
+                                        .practice__general-responsive-body-url 
+                                            a(href="#") adobe.braindumps.9a0-38..
+                            .button-load-more-index-page
+                                .button-load-more-index-page-pic
+                                    i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                a(href="#").button-load-link Load More      
+                .slider-main-page
+                    .container
+                        .trainig-course__title-vendor
+                            h2 Hot Training Courses
+                            a(href="#").practice__heading-link See All
+                        .swiper-container.s3
+                            .swiper-wrapper.slider-third-mobile
+                                li.practice__content-right-item-responsive-elem.swiper-slide
+                                    a(href="#").practice__content-right-link    
+                                        .practice__content-right-item-responsive-elem
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25.99
+                                            .practice__title-number-responsive
+                                                .practice__title-name-responsive
+                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                li.practice__content-right-item-responsive-elem.swiper-slide
+                                    a(href="#").practice__content-right-link    
+                                        .practice__content-right-item-responsive-elem
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25.99
+                                            .practice__title-number-responsive
+                                                .practice__title-name-responsive
+                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                li.practice__content-right-item-responsive-elem.swiper-slide
+                                    a(href="#").practice__content-right-link    
+                                        .practice__content-right-item-responsive-elem
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25.99
+                                            .practice__title-number-responsive
+                                                .practice__title-name-responsive
+                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                li.practice__content-right-item-responsive-elem.swiper-slide
+                                    a(href="#").practice__content-right-link    
+                                        .practice__content-right-item-responsive-elem
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25.99
+                                            .practice__title-number-responsive
+                                                .practice__title-name-responsive
+                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                li.practice__content-right-item-responsive-elem.swiper-slide
+                                    a(href="#").practice__content-right-link    
+                                        .practice__content-right-item-responsive-elem
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25.99
+                                            .practice__title-number-responsive
+                                                .practice__title-name-responsive
+                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                li.practice__content-right-item-responsive-elem.swiper-slide
+                                    a(href="#").practice__content-right-link    
+                                        .practice__content-right-item-responsive-elem
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25.99
+                                            .practice__title-number-responsive
+                                                .practice__title-name-responsive
+                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing                         
+                .course-test
+                    .container
+                        .course-test__title
+                            h2 Course Test
+                        .content-files
+                            table.table-tutorials-details.table
+                                colgroup.table-tutorials-details__col-1
+                                colgroup.table-tutorials-details__col-2
+                                colgroup.table-tutorials-details__col-3
+                                colgroup.table-tutorials-details__col-4
+                                colgroup.table-tutorials-details__col-5
+                                colgroup.table-tutorials-details__col-6
+                                thead.table-certificate-bundle-header
+                                    tr
+                                        th.table-certificate-bundle-padding.table-certificate-bundle-padding--color
+                                            h4 Vendor
+                                        th.table-certificate-bundle-padding.table-certificate-bundle-padding--color
+                                            h4 Exam
+                                        th.table-certificate-bundle-padding.table-certificate-bundle-padding--color
+                                            h4 File Name
+                                        th.table-certificate-bundle-padding.table-certificate-bundle-padding--color
+                                            h5 Views
+                                        th.table-certificate-bundle-padding.table-certificate-bundle-padding--color
+                                            h5 Downloads
+                                        th.table-certificate-bundle-padding.table-certificate-bundle-padding--color
+                                            h5 Size
+                                tbody
+                                    tr
+                                        td(rowspan="5").table__margin-tut-details-page
+                                            .practice__content-left-pic-microsoft
+                                                img(src="./assets/img/icon-microsoft.png")
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-files-number-img
+                                                h5 70-743
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 178205
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-files-number-img
+                                                h5 70-743
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 178205
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-files-number-img
+                                                h5 70-743
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 178205
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    - for (let i = 0; i < 2; i++)
+                                    tr
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-files-number
+                                                h5 70-743
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 1244
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border-tut-details-page
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td.first-screen__border-right
+                                            .first-screen__left-offer-files-number
+                                                h5 70-743
+                                        td.first-screen__border-right
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border-right
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 1245
+                                        td.first-screen__border-right
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                .similar-course
+                    .container
+                            .practice__heading
+                                h3 Similar Courses
+                    .container
+                        ul.practice__content-right-list-general
+                            li.practice__content-right-item-element
+                                .practice__content-right-img
+                                    a(href="#").practice__content-right-link
+                                        img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                        .practice__content-right-img-overplap
+                                            img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                        .button-price
+                                            .button-price__link $25,99
+                                        .practice__title-number
+                                            h4 70-463
+                                            .practice__title-name
+                                                h2 CompTIA Security+
+                                        span.line
+                                        .practice__students-general
+                                            .practice__students-first
+                                                .practice__students-title
+                                                    h3 Students
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 83 123
+                                            .practice__students-second
+                                                .practice__students-title
+                                                    h3 Duration
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 2.5h
+                                            .practice__students-third
+                                                .practice__students-title-sign-in-page
+                                                    h3 Rating
+                                                    h4 4.9 (124)
+                                                .practice__stars
+                                                    ul.practice__stars-list
+                                                        - for (let i = 0; i < 5; i++)
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                            .practice__stars-title
+                                                h4 4.9 (124)
+                            li.practice__content-right-item-element
+                                .practice__content-right-img
+                                    a(href="#").practice__content-right-link
+                                        img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                        .practice__content-right-img-overplap
+                                            img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                        .button-price.button-price--color
+                                            .button-price__link Free
+                                        .practice__title-number
+                                            h4 70-463
+                                            .practice__title-name
+                                                h2 CompTIA Security+
+                                        span.line
+                                        .practice__students-general
+                                            .practice__students-first
+                                                .practice__students-title
+                                                    h3 Students
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 83 123
+                                            .practice__students-second
+                                                .practice__students-title
+                                                    h3 Duration
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 2.5h
+                                            .practice__students-third
+                                                .practice__students-title-sign-in-page
+                                                    h3 Rating
+                                                    h4 4.9 (124)
+                                                .practice__stars
+                                                    ul.practice__stars-list
+                                                        - for (let i = 0; i < 5; i++)
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                            .practice__stars-title
+                                                h4 4.9 (124)
+                            li.practice__content-right-item-element
+                                .practice__content-right-img
+                                    a(href="#").practice__content-right-link
+                                        img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                        .practice__content-right-img-overplap
+                                            img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                        .button-price
+                                            .button-price__link $25,99
+                                        .practice__title-number
+                                            h4 70-463
+                                            .practice__title-name
+                                                h2 CompTIA Security+
+                                        span.line
+                                        .practice__students-general
+                                            .practice__students-first
+                                                .practice__students-title
+                                                    h3 Students
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 83 123
+                                            .practice__students-second
+                                                .practice__students-title
+                                                    h3 Duration
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 2.5h
+                                            .practice__students-third
+                                                .practice__students-title-sign-in-page
+                                                    h3 Rating
+                                                    h4 4.9 (124)
+                                                .practice__stars
+                                                    ul.practice__stars-list
+                                                        - for (let i = 0; i < 5; i++)
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                            .practice__stars-title
+                                                h4 4.9 (124)
+                            li.practice__content-right-item-element
+                                .practice__content-right-img
+                                    a(href="#").practice__content-right-link
+                                        img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                        .practice__content-right-img-overplap
+                                            img(src="./assets/img/third-image.jpg").practice__content-right-image-overplap
+                                        .button-price
+                                            .button-price__link $29,99
+                                        .practice__title-number
+                                            h4 70-463
+                                            .practice__title-name
+                                                h2 CompTIA Security+
+                                        span.line
+                                        .practice__students-general
+                                            .practice__students-first
+                                                .practice__students-title
+                                                    h3 Students
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 83 123
+                                            .practice__students-second
+                                                .practice__students-title
+                                                    h3 Duration
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 2.5h
+                                            .practice__students-third
+                                                .practice__students-title-sign-in-page
+                                                    h3 Rating
+                                                    h4 4.9 (124)
+                                                .practice__stars
+                                                    ul.practice__stars-list
+                                                        - for (let i = 0; i < 5; i++)
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                            .practice__stars-title
+                                                h4 4.9 (124)
+                .comments.comments--padding-bottom
+                    .container
+                        .comments__general.comments__general--padding
+                            .comments__title-main
+                                h2 Comments
+                            .comments__add-comment
+                                .comments__url
+                                    a(href="#").comments__link + Add Comment
+                        .comments__section
+                            .comments__questions
+                                .comments__header
+                                    ul.comments__list
+                                        li.comments__item
+                                            .comments__pic
+                                                img(src='./assets/img/united-states-icon.jpg').comments__pic-flag
+                                        li.comments__item
+                                            .comments__name
+                                                h3 Bruce Adams
+                                            .comments__time
+                                                h4 Dec 13 2019, 11:42 AM
+                                .comments__body
+                                    .comments__heading.comments__heading--position
+                                        h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                            include ../common/_question
+                            .button-load-more-index-page
+                                .button-load-more-index-page-pic
+                                    i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                a(href="#").button-load-link Load More   
+                        .comments__submit.comments__submit--tut-details-page
+                            .comments__title
+                                .comments__title__element
+                                    h2 Add comment
+                            .comments__form-general.comments__form-general--padding-bottom
+                                form.comments__form#form
+                                    .comments__form-all.comments__form-all--padding-top
+                                        .comments__form-lines
+                                            label.comments__form-label-line
+                                                h4 Name <span>*</span>
+                                                input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                                #nameError
+                                        .comments__form-lines
+                                            label.comments__form-label-line
+                                                h4 Email <span>*</span>
+                                                input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                                #emailError
+                                        .comments__form-rating
+                                            .comments__title.comments__title--padding
+                                                h4 Rate file <span>*</span>
+                                            .comments__stars
+                                                .rating-stars.text-center
+                                                    ul.comments__stars-list#stars
+                                                        li.star(title='Good', data-value='1')
+                                                            svg.comments__stars-picture-empty
+                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                        li.star(title='Good', data-value='2')
+                                                            svg.comments__stars-picture-empty
+                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                        li.star(title='Good', data-value='3')
+                                                            svg.comments__stars-picture-empty
+                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                        li.star(title='Excellent', data-value='4')
+                                                            svg.comments__stars-picture-empty
+                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                        li.star(title='Perfect', data-value='5')
+                                                            svg.comments__stars-picture-empty
+                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                    .comments__form-field
+                                        label.comments__form-label-general
+                                            .comments__title-general-padding
+                                                h4 Comment
+                                                span *
+                                            textarea.comments__textarea-field#textArea
+                                    .comments__form-verification
+                                        label.comments__form-label
+                                            .comments__title-general
+                                                h4 Verification
+                                                span *
+                                            .comments__form-verification-general
+                                                .comments__form-verification-left
+                                                    input(type="text").comments__form-verification-input#verificationInput
+                                                .comments__form-verification-right
+                                                    .comments__form-verification-circle#animation
+                                                        img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                                    .comments__form-verification-pic
+                                                        .comments__form-verification-bitmap
+                                                            img(src="./assets/img/bitmap-1.png")
+                                        button(type="submit").button-submit Submit
+                    .avanset-adv 
+                        .container
+                            .avanset-adv__wrapper
+                                .avanset-adv__left 
+                                    .avanset-adv__title
+                                        h3 Download Avanset VCE Software to Open Exam Files
+                                .avanset-adv__right    
+                                    .avanset-adv__button
+                                        .avanset-adv__url 
+                                            a(href="#").avanset-adv__link Download  
+        include ../common/_footer
+    include ../common/_modal-video
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works

@@ -1,0 +1,13 @@
+extends ../_template
+
+block variables
+  - var title = 'Old Browser'
+
+block content
+  .old-header
+    img.big-logo(src="assets/img/logo-png2.png" width="318" height="")
+  .old-body
+    .old-body__content-wrapper
+      h1.old-body__heading Improve Your Experience
+      p.old-body__text You are using a web browser that is not supported by ExamLabs<br> To get a bettep experience, try one of these options and download latest version:
+        span.old-body__links <a class="old-body__link" href="#">Safari</a>, <a class="old-body__link" href="#">Chrome</a> or <a class="old-body__link" href="#">Firefox</a>

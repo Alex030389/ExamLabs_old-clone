@@ -1,0 +1,160 @@
+.content-microsoft-exam-details-comments {
+
+  @include laptop {
+    display: none;
+  }
+}
+
+.content-microsoft-exam-details-comments-responsive {
+  display: none;
+
+  @include laptop {
+    display: block;
+  }
+
+  @include phones {
+    padding-top: rem(20px);
+  }
+}
+
+.first-screen__title {
+
+  h4 {
+    @include GothamPro-Medium;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2b2c30;
+
+    @include desktop-1024 {
+      display: none;
+    }
+  }
+}
+
+.content-general--exam-details-comments {
+
+    @include desktop-1024 {
+      flex-direction: column;
+    }
+}
+
+.content-general__left-exam-details {
+  width: 70%;
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.content-general__right {
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.content-general__right-exam-details-comments {
+  width: 20%;
+
+  @include desktop {
+    width:100%;
+  }
+
+  @include laptop {
+    padding-top: rem(30px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(30px);
+    flex-direction: column;
+  }
+
+  @include tablets-600 {
+    flex-direction: column;
+  }
+}
+
+.content-general__banner--padding-responsive {
+
+  .content-general__banner {
+    @include laptop {
+      padding-top: 0;
+    }
+  }
+}
+
+.content-general__banner-padding {
+  padding-top: rem(45px);
+  text-align: center;
+
+  @include laptop {
+    padding-top: 0;
+  }
+  
+  @include tablets-600 {
+    padding-top: rem(30px);
+    text-align: center;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+.content-files__title {
+  @include tablets {
+    padding-top: rem(20px);
+  }
+}
+
+.practice__general-responsive-body-heading--border-bottom {
+  padding-bottom: rem(20px);
+  border-bottom: rem(1px) solid $border-color;
+  
+  h3 {
+    text-align: center;
+  }
+}
+
+.practice__general-responsive-body-center {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+}
+
+.trainig-course__block-url-exam-details {
+  display: none;
+
+  @include phones {
+    display: block;
+    padding-bottom: rem(353px);
+    text-align: center;
+  }
+}
+
+.comments__submit--padding-bottom {
+  @include tablets {
+    padding-bottom: rem(170px);
+  }
+
+  @include phones {
+    padding-bottom: 0;
+  }
+}
+
+.comments__form-general-exam-det-page {
+  border: 0.0625rem solid #d9e0ec;
+  width: 75%;
+  padding: 2.1875rem 1.875rem;
+  box-shadow: 0rem 0.625rem 1.9375rem 0.125rem #d9e0ec;
+  border-radius: 0.625rem;
+  background: #fff;
+
+ @include desktop {
+   width: 100%;
+ }
+
+  @include phones {
+    margin-bottom: rem(20px);
+  }
+}
+

@@ -1,0 +1,294 @@
+extends ../_template
+
+block variables
+  - var title = 'VENDOR NEW PAGE'
+
+block content
+  .wrapper
+      section.section.margin-bottom
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        header.header
+            include ../common/_header
+        .header-search-element.visually-hidden 
+          .container
+              form.information__input
+                input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search  
+        .container
+          .header__second
+            include ../common/_nav         
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line
+        .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Certification Providers     
+                            .breadcrumbs__text
+                                h3 Microsoft   
+        .files__content
+            .container
+                .files__table-general
+                    .files__table-left-vendor
+                        .files__title-vendor.files__title-vendor--responsive
+                            h2 Pass Microsoft Certification Exam in First Attempt Guaranteed! Get 100% Real Exam Questions, Accurate & Verified Answers As seen in the Real Exam! 30 Days Free Updates, Instant Download!
+                    .vendor__table-right.vendor__table-right--responsive
+                        .files__title-vendor
+                            h3 Microsoft Certification 
+                    .files__table-left-vendor
+                        .mcse-private-cloud-element 
+                            .mcse-private-cloud__title 
+                                h3 Top Microsoft Exams                                   
+                            .mcse-private-cloud__columns 
+                                table.mcse-private-table 
+                                    colgroup.mcse-private-table__col-1
+                                    colgroup.mcse-private-table__col-2
+                                    colgroup.mcse-private-table__col-3
+                                    thead.mcse-private-header 
+                                        tr 
+                                            th.mcse-title 
+                                                h4 Exam 
+                                            th.mcse-left.mcse-title 
+                                                h4 Title 
+                                            th.mcse-title.mcse-center.last  
+                                                h4 Files    
+                                    tbody 
+                                        - for (let i = 0; i < 5; i++)
+                                            tr.mcse-position 
+                                                td.mcse-title-bold
+                                                    h5 70-743 
+                                                td.mcse-left 
+                                                    a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce                 
+                                                td.mcse-title-bold.mcse-center.last   
+                                                    h5 57
+                        .load-more-button-wrapper
+                            .load-more-button-responsive
+                                .button-load-more-index-page-pic
+                                    i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                a(href="#").button-load-link Load More
+                        .mcse-private-cloud-element 
+                            .mcse-private-cloud__title 
+                                h3 Microsoft Certification
+                            - for (let i = 0; i < 5; i++)    
+                                .mcse-private-cloud-element-block 
+                                    .mcse-private-cloud__columns-left-item 
+                                        h4 MCSA
+                                    .mcse-private-cloud__columns-left-link 
+                                        a(href="#") Configuring and Deploying a Private Cloud with System Center 2012
+                        .load-more-button-wrapper
+                            .load-more-button-responsive
+                                .button-load-more-index-page-pic
+                                    i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                a(href="#").button-load-link Load More
+                        .files__table-cell-vendor.files__table-cell-vendor--margin-bottom
+                                        table.table-vendor.table
+                                            thead.table__padding-vendor.table__padding-vendor--thead-width
+                                                tr.table__padding-full-width
+                                                    th.table__padding-heading
+                                                        h5 Exam
+                                                    th.table__padding-title
+                                                        h5 Title
+                                                    th.table__padding-heading-second
+                                                        h5 Files
+                                            tbody.tbody-width
+                                                - for (let i = 0; i < 15; i++)
+                                                    tr.table-hover
+                                                        td.table__cell-padding-numbers-vendor-page-number.table__cell-padding-numbers--padding-left-and-right  
+                                                            .color.table__cell-padding-numbers 70-247
+                                                        td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right 
+                                                            .table__link.table__link--padding-left
+                                                                a(href="#").table__link Configuring and Deploying a Private Cloud with System Center 2012
+                                                        td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right  
+                                                            .color 2131
+                        .practice__heading.practice__heading--padding-top 
+                            h2 Hot Microsoft Tutorials
+                            a(href="#") See All
+                        .swiper-mobile
+                            .swiper-container.s3
+                                .swiper-wrapper.slider-third-mobile
+                                    - for (let i = 0; i < 5; i++)
+                                        li.practice__content-right-item-responsive-elem.swiper-slide
+                                            a(href="#").practice__content-right-link    
+                                                .practice__content-right-item-responsive-elem
+                                                    img(src="/assets/img/block.png")
+                                                    .practice__content-right-img-overplap
+                                                        img(src="./assets/img/8460.jpg").practice__content-right-image-overplap
+                                                    .button-price
+                                                        .button-price__link $25.99
+                                                    .practice__title-number-responsive
+                                                        .practice__title-name-responsive
+                                                            h2 CCNP <br> Implementing <br> Cisco IP Routing        
+                        .swiper-container.slider2    
+                            ul.practice__content-right-list-index.swiper-wrapper
+                                - for (let i = 0; i < 6; i++)
+                                    li.practice__content-right-item.swiper-slide
+                                        .practice__content-right-img
+                                            a(href="#").practice__content-right-link
+                                                img(src="./assets/img/block.png").practice__content-right-pic-general
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25,99
+                                                .practice__title-number
+                                                    h4 70-463
+                                                    .practice__title-name
+                                                        h2 CompTIA Security+
+                                                span.line
+                                                .practice__students-general
+                                                    .practice__students-first
+                                                        .practice__students-title
+                                                            h3 Students
+                                                        .practice__line
+                                                        .practice__quantity
+                                                            h4 83
+                                                    .practice__students-second
+                                                        .practice__students-title
+                                                            h3 Duration
+                                                        .practice__line
+                                                        .practice__quantity
+                                                            h4 2.5h
+                                                    .practice__students-third
+                                                        .practice__students-title-sign-in-page
+                                                            h3 Rating
+                                                            h4 4.9 (124)
+                                                        .practice__stars
+                                                            ul.practice__stars-list
+                                                                - for (let i = 0; i < 5; i++)
+                                                                    li.practice__stars-itme
+                                                                        .practice__stars-pic
+                                                                            .practice__stars-img
+                                                    .practice__stars-title
+                                                        h4 4.9 (124)  
+                            .swiper-button-prev
+                                img(src="./assets/img/left.png")
+                            .swiper-button-next
+                                img(src="./assets/img/right.png")                             
+                        .files__table-description 
+                            p Most popular Microsoft Certification exam dumps, practice test questions and  trauning courses from Exam Labs. Latest Microsoft Certification Questions and Answers to Pass the Microsoft exams Fast. Be prepared for your next Microsoft Exam Using Exam Dumps from Exam Labs. The Microsoft Exam Dumps & Practice Test Questions for Microsoft Ctrtifications are uploaded by real users and are opened by using Avanset VCE Player,.                
+                        .practice__heading
+                            h2 About Microsoft Certifications
+                        .files__table-description 
+                            p Most popular Microsoft Certification exam dumps, practice test questions and  trauning courses from Microsoft Certification exam dumps, practice test questions and  trauning courses from #[a(href="#") Read More]
+                        .swiper-container.slider3
+                            ul.vendor__table-right-list-element-responsive.swiper-wrapper
+                                    - for (let i = 0; i < 7; i++)
+                                        li.vendor__table-right-item.swiper-slide 
+                                            a(href="#")
+                                                img(src="./assets/img/ccnp.png")
+                                        li.vendor__table-right-item.swiper-slide
+                                            a(href="#")
+                                                img(src="./assets/img/ccnp.png")
+                        .comments-form-split
+                            .comments__general
+                                .comments__title-general-new 
+                                    h2 Comment 
+                                .comments__url 
+                                    a(href="#").comments__link +Add Comment
+                            .comments-block-wrap
+                                .comments__section 
+                                    - for (let i = 0; i < 2; i++)
+                                        .comments__questions.comments__questions--padding
+                                            .comments__header
+                                                ul.comments__list
+                                                    li.comments__item
+                                                        .comments__name 
+                                                            h3 Alice
+                                                        .comments__time 
+                                                            h4 January 17, 2019, 01:51 PM
+                                            .comments__body 
+                                                .comments__heading.comments__heading--position
+                                                    h4 alice
+                                        .comments__questions.comments__questions--padding 
+                                            .comments__header
+                                                ul.comments__list
+                                                    li.comments__item
+                                                        i.spritesheet-flags.sprite-IN
+                                                    li.comments__item    
+                                                        .comments__name 
+                                                            h3 Alice
+                                                        .comments__time 
+                                                            h4 January 17, 2019, 01:51 PM
+                                            .comments__body 
+                                                .comments__heading.comments__heading--position
+                                                    h4 It is a nice platform to enhance knowledge and expertise in the technical field.            
+                            .comments__submit
+                                .comments__title
+                                    .comments__title__element
+                                        h2 Add comment
+                                .comments__form-general
+                                    form.comments__form#form
+                                        .comments__form-all.comments__form-all--padding-top
+                                            .comments__form-lines
+                                                label.comments__form-label-line
+                                                    h4 Name <span>*</span>
+                                                    input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                                    #nameError
+                                            .comments__form-lines
+                                                label.comments__form-label-line
+                                                    h4 Email <span>*</span>
+                                                    input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                                    #emailError
+                                        .comments__form-field
+                                            label.comments__form-label-general
+                                                .comments__title-general-padding
+                                                    h4 Comment
+                                                    span *
+                                                textarea.comments__textarea-field#textArea
+                                        .comments__form-verification
+                                            label.comments__form-label
+                                                .comments__title-general
+                                                    h4 Verification
+                                                    span *
+                                                .comments__form-verification-general
+                                                    .comments__form-verification-left
+                                                        input(type="text").comments__form-verification-input#verificationInput
+                                                    .comments__form-verification-right
+                                                        .comments__form-verification-pic
+                                                            .comments__form-verification-bitmap
+                                                                img(src="./assets/img/captcha.png")
+                                                        .comments__form-verification-circle#animation
+                                                            img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                            button(type="submit").button-submit Submit
+                    .vendor__table-right.vendor__table-right--responsive
+                            ul.vendor__table-right-list-element 
+                                - for (let i = 0; i < 7; i++)
+                                    .vendor__table-right-list-block
+                                        li.vendor__table-right-item 
+                                            a(href="#")
+                                                img(src="./assets/img/ccnp.png")
+                                        li.vendor__table-right-item 
+                                            a(href="#")
+                                                img(src="./assets/img/ccnp.png") 
+                            .sidebar-vce
+                                .sidebar-vce__header
+                                    img.sidebar-vce__logo(src="assets/img/avanset-logo.png", alt="Avanset Logo")
+                                a.sidebar-vce__main-link.link-true.link-true--large(href="#") How to Open VCE Files
+                                p.sidebar-vce__text
+                                    b.sidebar-vce__text-large.desktop-hidden You need Avanset VCE Player in Order to Open VCE Files!
+                                    span.sidebar-vce__text-small Use <a class="link-true" href="#">VCE Exam Simulator</a> to open VCE files
+                                img.sidebar-vce__pic(src="assets/img/avanset-img.jpg", alt="Screenshot")
+                                .sidebar-vce__buttons-wrapper
+                                    a.sidebar-vce__button.sidebar-vce__button--green(href="#") Sign Up 
+                                        span.green-text Free Demo
+                                    a.sidebar-vce__button.sidebar-vce__button--yellow(href="#") Learn More
+                                    a.sidebar-vce__button.sidebar-vce__button--blue(href="#") Full Version
+
+        include ../common/adv                           
+        include ../common/_footer
+        include ../common/_sidebar
+        include ../common/_modal-download
+        include ../common/_modal-vip-subs
+        include ../common/_modal-popup-download
+        include ../common/_modal-contact-form
+        include ../common/_modal-how-it-works
+        include ../common/_modal-download-two
+        include ../common/_modal-add-to-cart                                
+
+
+               
+                      

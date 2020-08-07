@@ -1,0 +1,118 @@
+.user-sidebar  {
+    position: fixed;
+    left: -100%;
+    min-height: 100%;
+    width: 100%;
+    transition: left .3s ease-in-out;
+    top: 59px;  
+    z-index: 10;
+    background: #fff;
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &--active {
+        left: 0;
+        min-height: 100%;
+        transition: left .3s ease-in-out;
+        top: 59px;  
+        z-index: 10;
+        background: #fff;
+        z-index: 20;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__pic {
+        width: rem(20px);
+        height: rem(20px);
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        position: relative;
+        padding: rem(30px);
+        @include GothamPro-Medium;
+        font-size: rem(15px);
+        font-weight: 500;
+        text-align: left;
+        color: #2b2c30;
+    }
+
+    &__img {
+        order: -1;
+        margin-right: rem(25px);
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__picture {
+        width: rem(7px);
+        height: rem(11px);
+    }
+}
+
+.header__first-enter-pic-entry {
+    z-index: 15;
+}
+
+.user-sidebar__title {
+    padding-bottom: rem(30px);
+    border-bottom: 1px solid $border-color;
+
+    h3 {
+        padding: rem(28.8px) 0 0 rem(20px);
+        @include GothamPro-Bold;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        color: #000000;
+    }
+}
+
+.user-sidebar__padding {
+    a {
+        padding-left: rem(42px);
+        display: flex;
+        align-items: center;
+        @include GothamPro-Medium;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        text-align: left;
+        color: #2b2c30;
+    }
+}
+
+.sign-ing-index {
+    z-index: 21 !important;
+}
+
+.sidebar__link-mobile {
+    padding: rem(25px);
+}
+
+.user-sidebar__padding {
+    width: 100%;
+}

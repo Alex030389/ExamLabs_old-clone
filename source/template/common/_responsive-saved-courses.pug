@@ -1,0 +1,31 @@
+.responsive-saved-courses-block
+    .container.container--width--100-phones
+        .registration-page-mobile 
+                .registration-page-mobile__header 
+                    .container
+                        .registration-page-mobile__title 
+                            h3 Saved Courses 
+        .container                    
+            .practice__content-right__title-responsive 
+                h3 My Courses                    
+        ul.practice__content-right-list-responsive
+            - for (let i = 0; i < 4; i++)
+                .practice__content-right-list-responsive-genral
+                    - for (let i = 0; i < 2; i++)
+                        li.practice__content-right-item-responsive
+                            a(href="#").practice__content-right-link    
+                                .practice__content-right-item-responsive
+                                    img(src="./assets/img/block-purchased.png" data-rjs="3").practice__content-right-pic-general
+                                    .practice__content-right-img-overplap
+                                        img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                    .button-price
+                                        a(href="#").button-price__link Purchased
+                                    .practice__title-number-responsive
+                                        .practice__title-name-responsive
+                                            h2 CCNP <br> Implementing <br> Cisco IP Routing
+        .button-load-more-index-page
+            .button-load-more-index-page-pic
+                i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+            a(href="#").button-load-link Load More                                       
+
+

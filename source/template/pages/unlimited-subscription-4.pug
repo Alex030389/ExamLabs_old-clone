@@ -1,0 +1,230 @@
+extends ../_template
+
+block variables
+    - var title = 'Unlimited Subscription 4'
+
+block content
+    .wrapper
+        section.section.margin-bottom.margin-bottom--no-footer
+            header.header
+                include ../common/_header-empty
+            .content-tutorial-details.content-tutorial-details--padding-top
+                .files__content.files__content-next
+                    .container
+                        .files__title-vendor.files__title-vendor--responsive
+                            h2 Get Unlimited Access to ALL Exam-Labs VCE Files <br> One Time Special Offer 50% OFF
+                        .files__table-general  
+                            .content-general.content-general--direction
+                                .files__table-general-block
+                                    .files__table-left-unlim
+                                        .content-microsoft
+                                            .content-microsoft__left.content-microsoft__left--padding
+                                                .content-microsoft__block-height.content-microsoft__block--margin
+                                                    .content-microsoft__block-center-width
+                                                        .content-microsoft__block-center-title 
+                                                            h3 Download Quality. ExamLabs Certified.
+                                                        .first-screen__left-offer-files-text
+                                                            p Get <span> Unlimited Access </span> to the all Exam-Labs PREMIUM VCE files! Take advantage of premium VCE Files which are guaranteed by ExamLabs!   
+                                                        ul.content-microsoft__block-list
+                                                            each item in ['Guaranteed to have Real Exam Questions', '100% Accurate & Verified Answers', ' Fast Free Updates to Cover Latest Pool of Questions', 'Instant Download', '98.6% Pass Rate']
+                                                                li.content-microsoft__block-item
+                                                                    .content-microsoft__block-picture
+                                                                        img(src="assets/img/tick.png").content-microsoft__block-pic
+                                                                    .content-microsoft__block-title
+                                                                        h4 #{item}
+                                    .files__table-right-unlim
+                                        .content-microsoft__right-elem.swiper-container
+                                            ul.content-microsoft__right-list
+                                                li.content-microsoft__right-item
+                                                    img(src="assets/img/screen1.png")
+                                                li.content-microsoft__right-item
+                                                    img(src="assets/img/screen2.png")
+                                                li.content-microsoft__right-item
+                                                    img(src="assets/img/screen3.png")
+                                                li.content-microsoft__right-item
+                                                    img(src="assets/img/screen4.png")
+                                                li.content-microsoft__right-item
+                                                    img(src="assets/img/screen5.png")
+                                    .unlim__label
+                                        span.unlim__label-percent 50%
+                                        span.unlim__label-word OFF
+                        .subscription-options 
+                            .subscription-options-title 
+                                h2 Subscription Options
+                            .subscription-options-subtitle 
+                                h4 Please select your perferred subscription below:
+                                .subscription__list.subscription__list--thanks
+                                    input(style="display:none" type="radio" value="10092" id="every3month" name="id")
+                                    label(for="every3month").subscription__item-big
+                                        .subscription__item-heading 
+                                            h3 PAY QUARTERLY
+                                        .subscription__item-text 
+                                            p Billed every 3 month   
+                                        .subscription__item-price
+                                            h5 $59.99
+                                            .subscription__item-price-wrap
+                                                span.price-color $
+                                                h3 59,99 
+                                            span /month 
+                                    input(style="display:none" type="radio" value="10093" id="every6month" name="id")
+                                    label(for="every6month").subscription__item-big
+                                        .subscription__item-heading 
+                                            h3 PAY EVERY 6 MONTHS
+                                        .subscription__item-text 
+                                            p Billed every 6 months  
+                                        .subscription__item-price
+                                            h5 $39.99
+                                            .subscription__item-price-wrap
+                                                span.price-color $
+                                                h3 39,99 
+                                            span /month   
+                                    input(style="display:none" type="radio" value="10094" id="every12month" name="id")
+                                    label(for="every12month").subscription__item-big
+                                        .subscription__item-heading 
+                                            h3 PAY ANNUALLY
+                                        .subscription__item-text 
+                                            p Billed every 12 months  
+                                        .subscription__item-price
+                                            h5 $32.99
+                                            .subscription__item-price-wrap
+                                                span.price-color $
+                                                h3 32,99 
+                                            span /month
+                                .total-due.total-due--thanks
+                                    .total-due__left 
+                                        .total-due__left-title 
+                                            h3 Total Due: 
+                                        .total-due__left-old-price 
+                                            span $
+                                            h4 34.99
+                                        .total-due__left-current-price#currentPrice
+                                            span $
+                                            h4 79.99
+                                        .total-due__left-label 
+                                            .total-due__left-image
+                                                img(src="assets/img/b.svg") 
+                                                .total-due__left-label-text 
+                                                    span $
+                                                    h4 39.95
+                                                .total-due__left-label-save 
+                                                    h4 in savings       
+                                    .total-due__right 
+                                        .total-due__right-text 
+                                            p Your purchase with ExamLabs is safe and fast. Your products will be available for immediate download after your payment has bee received.
+                        .cart__content.cart__content-next.cart__content--thanks
+                            .card__information
+                                .card__title
+                                    h2 Credit Card Information
+                                .card__form
+                                    .card__form-number
+                                        .card__form-general
+                                            .card__form-email
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 Email 
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field(value="sam@testking.com" disabled="disabled" name="pay[email]" data-field="email" type="email")
+                                                    .val_error
+                                            .card__form-card-number
+                                                label.card__form-label-card
+                                                    .card__form-title.form-element
+                                                        h4 Card Number 
+                                                            span *
+                                                        .card__form-input-line
+                                                            input.card__form-input.form-field.card-number(name="pay[card_number]" data-field="card_number" type="text" placeholder="0000 0000 0000 0000" maxlength="19")
+                                                            .card__input-pic
+                                                                i.general-sprite.general-sprite-icon-lock-grey
+                                                        .val_error
+                                            .cart__user-place-general-block
+                                                .cart__user-place.cart__user-place--width
+                                                    .cart__user-country
+                                                        label.cart__form-label-date.form-element
+                                                            .cart__form-title
+                                                                h4 Expiration date 
+                                                                    span *
+                                                            .cart__form-input-line.cart__form-input-line--width
+                                                                .categories__select
+                                                                    .categories__select-wrapper-card
+                                                                        .categories__border-card.categories__border-card--position
+                                                                        .categories__triangle
+                                                                        select.selectize.form-field(data-field="card_expired_month" id="card-expiry-month" name="pay[card_expired_month]")
+                                                                            option 1
+                                                                            option 2
+                                                                            option 3
+                                                                            option 4
+                                                                            option 5
+                                                                            option 6
+                                                                            option 7
+                                                                            option 8
+                                                                            option 9
+                                                                            option 10
+                                                                            option 11
+                                                                            option 12
+                                            .cart__user-place-general-block
+                                                .cart__user-place
+                                                    .cart__user-country.form-element
+                                                        label.cart__form-label-year
+                                                            .cart__form-title-hidden
+                                                                br
+                                                            .cart__form-input-line.cart__form-input-line--width
+                                                                .categories__select
+                                                                    .categories__select-wrapper-card
+                                                                        .categories__border-card.categories__border-card--position
+                                                                        .categories__triangle
+                                                                        select.selectize.form-field(name="pay[card_expired_year]" data-field="card_expired_year" id="card-expiry-year")
+                                                                            option 19
+                                                                            option 20
+                                                                            option 21
+                                                                            option 22
+                                                                            option 23
+                                                                            option 24
+                                                                            option 25
+                                                                            option 26
+                                                                            option 27
+                                                                            option 28
+                                                        .val_error
+                                            .card__form-title.form-element.card__form-title--width
+                                                label.cart__form-label-security
+                                                    h4 Security Code (CVV)
+                                                        span *
+                                                    .card__form-input-line.card__form-input-line--width-50
+                                                        input.cart__form-input.form-field(name="pay[card_cvv]" data-field="card_cvv" id="card-cvv" type="text" maxlength="4")
+                                                        .card__form-security-pic
+                                                            i.general-sprite.general-sprite-icon-card
+                                                    .val_error--general-wrapper
+                                                        .val_error
+                                    .card__form-security
+                                        label.card__form-label-second.form-element
+                                            .val_error
+                                            .checkbox.form-element
+                                                .checkbox-line
+                                                    label.checkbox-label
+                                                        input.checkbox-input.form-field.accept-billing-policy(data-domain="Devlabs.tk" data-field="accept_billing_policy" type="checkbox" name="checkbox-test")
+                                                        span.checkbox-img
+                                                        .checkbox-desc
+                                                            p I have read and agree to ExamLabs.com 
+                                                                a(href="#" id="billing-policy-modal") Billing Policy
+                                        .button-card
+                                            button.button-submit.button-submit--card.button-submit--large(type="submit") Pay Now
+                                            .button-card__image-wrapper
+                                                img(src="assets/img/iVerisign.png", alt="VeriSign Secured")
+                            <div class="card__pay-methods">
+                                <div class="card__pay-logos">
+                                    <div class="card__pay-logos-responsive">
+                                        <div class="card__pay-pic-visa"><img class="card__pay-img" src="assets/img/visa-logo.png"></div>
+                                        <div class="card__pay-pic-master-card"><img class="card__pay-img" src="assets/img/mastercard-logo.png"></div>
+                                        <div class="card__pay-pic-maestro-card"><img class="card__pay-img" src="assets/img/maestrocard-logo.png"></div>
+                                    </div>
+                                    <div class="card__pay-logos-responsive">
+                                        <div class="card__pay-pic-american-express"><img class="card__pay-img" src="assets/img/american-express-card-logo.png"></div>
+                                        <div class="card__pay-pic-solo"><img class="card__pay-img" src="assets/img/solo-logo.png"></div>
+                                        <div class="card__pay-pic-jcb"><img class="card__pay-img" src="assets/img/jcb-logo.png"></div>
+                                    </div>
+                                </div>
+                                <div class="card__pay-text">
+                                    <p>Your purchase with Exam-Labs is safe and fast. Your products will be available for immediate download after your payment has been received.</p>
+                                </div>
+                            </div>
+                            .skip__link-wrapper
+                                a.skip__link(href="#") Skip                              

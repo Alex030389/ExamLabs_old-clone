@@ -1,0 +1,120 @@
+extends ../_template
+
+block variables
+    - var title = 'Apply to job'
+
+block content
+    .wrapper
+        section.section.apply-to-job
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-first-page
+                include ../common/_practice-line
+            .registration-page-mobile.registration-page-mobile--visibility 
+                .registration-page-mobile__header 
+                    .container
+                        .registration-page-mobile__title 
+                            h3 Apply to job
+                .registration-page-mobile__body 
+                    form.registration-page-mobile__form#form 
+                                .container
+                                    .registration-page-mobile__form-input
+                                        label.registration-page-mobile__label 
+                                            .registration-page-mobile__heading
+                                                h3 Your Name 
+                                                span *
+                                            input.registration-page-mobile__input(type="text")
+                                            #nameError
+                                    .registration-page-mobile__form-input            
+                                        label.registration-page-mobile__label 
+                                            .registration-page-mobile__heading
+                                                h3 Skype 
+                                                span *
+                                            input.registration-page-mobile__input(type="text") 
+                                            #skypeError
+                                    .registration-page-mobile__form-input
+                                        label.registration-page-mobile__label 
+                                            .registration-page-mobile__heading
+                                                h3 Email 
+                                                span *
+                                            input.registration-page-mobile__input(type="email")
+                                            #mailError         
+                                    .registration-page-mobile__ckeckboxes-general 
+                                        .registration-page-mobile__form-input.checkboxes 
+                                            .registration-page-mobile__form-input-title
+                                                h3 Experience
+                                                span *
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__checkbox-wrapper
+                                                    input(type="checkbox").registration-page-mobile__checkbox-input 
+                                                    .registration-page-mobile__checkbox-image
+                                                    .registration-page-mobile__heading-title
+                                                        h4 I can Provide Updated Exam Questions
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__checkbox-wrapper
+                                                    input(type="checkbox").registration-page-mobile__checkbox-input 
+                                                    .registration-page-mobile__checkbox-image
+                                                    .registration-page-mobile__heading-title
+                                                        h4 I can Write Answers & Explanations
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__checkbox-wrapper
+                                                    input(type="checkbox").registration-page-mobile__checkbox-input 
+                                                    .registration-page-mobile__checkbox-image
+                                                    .registration-page-mobile__heading-title
+                                                        h4 I can Write IT Guides, Articles & Tutorials
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__checkbox-wrapper
+                                                    input(type="checkbox").registration-page-mobile__checkbox-input 
+                                                    .registration-page-mobile__checkbox-image
+                                                    .registration-page-mobile__heading-title
+                                                        h4 I am a Trainer     
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__checkbox-wrapper
+                                                    input(type="checkbox").registration-page-mobile__checkbox-input 
+                                                    .registration-page-mobile__checkbox-image
+                                                    .registration-page-mobile__heading-title
+                                                        h4 I am a Trainer                                 
+                                    .registration-page-mobile__textarea 
+                                        label.registration-page-mobile__label 
+                                            .registration-page-mobile__heading
+                                                h3 Experience 
+                                                span *
+                                            textarea.registration-page-mobile__textarea-field
+                                    .registration-page-mobile__bitmap 
+                                        label.registration-page-mobile__label 
+                                            .registration-page-mobile__heading
+                                                h3 Verification 
+                                                span *   
+                                            .registration-page-mobile__general-block    
+                                                .registration-page-mobile__left 
+                                                    input.registration-page-mobile__left-side(type="text")
+                                                .registration-page-mobile__right  
+                                                    .registration-page-mobile__left-element 
+                                                        .registration-page-mobile__left-element-circle
+                                                    .registration-page-mobile__right-element 
+                                                        img(src="./assets/img/bitmap-1.png").registration-page-mobile__right-element-bitmap             
+                                    .registration-page-mobile__add-file
+                                        .registration-page-mobile__add-file-left 
+                                            label.registration-page-mobile__label 
+                                                .registration-page-mobile__label-add-file-title 
+                                                    h4 + Add File
+                                                input(type="file").registration-page-mobile__type-file
+                                        .registration-page-mobile__add-file-right
+                                            .registration-page-mobile__add-file-right-title
+                                                h3 Max Size
+                                                span 60 Mb
+                                    .registration-page-mobile__submit-button 
+                                        button(type="submit").registration-page-mobile__button Send                        
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works
+
+

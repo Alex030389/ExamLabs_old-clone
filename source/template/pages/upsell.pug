@@ -1,0 +1,255 @@
+extends ../_template
+
+block variables
+    - var title = 'Upsell page'
+
+block content
+    .wrapper
+        section.section
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .files__content
+                    .container
+                        .upsell-title
+                            h4 Thank you for purchasing our ExamLabs ECCouncil 312-50 Premium File!
+                        .files__table-general  
+                            .content-general.content-general--direction
+                                .files__table-general-block
+                                    .files__table-left-unlim
+                                        .content-microsoft
+                                            .content-microsoft__left.content-microsoft__left--padding
+                                                .content-microsoft__block-height.content-microsoft__block--margin
+                                                    .content-microsoft__block-center-width
+                                                        .content-microsoft__block-center-title 
+                                                            h3 Did you know that you could have <span> Unlimited Access to the ExamLabs Premium databese for ine year?</span>
+                                                        .first-screen__left-offer-files-text
+                                                            p Wuth an Unlimited Access Annual Membership, You Can:
+                                                        ul.content-microsoft__block-list
+                                                            each item in ['Have wrry-free access to the most up-to-date questions', 'Cataloged, Easily Navigated Database', 'ExamLabs Certified Safe Files', 'Have the resources to plan out your studying schedule for multiple exams', 'Recelve any new questions released for downloadded VCE files']                                                  
+                                                                li.content-microsoft__block-item
+                                                                    .content-microsoft__block-picture
+                                                                        img(src="assets/img/tick.png").content-microsoft__block-pic
+                                                                    .content-microsoft__block-title
+                                                                        h4 #{item}
+                                    .files__table-right-unlim
+                                        .content-microsoft__right-elem  
+                                            img(src="assets/img/Good-study-habits.jpg")           
+                                .files__table-bottom-block-elem 
+                                            .certification__title-elem
+                                                h2 <span>As a Thank You,</span> ExamLabs is offering you special pricing!      
+                                            .upsell-general-block-wrapper
+                                                .upsell-general-block
+                                                    .upsell-left
+                                                        .upsell-left__item 
+                                                            .upsell-left__item-header
+                                                                h3 Annual Membership
+                                                            .upsell-left__item-body 
+                                                                .upsell-left__item-body-wrapper
+                                                                    .upsell-left__item-body-title 
+                                                                        h3 Reduced Monthly Rate
+                                                                    .upsell-left__item-body-price 
+                                                                        .left 
+                                                                            span $
+                                                                            h3 34.99
+                                                                        .right 
+                                                                            span $  
+                                                                            h3 17.49
+                                                                .upsell-left__item-body-wrapper
+                                                                    .upsell-left__item-body-title 
+                                                                        h3 Reduced Monthly Rate
+                                                                    .upsell-left__item-body-price 
+                                                                        .left-font-size 
+                                                                            span $
+                                                                            h3 419.88
+                                                                        .right 
+                                                                            span $  
+                                                                            h3 217.49            
+                                                    .upsell-center
+                                                        .upsell-center__pic 
+                                                            img(src="assets/img/fill-big.png")
+                                                        .upsell-center__save 
+                                                            span Save 
+                                                        .upsell-center__price 
+                                                            h3 $73.65
+                                                        .upsell-center__on 
+                                                            h3 ON 
+                                                            h3 AN
+                                                        .upsell-center__membership 
+                                                            h3 ANNUAL 
+                                                            h4 Membership                
+                                                    .upsell-right
+                                                        .upsell-right__title 
+                                                            h3 Get 50% OFF
+                                                        .upsell-right__subtitle 
+                                                            h3 Your Membership Today!  
+                                .pay 
+                                    .pay__title 
+                                        h3 Pay $209.94 
+                                        span and Get 12 Months of Unlimited Access to Premium Files!   
+                                .cart__content
+                                    .cart__title
+                                            h2 Secure Billing Information
+                                    .cart-general-block 
+                                            .cart__left
+                                                .cart__form
+                                                    form.cart__form-user-info
+                                                        .cart__form-general-wrapper
+                                                            .cart__form-general
+                                                                .cart__form-left
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 Full name <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            input.cart__form-input(type="text" placeholder="Alex")
+                                                                        .val_error#name_error
+                                                                .cart__form-right
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 Email <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            input.cart__form-input(type="email")
+                                                                        .val_error#email_error
+                                                            .cart__user-place
+                                                                .cart__user-country
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 Country <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            .categories__select
+                                                                                .categories__select-wrapper-card
+                                                                                    .categories__border-card
+                                                                                    .categories__triangle
+                                                                                    select.selectize
+                                                                                        option 30 Days (Free)
+                                                                        .val_error#country_error
+                                                                .cart__user-state
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 State/Province <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            input.cart__form-input(type="text")
+                                                                        .val_error#state_error
+                                                                .cart__user-city
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 City <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            input.cart__form-input(type="text")
+                                                                        .val_error#city_error
+                                                            .cart__user-address
+                                                                .cart__user-address-line
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 Address line <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            input.cart__form-input(type="text")
+                                                                        .val_error#adress_error
+                                                                .cart__user-zip
+                                                                    label.cart__form-label
+                                                                        .cart__form-title
+                                                                            h4 Zip/Postal <span>*</span>
+                                                                        .cart__form-input-line
+                                                                            input.cart__form-input(type="text")
+                                                                        .val_error#zip_error
+                                                        .card__title
+                                                            h2 Credit Card Information
+                                                        .card__information
+                                                            .card__information-general
+                                                                .card-wrapper-position
+                                                                    .card-wrapper
+                                                                        .card-number 
+                                                                            label.card-number__label 
+                                                                                .card-number__title 
+                                                                                    h3 Card Number <span>*</span>  
+                                                                                .card-number__input 
+                                                                                    input(type="text" placeholder="8888 8888 8888 8888")
+                                                                                    .card-number__pic 
+                                                                                        i.general-sprite.general-sprite-icon-lock-grey                            
+                                                                        .select-card-type    
+                                                                            label.card-number__label 
+                                                                                .card-number__title 
+                                                                                    h3 Select Type Card <span>*</span>  
+                                                                                .card-number__input-type
+                                                                                    select(name="card-type").type-card
+                                                                                        option(value="Mastercard") Mastercard 
+                                                                                        option(value="Visa") Visa
+                                                                                        option(value="paypal") PayPal
+                                                                        .wrap-for-mobile
+                                                                            .expire-date 
+                                                                                label.card-number__label 
+                                                                                    .card-number__title 
+                                                                                        h3 Expire Date <span>*</span>  
+                                                                                    .card-number__input-expire
+                                                                                        input(type="text")  
+                                                                            .security-code 
+                                                                                label.card-number__label 
+                                                                                    .card-number__title 
+                                                                                        h3 Security Code <span>*</span> 
+                                                                                    .card-number__input-security
+                                                                                        input(type="text" placeholder="123") 
+                                                                                        .card-number__img   
+                                                                                            i.general-sprite.general-sprite-icon-card    
+                                                                    .wrapper-for-two-elems
+                                                                        .wrapper-for-two-elems__left 
+                                                                            .checkbox
+                                                                                .checkbox-line
+                                                                                    label.checkbox-label
+                                                                                        input.checkbox-input(type='checkbox', name='checkbox-test')
+                                                                                        span.checkbox-img
+                                                                                        .checkbox-desc
+                                                                                            p I have read and agree to ExamLabs.com Billing Policy
+                                                                                            h4 ExamCollection.com Billing Policy 
+                                                                        .wrapper-for-two-elems__right
+                                                                            .submit-button 
+                                                                                button(type="submit") Get Unlimited Premium VCE Files
+                                            .cart__right 
+                                                .cards-new
+                                                    .card__pay-methods-right-elem
+                                                        .card__pay-logos-elems
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/visa-logo.png").card__pay-img
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/mastercard-logo.png").card__pay-img
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/maestrocard-logo.png").card__pay-img
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/american-express-card-logo.png").card__pay-img
+                                                                .card__pay-pic-solo-elem
+                                                                    img(src="assets/img/solo-logo.png").card__pay-img
+                                                                .card__pay-pic-elem-jcb
+                                                                    img(src="assets/img/jcb-logo.png").card__pay-img
+                                                        .card__pay-text
+                                                            p.
+                                                                Your purchase with ExamLabs is safe and fast. Your products will be available for immediate download after your payment has been received.                                                     
+                                                .need-help 
+                                                    .need-help__wrapper 
+                                                        .need-help__title 
+                                                            h3 Need Help? Contact us
+                                                        .need-help__link 
+                                                            a(href="mailto:sam@testking.com") Customer Support
+                                                        .need-help__circle     
+            
+            include ../common/adv               
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                                                  
+
+
+                                    
+                                

@@ -1,0 +1,71 @@
+.modal-upload-ete-files
+    .modal-upload-ete-files__content
+        .modal-vacancy__header.modal-vacancy__header--padding
+            .modal-vacancy__title.modal-vacancy__title--padding
+                h2 Upload.vce Files
+            span.modal-free-registration__header-btn &times
+        .modal-vacancy__general.modal-vacancy__general--padding
+            .modal-vacancy__sub-header.modal-vacancy__sub-header--padding
+                p If you have.vce or PDF exam file - Share it with others. Thank you for your help in advance!
+            .modal-vacancy__submit
+                form.modal-vacancy__form
+                    .modal-vacancy__line-general-upload-ete-files
+                        .modal-vacancy__line-ete-files.modal-vacancy__line-general--padding
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Your Name
+                                        span *
+                                input(type="text" placeholder="Andrew").modal-vacancy__input
+                        .modal-vacancy__line-ete-files.modal-vacancy__line-general--padding
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Email
+                                        span *
+                                input(type="email").modal-vacancy__input
+                    .modal-vacancy__line-supplier
+                        .modal-vacancy__line-supplier-left
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Vendor
+                                        span *
+                                .cart__form-input-line
+                                    .categories__select
+                                        .categories__select-wrapper-card
+                                            .categories__border-card
+                                            .categories__triangle
+                                            select.selectize
+                                                option Microsoft
+                        .modal-vacancy__line-supplier-center
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Supplier of questions (e.g. Practi.vcest)
+                                        span *
+                                input(type="text").modal-vacancy__input
+                        .modal-vacancy__line-supplier-right
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Exam Code / Number
+                                        span *
+                                input(type="text").modal-vacancy__input
+                    .modal-vacancy__line-version
+                        .modal-vacancy__line-supplier-left.modal-vacancy__line-supplier-left--margin
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 File version or date (e.g. 2013-10-08)
+                                        span *
+                                input(type="text" placeholder="2018-12-13").modal-vacancy__input
+                        .modal-vacancy__line-supplier-right
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Number of questions
+                                        span *
+                                input(type="text" placeholder="14").modal-vacancy__input
+                    .modal-vacancy__add-file.modal-vacancy__add-file--padding
+                        .button-add-file
+                            label.button-add-file__label(for='files') + Add File
+                            input(type='file').button-add-file__input#files
+                        .button-add-file__size
+                            h3 Max Size
+                            h4 60 Mb
+                    .button-submit-form.button-submit-form--position
+                        button(type="submit").button-submit-form__info.button-submit-form__info--img Upload

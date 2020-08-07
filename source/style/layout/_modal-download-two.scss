@@ -1,0 +1,200 @@
+.modal-download-two {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content-general {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0, 0, 0, .2), 0 rem(7px) rem(20px) 0 rgba(0, 0, 0, .17);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    border-radius: rem(10px);
+
+    @include desktop {
+      width: 70%;
+    }
+
+    @include laptop {
+      width: 75%;
+    }
+
+    @include tablets {
+      width: 80%;
+    }
+
+    @include phones {
+      width: 95%;
+    }
+  }
+}
+
+.modal-vacancy__general--background-color {
+  border: solid rem(1px) #ffaf09;
+  background: linear-gradient(#fff7e3, #fff7e3), linear-gradient(284deg, #ffd816, #ffaf09);
+  border-radius: rem(10px);
+  padding: rem(40px) rem(94px);
+  position: relative;
+
+  @include phones {
+    padding: rem(40px) rem(40px);
+  }
+}
+
+.modal-free-registration__header-btn--color {
+  color: #ffaf09;
+  margin-left: 20px;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.modal-download-two__body {
+  padding-bottom: rem(40px);
+
+  @include phones {
+    padding-bottom: 0;
+  }
+}
+
+.modal-download-two__desc {
+
+  p {
+    @include GothamPro-Medium();
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.8;
+    text-align: center;
+    color: #55493c;
+
+    @include tablets {
+      @include GothamPro;
+      font-size: 16px;
+      line-height: 1.69;
+      text-align: center;
+      color: #55493c;
+    }
+  }
+
+  a {
+    font-weight: 500;
+    color: #2581ed;
+
+    @include phones {
+      text-decoration: underline;
+    }
+  }
+}
+
+.modal-vacancy__title {
+
+  @include phones {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    @include tablets {
+      opacity: 0.9;
+      @include GothamPro-Medium;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #2b2c30;
+    }
+  }
+}
+
+.modal-download-two__position {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-download-two__circle {
+  @include circle(rem(58px), #ffaf09);
+  position: relative;
+
+  @include phones {
+    width: 38px;
+    height: 38px;
+  }
+
+  &:before {
+    content: '!';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: rem(20px);
+    @include GothamPro-Medium();
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-notice__header {
+  display: flex;
+  padding-left: rem(30px);
+  padding-right: rem(30px);
+  padding-top: rem(62px);
+
+  @include phones {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+.modal-download-two__content-general-notice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  justify-content: center;
+  display: flex;
+
+  @include tablets {
+    width: 95%;
+  }
+
+  @include tablets-600 {
+    width: 100%;
+  }
+
+  @include phones {
+    width: 95%;
+  }
+}

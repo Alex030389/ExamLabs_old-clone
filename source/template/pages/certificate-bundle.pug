@@ -1,0 +1,685 @@
+extends ../_template
+
+block variables
+    - var title = 'Certificate bundle'
+
+block content
+    .wrapper
+        section.section.certificate-bundle-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content
+                include ../common/_practice-line
+                .practice__info
+                    .container
+                        .practice__info-general.practice__info-general--position
+                            .practice__info-left
+                                .practice__info-title
+                                    h2 You need Avanset VCE Software To Open Exam Files!
+                                .practice__info-text
+                                    h4 Avanset VCE Software available on the Windows, MacOS, iOS and Android.
+                            .practice__info-right
+                                .button.button--files
+                                    a(href="#").button__link Download
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 New Files
+            .container.container--width--100
+                .first-screen__general
+                    .content-questions.content-questions--padding-bottom
+                            .content-questions__upper-part 
+                                .content-questions__title-mobile 
+                                    h3 70-743: Premium VCE File
+                            .content-questions__slider 
+                                .content-questions__slider-wrapper-general
+                                    .content-questions__slider-left-side
+                                        .content-questions__slider-title 
+                                            h4 Verified by experts 
+                                        .content-questions__title-mobile 
+                                            h4 Microsoft MCSE: Business Intelligence Tests 
+                                    .content-questions__slider-right-side        
+                                        .content-questions__img-mobile  
+                                            img(src="assets/img/fill-discount.png").content-questions__pic-mobile
+                                        .content-questions__slider-right-text 
+                                            h3 You save
+                                            h4 $49.<span>99</span>     
+                                .content-question__white-square 
+                                    ul.content-question__list 
+                                        li.content-question__item 
+                                            .content-question__pic  
+                                                img(src="assets/img/download.png") 
+                                            .content-question__main-title
+                                                h3 70-361 
+                                                span +
+                                            .content-question__subtitle       
+                                                h4 4 products       
+                                        li.content-question__item 
+                                            .content-question__pic  
+                                                img(src="assets/img/download.png") 
+                                            .content-question__main-title
+                                                h3 70-361 
+                                                span +
+                                            .content-question__subtitle       
+                                                h4 4 products
+                                        li.content-question__item 
+                                            .content-question__pic  
+                                                img(src="assets/img/download.png") 
+                                            .content-question__main-title
+                                                h3 70-361
+                                            .content-question__subtitle       
+                                                h4 4 products                                  
+                                .content-questions__text 
+                                    .content-questions__text-left 
+                                        ul.content-microsoft__block-list
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="assets/img/tick.png").content-microsoft__block-image
+                                                .content-microsoft__block-title
+                                                        h4 Latest Questions
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="assets/img/tick.png").content-microsoft__block-image
+                                                .content-microsoft__block-title
+                                                    h4 100% Accurate Answers
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="assets/img/tick.png").content-microsoft__block-image
+                                                .content-microsoft__block-title
+                                                    h4 Instant Downloads  
+                                    .content-questions__text-right   
+                                        .content-questions__text-square 
+                                            h4 $69.99
+                                .content-questions__button-wrapper            
+                                    .content-questions__button               
+                                        button(type="submit").content-microsoft__block-link Add to Cart  
+                    .first-screen__left
+                        .first-screen__left-wrapper
+                            .first-screen__title.first-screen__title--padding
+                                h2 Microsoft MCSA: SQL Server 2012 Tests
+                            .first-screen__left-heading
+                                h4 <span>Certification:</span> MCSA - SQL Server 2012
+                            .first-screen__left-heading-name
+                                h4 <span>Certification Full Name:</span> Microsoft Certified Solutions Associate SQL Server 2012 (MCSA: SQL Server 2012)
+                            .first-screen__left-offer-files-title
+                                h2 Free MCSA: Windows Server 2012 Exam Questions & MCSA: Windows Server 2012 Dumps
+                            .first-screen__left-desc
+                                p <span>Description:</span> AWS Certified Solutions Architect is a certification and training program, which is currently among the top IT certifications. The examination course is designed for the individuals that come with some good experience in designing applications, along with systems… #[a(href="#") <span>Read more</span> ]
+                            include ../common/_responsive_certificate_bundle
+                        .first-screen__left-offer
+                            .first-screen__left-offer-heading
+                                .first-screen__left-offer-pic
+                                    img(src="assets/img/icon-verify.png").first-screen__left-offer-img
+                                .first-screen__left-offer-text
+                                    h4 Verified by experts
+                            .first-screen__left-offer-title
+                                h3 Microsoft MCSE: Business Intelligence Tests
+                            .first-screen__left-offer-discount
+                                .first-screen__left-offer-discount-left#hoverEvent
+                                    .first-screen__left-offer-discount-pic
+                                        img(src="assets/img/left-offer.png").first-screen__left-offer-discount-img
+                                    .first-screen__left-offer-discount-text
+                                        h4 70-361 Exam
+                                        h5 4 products
+                                    .first-screen__left-offer-discount-number
+                                        h2 1
+                                    .first-screen__left-offer-discount-left-hover
+                                        ul.first-screen__left-offer-discount-left-list#hoverElement
+                                            .first-screen__left-offer-discount-left-general
+                                                li.first-screen__left-offer-discount-left-item
+                                                    .first-screen__left-offer-discount-left-pic
+                                                        img(src="assets/img/file-1.png").first-screen__left-offer-discount-left-img
+                                                    .first-screen__left-offer-discount-left-info
+                                                        h3 70-462 Exam
+                                                        h4 Study Guide
+                                                        h5 143 Pages
+                                                        h6 $32
+                                                    a(href="#").first-screen__left-offer-discount-left-link
+                                                        .first-screen__left-offer-discount-left-cart
+                                                li.first-screen__left-offer-discount-left-item
+                                                    .first-screen__left-offer-discount-left-pic
+                                                        img(src="assets/img/file-2.png").first-screen__left-offer-discount-left-img
+                                                    .first-screen__left-offer-discount-left-info
+                                                        h3 70-462 Exam
+                                                        h4 Training Course
+                                                        h5 37 Lectures
+                                                        h6 $32
+                                                    a(href="#").first-screen__left-offer-discount-left-link
+                                                        .first-screen__left-offer-discount-left-cart
+                                            .first-screen__left-offer-discount-left-general
+                                                li.first-screen__left-offer-discount-left-item
+                                                    .first-screen__left-offer-discount-left-pic
+                                                        img(src="assets/img/file-3.png").first-screen__left-offer-discount-left-img
+                                                    .first-screen__left-offer-discount-left-info
+                                                        h3 70-462 Exam
+                                                        h4 Premium File
+                                                        h5 252 Questions
+                                                        h6 $32
+                                                    a(href="#").first-screen__left-offer-discount-left-link
+                                                        .first-screen__left-offer-discount-left-cart
+                                                li.first-screen__left-offer-discount-left-item
+                                                    .first-screen__left-offer-discount-left-pic
+                                                        img(src="assets/img/file-4.png").first-screen__left-offer-discount-left-img
+                                                    .first-screen__left-offer-discount-left-info
+                                                        h3 70-462 Exam
+                                                        h4 Audio Guide
+                                                        h5 90 Minutes
+                                                        h6 $32
+                                                    a(href="#").first-screen__left-offer-discount-left-link
+                                                        .first-screen__left-offer-discount-left-cart
+                                .plus
+                                    h4 +
+                                .first-screen__left-offer-discount-center
+                                    .first-screen__left-offer-discount-pic
+                                        img(src="assets/img/center-offer.png").first-screen__left-offer-discount-img
+                                    .first-screen__left-offer-discount-text
+                                        h4 70-462 Exam
+                                        h5 3 products
+                                    .first-screen__left-offer-discount-number
+                                        h2 2
+                                .plus
+                                    h4 +
+                                .first-screen__left-offer-discount-right
+                                    .first-screen__left-offer-discount-pic
+                                        img(src="assets/img/right-offer.png").first-screen__left-offer-discount-img
+                                    .first-screen__left-offer-discount-text
+                                        h4 70-463 Exam
+                                        h5 4 products
+                                    .first-screen__left-offer-discount-number
+                                        h2 3
+                            .first-screen__left-offer-discount-information
+                                .first-screen__left-offer-discount-row
+                                    ul.first-screen__left-offer-discount-list
+                                        li.first-screen__left-offer-discount-item
+                                            .content-microsoft__block-picture
+                                                img(src="assets/img/tick.png").content-microsoft__block-pic
+                                            .first-screen__left-offer-discount-info
+                                                h4 Latest Questions
+                                        li.first-screen__left-offer-discount-item
+                                            .content-microsoft__block-picture
+                                                img(src="assets/img/tick.png").content-microsoft__block-pic
+                                            .first-screen__left-offer-discount-info
+                                                h4 100% Accurate Answers
+                                        li.first-screen__left-offer-discount-item
+                                            .content-microsoft__block-picture
+                                                img(src="assets/img/tick.png").content-microsoft__block-pic
+                                            .first-screen__left-offer-discount-info
+                                                h4 Fast Exam Updates
+                                .first-screen__left-offer-discount-button
+                                    .first-screen__left-offer-discount-button-one
+                                        h4 $179,99
+                                        h5 $69,99
+                                    .first-screen__left-offer-discount-button-two#addToCart
+                                        a(href="#").first-screen__left-offer-discount-button-link Add to Cart
+                                .first-screen__left-offer-discount-picture
+                                    img(src="assets/img/you-save.png").first-screen__left-offer-discount-image
+                        .first-screen__left-offer-files
+                            .first-screen__left-offer-files-title
+                                h2 MCSE: Private Cloud VCE Files
+                            .first-screen__left-offer-files-text
+                                p AWS Certified Solutions Architect is a certification and training program, which is currently among the top IT certifications. The examination course is designed for the individuals that come with some good experience in designing applications, along with systems. AWS Certified Solutions Architect is a certification and training program, which is currently among the top IT certifications.
+                            .mcse-private-cloud 
+                                .mcse-private-cloud__title 
+                                    h3 MCSE: Private Cloud VCE Files                                    
+                                .mcse-private-cloud__columns 
+                                    .mcse-private-cloud__columns-left 
+                                        ul.mcse-private-cloud__columns-left-list 
+                                            li.mcse-private-cloud__columns-left-item 
+                                                h4 70-743
+                                            li.mcse-private-cloud__columns-left-item 
+                                                h4 70-743
+                                            li.mcse-private-cloud__columns-left-item 
+                                                h4 70-743
+                                            li.mcse-private-cloud__columns-left-item 
+                                                h4 70-743
+                                            li.mcse-private-cloud__columns-left-item 
+                                                h4 70-743                
+                                    .mcse-private-cloud__columns-right  
+                                        ul.mcse-private-cloud__columns-right-list
+                                            - for (let i = 0; i < 5; i++)
+                                                li.mcse-private-cloud__columns-right-item 
+                                                    a(href="#").mcse-private-cloud__columns-right-link Microsoft.BrainDumps.70-7.. 
+                            .button-load-more-index-page.button-load-more-index-page--padding-top
+                                .button-load-more-index-page-pic
+                                    i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                a(href="#").button-load-link Load More                        
+                            table.table-certificate-bundle.table
+                                colgroup.table-certificate-bundle__col-1
+                                colgroup.table-certificate-bundle__col-2
+                                colgroup.table-certificate-bundle__col-3
+                                thead.table-certificate-bundle-header
+                                    tr
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title
+                                                h4 Exam
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title-padding
+                                                h4 File Name
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title
+                                                h4 Files
+                                tbody
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-files-number-img
+                                                h5 70-743
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 2
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-files-number-img
+                                                h5 70-743
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 4
+                                    - for (let i = 0; i < 2; i++)
+                                        tr
+                                            td.first-screen__border
+                                                .first-screen__left-offer-files-number
+                                                    h5 70-743
+                                            td.first-screen__border
+                                                .first-screen__left-offer-right-body-url
+                                                    a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                            td.first-screen__border
+                                                .first-screen__left-offer-right-body-quantity
+                                                    h4 4
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-files-number
+                                                h5 70-743
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 4
+                            .button-general
+                                .button-vendor
+                                    a(href="#").button-load__link Load more
+                            table.table-certificate-bundle.table
+                                colgroup.table-certificate-bundle__col-1
+                                colgroup.table-certificate-bundle__col-2
+                                colgroup.table-certificate-bundle__col-3
+                                colgroup.table-certificate-bundle__col-4
+                                colgroup.table-certificate-bundle__col-5
+                                thead.table-certificate-bundle-header
+                                    tr
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title
+                                                h4 Exam
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title-padding
+                                                h4 File Name
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title
+                                                h4 Size
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title
+                                                h4 Downloads  
+                                        th.table-certificate-bundle-padding
+                                            .table-certificate-bundle-title
+                                                h4 Votes               
+                                tbody
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-files-number
+                                                h5 70-743
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity-first
+                                                h4 2
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 1300
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 2899                
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-files-number
+                                                h5 70-743
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity-first
+                                                h4 4
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 1300
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 2899           
+                                    - for (let i = 0; i < 2; i++)
+                                        tr
+                                            td.first-screen__border
+                                                .first-screen__left-offer-files-number
+                                                    h5 70-743
+                                            td.first-screen__border
+                                                .first-screen__left-offer-right-body-url
+                                                    a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                            td.first-screen__border
+                                                .first-screen__left-offer-right-body-quantity-first
+                                                    h4 4
+                                            td.first-screen__border
+                                                .first-screen__left-offer-right-body-quantity
+                                                    h4 1300
+                                            td.first-screen__border
+                                                .first-screen__left-offer-right-body-quantity
+                                                    h4 2899           
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-files-number
+                                                h5 70-743
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity-first
+                                                h4 4   
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 4444 
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 4555                      
+                    .first-screen__right
+                        .first-screen__title-exam-det
+                            h3 Exam Bundles
+                        .content-general__purchases.content-general__purchases--padding
+                            ul.content-general__purchases-list-cert-bundle-page
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        img(src="assets/img/download.png").content-general__purchases-img
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Premium Bundle
+                                        .content-general__purchases-info-all
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        img(src="assets/img/download.png").content-general__purchases-img
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Premium Bundle
+                                        .content-general__purchases-info-all.content-general__purchases-info-all--width
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        img(src="assets/img/download.png").content-general__purchases-img
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Premium Bundle
+                                        .content-general__purchases-info-all
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                        .practice__content-wrapper-content
+                            .first-screen__title
+                                h3 Hot training courses
+                            .practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)                   
+                            .content-microsoft__right-pic
+                                a(href="#").content-microsoft__right-link
+                                    img(src="assets/img/avanset-new.png").content-microsoft__right-img
+                        .container        
+                            .trainig-course-download
+                                .trainig-course__title-vendor
+                                    h2 Hot Training Courses
+                                    .trainig-course__url
+                                        a(href="#").trainig-course__link See All
+                                .trainig-course-general__download
+                                    .trainig-course__block-vendor
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom-general
+                                                    a(href="#").trainig-course__block-link
+                                                        .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                            img(src="assets/img/8718.jpg" data-rjs="3").trainig-course__block-img
+                                                            img(src="assets/img/block_mobile-second.png" data-rjs="3").practice__content-right-pic-general-index
+                                                            .trainig-course__price.trainig-course__price--color
+                                                                h3 FREE
+                                                            .trainig-course__heading
+                                                                h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                            span.line
+                                                            .trainig-course__general
+                                                                .trainig-course__first
+                                                                    .trainig-course__quantity
+                                                                        h4 83
+                                                                .trainig-course__second
+                                                                    .trainig-course__quantity
+                                                                        h3 2.5h
+                                                                .trainig-course__third
+                                                                    .trainig-course__quantity
+                                                                        h5 4.9 (124)
+                                    .trainig-course__block-vendor
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom-general
+                                                a(href="#").trainig-course__block-link
+                                                    .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                        img(src="assets/img/8718.jpg" data-rjs="3").trainig-course__block-img
+                                                        img(src="assets/img/block_mobile-second.png" data-rjs="3").practice__content-right-pic-general-index
+                                                        .trainig-course__price.trainig-course__price--color
+                                                            h3 FREE
+                                                        .trainig-course__heading
+                                                            h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                        span.line
+                                                        .trainig-course__general
+                                                            .trainig-course__first
+                                                                .trainig-course__quantity
+                                                                    h4 83
+                                                            .trainig-course__second
+                                                                .trainig-course__quantity
+                                                                    h3 2.5h
+                                                            .trainig-course__third
+                                                                .trainig-course__quantity
+                                                                    h5 4.9 (124)
+                                    .trainig-course__block-vendor
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom-general
+                                                a(href="#").trainig-course__block-link
+                                                    .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                        img(src="assets/img/8718.jpg" data-rjs="3").trainig-course__block-img
+                                                        img(src="assets/img/block_mobile-second.png" data-rjs="3").practice__content-right-pic-general-index
+                                                        .trainig-course__price.trainig-course__price--color
+                                                            h3 FREE
+                                                        .trainig-course__heading
+                                                            h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                        span.line
+                                                        .trainig-course__general
+                                                            .trainig-course__first
+                                                                .trainig-course__quantity
+                                                                    h4 83
+                                                            .trainig-course__second
+                                                                .trainig-course__quantity
+                                                                    h3 2.5h
+                                                            .trainig-course__third
+                                                                .trainig-course__quantity
+                                                                    h5 4.9 (124)
+                                    .trainig-course__block-vendor
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom-general
+                                                a(href="#").trainig-course__block-link
+                                                    .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                        img(src="assets/img/8718.jpg" data-rjs="3").trainig-course__block-img
+                                                        img(src="assets/img/block_mobile-second.png" data-rjs="3").practice__content-right-pic-general-index
+                                                        .trainig-course__price.trainig-course__price--color
+                                                            h3 FREE
+                                                        .trainig-course__heading
+                                                            h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                        span.line
+                                                        .trainig-course__general
+                                                            .trainig-course__first
+                                                                .trainig-course__quantity
+                                                                    h4 83
+                                                            .trainig-course__second
+                                                                .trainig-course__quantity
+                                                                    h3 2.5h
+                                                            .trainig-course__third
+                                                                .trainig-course__quantity
+                                                                    h5 4.9 (124)
+            .comments.comments--padding-bottom-section
+                .container
+                    .comments__general.comments__general--width.comments__general--width-sec
+                        .comments__title
+                            h2 Comments
+                        .comments__add-comment
+                            a(href="#").comments__add-comment-link + Add Comment
+                    .comments__section.comments__section--width.comments__general--width-sec
+                        .comments__questions
+                            .comments__header
+                                ul.comments__list
+                                    li.comments__item
+                                        .comments__pic
+                                            img(src='assets/img/united-states-icon.jpg').comments__pic-flag
+                                    li.comments__item
+                                        .comments__name
+                                            h3 Bruce Adams
+                                        .comments__time
+                                            h4 Dec 13 2019, 11:42 AM
+                            .comments__body
+                                .comments__heading.comments__heading--position
+                                    h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                        include ../common/_question
+                    .comments__submit-cert-bundle-page
+                        .comments__title
+                            h2 Add comment
+                        .comments__form-general-mobile
+                            form.comments__form#form
+                                .comments__form-all.comments__form-all--padding-top
+                                    .comments__form-lines
+                                        label.comments__form-label-line
+                                            h4 Name <span>*</span>
+                                            input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                            #nameError
+                                    .comments__form-lines
+                                        label.comments__form-label-line
+                                            h4 Email <span>*</span>
+                                            input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                            #emailError
+                                    .comments__form-rating
+                                        .comments__title.comments__title--padding
+                                            h4 Rate file <span>*</span>
+                                        .comments__stars
+                                            .rating-stars.text-center
+                                                ul.comments__stars-list#stars
+                                                    li.star(title='Good', data-value='1')
+                                                        svg.comments__stars-picture-empty
+                                                            use(xlink:href=`assets/img/sprite.svg#star`)
+                                                    li.star(title='Good', data-value='2')
+                                                        svg.comments__stars-picture-empty
+                                                            use(xlink:href=`assets/img/sprite.svg#star`)
+                                                    li.star(title='Good', data-value='3')
+                                                        svg.comments__stars-picture-empty
+                                                            use(xlink:href=`assets/img/sprite.svg#star`)
+                                                    li.star(title='Excellent', data-value='4')
+                                                        svg.comments__stars-picture-empty
+                                                            use(xlink:href=`assets/img/sprite.svg#star`)
+                                                    li.star(title='Perfect', data-value='5')
+                                                        svg.comments__stars-picture-empty
+                                                            use(xlink:href=`assets/img/sprite.svg#star`)
+                                .comments__form-field
+                                    label.comments__form-label-general
+                                        .comments__title-general-padding
+                                            h4 Comment
+                                            span *
+                                        textarea.comments__textarea-field#textArea
+                                .comments__form-verification
+                                    label.comments__form-label
+                                        .comments__title-general
+                                            h4 Verification
+                                            span *
+                                            #verificationError
+                                        .comments__form-verification-general
+                                            .comments__form-verification-left
+                                                input(type="text").comments__form-verification-input#verificationInput
+                                            .comments__form-verification-right
+                                                .comments__form-verification-circle#animation
+                                                    img(src='assets/img/icon-refresh.png').image__form-verification-circle
+                                                .comments__form-verification-pic
+                                                    .comments__form-verification-bitmap
+                                                        img(src="assets/img/bitmap-1.png")
+                                    button(type="submit").button-submit Submit
+                .avanset-adv 
+                    .container
+                        .avanset-adv__wrapper
+                            .avanset-adv__left 
+                                .avanset-adv__title
+                                    h3 Download Avanset VCE Software to Open Exam Files
+                            .avanset-adv__right    
+                                .avanset-adv__button
+                                    .avanset-adv__url 
+                                        a(href="#").avanset-adv__link Download 
+            include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-download
+    include ../common/_modal-free-registration
+    include ../common/_modal-how-it-works
+    include ../common/_background
+
+
+
+
+
+
+
+

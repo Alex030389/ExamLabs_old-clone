@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 35</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-v.1.0-/-Signed-Simple-2" transform="translate(-437.000000, -34.000000)" fill="#99A0B6">
+            <g id="Menu-v.1.0-/-Unsigned-Simple-Copy" transform="translate(24.000000, 12.000000)">
+                <g id="menu_signed">
+                    <g id="header">
+                        <g>
+                            <g id="Group-18">
+                                <g id="Group-36" transform="translate(413.000000, 22.000000)">
+                                    <g id="Group-35">
+                                        <path d="M10,18 C14.418278,18 18,14.418278 18,10 C18,5.581722 14.418278,2 10,2 C5.581722,2 2,5.581722 2,10 C2,14.418278 5.581722,18 10,18 Z M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z" id="Oval-4" fill-rule="nonzero"></path>
+                                        <rect id="Rectangle-10" transform="translate(19.181981, 19.181981) rotate(-45.000000) translate(-19.181981, -19.181981) " x="18.1819805" y="15.6819805" width="2" height="7"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

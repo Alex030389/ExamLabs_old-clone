@@ -1,0 +1,112 @@
+extends ../_template
+
+block variables
+    - var title = 'Success Purchase'
+
+block content
+    .wrapper
+        section.section.success-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .success
+                .container.container--width-custom
+                    .success__warn
+                        .success__title
+                            h2 Congratulations!
+                    .success__heading
+                        h1 You have succesfully complete the first step of your purchase!
+                    .success__discount
+                        .success__discount-left
+                            .success__discount-pic-position-pic
+                                img(src="./assets/img/20-percent.png").success__discount-pic-position-img
+                            .success__discount-left-pic
+                                img(src="./assets/img/membership.png").success__discount-left-img
+                                .success__discount-pic
+                                    span.success__discount-pic-percent 20% 
+                                    span.success__discount-pic-off OFF
+                            .success__discount-general
+                                .success__discount-left-title
+                                    h2 You now qualify for premium membership at discounted pricing!
+                                ul.success__discount-left-list
+                                    li.success__discount-left-item
+                                        .content-microsoft__block-picture
+                                            img(src="./assets/img/tick.png").content-microsoft__block-pic
+                                        .success__discount-left-text
+                                            h4 Special Premium Discounted Offers
+                                    .success__discount-left-desc
+                                        h4 On All Future Purchases
+                                    li.success__discount-left-item
+                                        .content-microsoft__block-picture
+                                            img(src="./assets/img/tick.png").content-microsoft__block-pic
+                                        .success__discount-left-text.success__discount-left-text--padding
+                                            h4 Early Access to Exam Updates
+                                    li.success__discount-left-item
+                                        .content-microsoft__block-picture
+                                            img(src="./assets/img/tick.png").content-microsoft__block-pic
+                                        .success__discount-left-text
+                                            h4 Access Over 300 Video Courses
+                                    .success__discount-left-desc
+                                        h4 Special Section in Member Area        
+                                    li.success__discount-left-item
+                                        .content-microsoft__block-picture
+                                            img(src="./assets/img/tick.png").content-microsoft__block-pic
+                                        .success__discount-left-text
+                                            h4 Valid for 12 Months!
+                                .success__discount-left-price
+                                    .success__discount-left-old
+                                        h5 Old price: <span> $119 </span>
+                                    .success__discount-left-new
+                                        h4 $99,99/year          
+                        .success__discount-right
+                            .success__discount-right-title
+                                h2 Credit Card Information
+                            .success__discount-right-submit
+                                form.success__discount-right-form#creditForm
+                                    .success__discount-right-line
+                                        label.success__discount-right-label
+                                            h4 Card Number <span>*</span>
+                                            input(type="text" placeholder="8888 8888 8888 8888").success__discount-right-input#creditCard
+                                            #creditCardError
+                                            .success__discount-right-pic
+                                                i.general-sprite.general-sprite-icon-lock-grey
+                                    .success__discount-right-secure
+                                        .success__discount-secure-left
+                                            label.success__discount-right-label
+                                                h4 Expire Date <span>*</span>
+                                                input(type="text" placeholder="12 / 24").success__discount-right-expire#expireDate
+                                                #expireDateError
+                                        .success__discount-secure-right
+                                            label.success__discount-right-label
+                                                h4 Security Code (CVV) <span>*</span>
+                                                input(type="text" placeholder="123").success__discount-right-expire#securityCode
+                                                #securityCodeError
+                                                .success__discount-secure-right-pic
+                                                    i.general-sprite.general-sprite-icon-card
+                                    .button__success
+                                        button.button-submit.button-submit--success(type="submit") Pay
+                                    .checkbox.checkbox--padding
+                                        .checkbox-line
+                                            label.checkbox-label
+                                                input.checkbox-input(type='checkbox', name='checkbox-test')
+                                                span.checkbox-img(value = '1')
+                                                .checkbox-desc
+                                                    p I have read and agree <span>ExamCollection.com Billing Policy</span>
+                        a.success__discount-linl-skip(href="#") Skip Discount
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_search-responsive-element
+    include ../common/_modal-how-it-works
+
+
+
+                                        
+
+

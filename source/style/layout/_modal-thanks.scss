@@ -1,0 +1,512 @@
+.modal-thanks {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 10;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0, 0, 0, .2), 0 rem(7px) rem(20px) 0 rgba(0, 0, 0, .17);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    border-radius: rem(10px);
+
+    @include desktop {
+      width: 85%;
+    }
+
+    @include desktop-1440 {
+      width: 75%;
+    }
+
+    @include laptop {
+      width: 90%;
+      max-height: 100vh;
+      overflow-y: auto; 
+    }
+
+    @include tablets {
+      width: 100%;
+    }
+
+    @include phones {
+      overflow-x: hidden;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+
+  &__general {
+    display: flex;
+  }
+
+  &__left {
+    padding: rem(30px);
+    width: 60%;
+
+    @include laptop {
+      width: 100%;
+    }
+
+    @include tablets {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__right {
+   transform: translate(5%, -2%);
+
+   @include desktop {
+    transform: translate(0, 0);
+    padding-right: rem(20px);
+   }
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__left-all {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  &__border {
+    border: rem(1px) solid $border-color;
+    background: $background;
+    border-radius: rem(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem(15px);
+
+    @include tablets {
+      border: none;
+      border-radius: 0;
+    }
+
+    @include phones {
+      padding: rem(20px);
+    }
+  }
+
+  &__responsive-close-elem {
+    width: 44px;
+    height: 45px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__responsive-close-elem-cross {
+    color: #8898c1;
+    cursor: pointer;
+    font-size: 30px;
+    transition: color .15s;
+
+    &:hover {
+      color: #2b8aeb;
+    }
+  }
+
+  &__left-pic {
+    padding-bottom: rem(20px);
+
+    @include tablets {
+      border: rem(20px) solid #fff;
+      border-radius: 50%;
+      padding-bottom: 0;
+      transform: translateY(-55px);
+    }
+
+    @include phones {
+      margin-bottom: -50px;
+    }
+  }
+  
+  &__left-title {
+    padding-bottom: rem(20px);
+    
+    h1 {
+      text-align: center;
+      @include GothamPro-Medium;
+      font-size: rem(24px);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      color: #2b2c30;
+
+      @include phones {
+        @include GothamPro-Medium;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.46;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2b2c30;
+      }
+    }
+  }
+
+  &__left-desc-responsive {
+    padding-bottom: rem(20px);
+    display: none;
+
+    @include phones {
+      padding-left: rem(20px);
+      padding-right: rem(20px);
+      display: block;
+    }
+
+    p {
+      text-align: center;
+      @include GothamPro-Medium;
+      font-size: rem(16px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.69;
+      letter-spacing: normal;
+      color: #40553c;
+
+      @include phones {
+        font-family: GothamPro;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: normal;
+        text-align: center;
+        color: #40553c;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      color: #2b8aeb;
+      text-decoration: none;
+      @include GothamPro-Medium;
+    }
+  }
+
+  &__left-desc-responsive-element {
+    padding-bottom: rem(30px);
+    display: none;
+
+    @include phones {
+      padding-left: rem(20px);
+      padding-right: rem(20px);
+      display: block;
+    }
+
+    p {
+      text-align: center;
+      @include GothamPro-Medium();
+      font-size: rem(16px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.69;
+      letter-spacing: normal;
+      color: #40553c;
+
+      @include phones {
+        font-family: GothamPro;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.93;
+        letter-spacing: normal;
+        text-align: center;
+        color: #40553c;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      color: #2b8aeb;
+      text-decoration: none;
+    }
+  }
+
+  &__left-desc {
+    padding-bottom: rem(50px);
+
+    @include phones {
+      padding-left: rem(20px);
+      padding-right: rem(20px);
+    }
+
+    p {
+      text-align: center;
+      @include GothamPro-Medium();
+      font-size: rem(16px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.69;
+      letter-spacing: normal;
+      color: #40553c;
+
+      @include phones {
+        font-family: GothamPro;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: normal;
+        text-align: center;
+        color: #40553c;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      color: #2b8aeb;
+      text-decoration: none;
+    }
+  }
+
+  &__left-title {
+    padding-bottom: rem(15px);
+
+    h2 {
+      @include GothamPro-Medium();
+      font-size: rem(18px);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: #2b2c30;
+    }
+  }
+
+  &__left-desc {
+    padding-bottom: rem(30px);
+
+    p {
+      font-size: rem(14px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.93;
+      letter-spacing: normal;
+      text-align: center;
+      color: #40553c;
+
+      @include phones {
+        font-family: GothamPro;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: normal;
+        text-align: center;
+        color: #40553c;
+      }
+    }
+
+    a {
+      @include phones {
+        @include GothamPro-Medium;
+      }
+    }
+  }
+
+  &__right {
+    width: 45%;
+    text-align: right;
+
+    @include laptop {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include phones {
+      display: none;
+    }
+
+    .modal-thanks__right-pic {
+      flex-shrink: 0;
+      width: 470px;
+      height: 640px;
+
+      @include desktop {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-button-account__url--background {
+  background: none;
+  text-decoration: underline;
+}
+
+.modal-thanks__left-desc--padding-bottom {
+  padding-bottom: 0;
+}
+
+.modal-thanks__left-title--padding-top {
+  padding-top: rem(30px);
+}
+
+.modal-thanks__responsive-element-mobile {
+  display: none; 
+  
+  @include tablets {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  @include phones {
+    width: 111%;
+    position: relative;
+  }
+}
+
+.close-element {
+  top: 0;
+  right: 0;
+  position: absolute;
+  color: #ccc;
+  font-size: rem(30px);
+  width: rem(40px);
+  height: rem(40px);
+  background: #fff;
+  display: block;
+  text-align: center;
+
+  @include phones {
+    right: 5%;
+  }
+}
+
+.modal-thanks__responsive-img {
+  width: 100%;
+}
+
+.modal-thanks__left-picture {
+
+  @include sprite($checked-1);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.modal-thanks__left-picture-responsive {
+  display: none;
+
+  @include tablets {
+    @include sprite($checked1);
+    display: block;
+  }
+}
+
+.button__link--font-size {
+
+  &:before {
+    width: rem(16px) !important;
+    height: rem(18px) !important;
+  }
+
+  .button__link {
+    @include phones {
+      font-size: rem(15px);
+    }
+  }
+}
+
+.thank-you {
+
+  padding-bottom: 235px;
+
+  @include desktop {
+    padding-bottom: 310px;
+  }
+
+  @include laptop {
+    padding-bottom: 337px;
+  }
+
+  @include tablets {
+    padding-bottom: 396px;
+  }
+
+  @include tablets-600 {
+    padding-bottom: 593px;
+  }
+
+  @include phones {
+    padding-bottom: 494px;
+  }
+}
+
+.button__link-picture {
+
+  &:before {
+    content: "";
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-position: -309px 0px !important;
+    width: 16px;
+    height: 18px;
+    margin-right: 1.25rem;
+  }
+}
+

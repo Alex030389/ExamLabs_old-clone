@@ -1,0 +1,164 @@
+extends ../_template
+
+block variables
+    - var title = 'Unlimited Subscription 2'
+
+block content
+    .wrapper
+        section.section.margin-bottom
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 Unlimited Subscription  
+                .files__content
+                    .container
+                        .files__title-vendor.files__title-vendor--responsive
+                            h2 ExamLabs Premium Subscription
+                        .files__table-general  
+                            .content-general.content-general--direction
+                                .files__table-general-block
+                                    .files__table-left-unlim
+                                        .content-microsoft
+                                            .content-microsoft__left.content-microsoft__left--padding
+                                                .content-microsoft__block-height.content-microsoft__block--margin
+                                                    .content-microsoft__block-center-width
+                                                        .content-microsoft__block-center-title 
+                                                            h3 Download Quality. ExamLabs Certified.
+                                                        .first-screen__left-offer-files-text
+                                                            p Get <span> Unlimited Access </span> to the all ExamLabs PREMIUM VCE files! Take advantage of premium VCE Files which are guaranteed by ExamLabs!   
+                                                        ul.content-microsoft__block-list
+                                                            each item in ['Guaranteed to have Real Exam Questions', '100% Accurate &amp; Verified Answers', ' Fast Free Updates to Cover Latest Pool of Questions', 'Instant Download', '98.6% Pass Rate']
+                                                                li.content-microsoft__block-item
+                                                                    .content-microsoft__block-picture
+                                                                        img(src="assets/img/tick.png").content-microsoft__block-pic
+                                                                    .content-microsoft__block-title
+                                                                        h4 #{item}
+                                    .files__table-right-unlim
+                                        .content-microsoft__right-elem.swiper-container.s7
+                                            ul.content-microsoft__right-list
+                                                - for (let i = 0; i < 5; i++)
+                                                    li.content-microsoft__right-item
+                                                        img(src="assets/img/Image_Spring_17_4.jpg")         
+                                .files__table-bottom-block 
+                                            .certification__title
+                                                h2 Subscription Options       
+                                            .first-screen__left-offer-files-text
+                                                p Please select your perferred subscription below:
+                                            .subscription__list.subscription__list--height-elem
+                                                input(style="display:none" type="radio" value="10091" id="every1month" name="id" checked)
+                                                label(for="every1month").subscription__item-big
+                                                    .subscription__item-heading 
+                                                        h3 PAY MONTHLY
+                                                    .subscription__item-text 
+                                                        p Billed every month    
+                                                    .subscription__item-price
+                                                        h5 $79.99
+                                                        .subscription__item-price-wrap
+                                                            span.price-color $
+                                                            h3 79.99 
+                                                        span /month
+                                                input(style="display:none" type="radio" value="10092" id="every3month" name="id")
+                                                label(for="every3month").subscription__item-big
+                                                    .subscription__item-heading 
+                                                        h3 PAY QUARTERLY
+                                                    .subscription__item-text 
+                                                        p Billed every 3 month   
+                                                    .subscription__item-price
+                                                        h5 $59.99
+                                                        .subscription__item-price-wrap
+                                                            span.price-color $
+                                                            h3 59,99 
+                                                        span /month 
+                                                input(style="display:none" type="radio" value="10093" id="every6month" name="id")
+                                                label(for="every6month").subscription__item-big
+                                                    .subscription__item-heading 
+                                                        h3 PAY EVERY 6 MONTHS
+                                                    .subscription__item-text 
+                                                        p Billed every 6 months  
+                                                    .subscription__item-price
+                                                        h5 $39.99
+                                                        .subscription__item-price-wrap
+                                                            span.price-color $
+                                                            h3 39,99 
+                                                        span /month   
+                                                input(style="display:none" type="radio" value="10094" id="every12month" name="id")
+                                                label(for="every12month").subscription__item-big
+                                                    .subscription__item-heading 
+                                                        h3 PAY ANNUALLY
+                                                    .subscription__item-text 
+                                                        p Billed every 12 months  
+                                                    .subscription__item-price
+                                                        h5 $32.99
+                                                        .subscription__item-price-wrap
+                                                            span.price-color $
+                                                            h3 32,99 
+                                                        span /month       
+                                            .general-block
+                                                .total-price 
+                                                    .card__pay-methods-left-wrap
+                                                        .card__pay-methods-left-top
+                                                            span Total Due:
+                                                            .subscription__item-price-wrap
+                                                                span.price-color-another $
+                                                                h3 79.99
+                                                        //- .card__pay-methods-left-bottom-width
+                                                        //-     .content__right-form-button
+                                                        button(type="submit").content__right-form-input.content__right-form-input--padding Get Premium
+                                                                //- .content__right-form-button-circle.content__right-form-button-circle--visible
+                                                                //-     .content__right-form-button-image
+                                                .notice
+                                                    .content-notice__title.content-notice__title--padding
+                                                        h4 Notice before download file
+                                                    .content-notice__desc.content-notice__desc--padding
+                                                        p Please keep in mind before downloading file you need to install Avanset Exam Simulator Software to open VCE files. #[a(href="#") Click here] to download software.
+                                                    .content-notice__pic
+                                                        .content-notice__warn 
+                                                .cards
+                                                    .card__pay-methods-right-elem
+                                                        .card__pay-logos-elems
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/visa-logo.png").card__pay-img
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/mastercard-logo.png").card__pay-img
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/maestrocard-logo.png").card__pay-img
+                                                                .card__pay-pic-elem
+                                                                    img(src="assets/img/american-express-card-logo.png").card__pay-img
+                                                                .card__pay-pic-solo-elem
+                                                                    img(src="assets/img/solo-logo.png").card__pay-img
+                                                                .card__pay-pic-elem-jcb
+                                                                    img(src="assets/img/jcb-logo.png").card__pay-img
+                                                        .card__pay-text
+                                                            p.
+                                                                Your purchase with ExamLabs is safe and fast. Your products will be available for immediate download after your payment has been received.                          
+                                                  
+            include ../common/adv
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                                                  
+
+
+                                    
+                                

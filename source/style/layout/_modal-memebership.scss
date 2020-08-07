@@ -1,0 +1,218 @@
+.membership-modal {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    background-color: #fff;
+    width: 45%;
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0,0,0, .2), 0 rem(7px) rem(20px) 0 rgba(0,0,0, .17);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    border-radius: rem(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include desktop {
+      width: 60%;
+    }
+
+    @include tablets {
+      width: 75%;
+    }
+
+    @include tablets-600 {
+      width: 80%;
+    }
+
+    @include phones {
+      width: 95%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(30px);
+    border-bottom: rem(1px) solid $border-color;
+  }
+
+  &__title {
+    width: 100%;
+
+      h2 {
+        @include GothamPro-Medium();
+        font-size: rem(24px);
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2b2c30;
+    }
+  }
+
+  &__general {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(127deg, #f2f4f7, #dce2e9);
+    padding: rem(38px);
+    border-bottom-left-radius: rem(10px);
+    border-bottom-right-radius: rem(10px);
+
+    @include desktop {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    width: 50%;
+    
+    @include desktop {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    flex-direction: column;
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+}
+
+.membership__list {
+  @include desktop {
+    margin-top: rem(30px);
+  }
+}
+
+.membership-modal__header-btn {
+  color: #8898c1;
+  cursor: pointer;
+}
+
+.membership__list--flex-direction {
+  flex-direction: column;
+}
+
+.membership-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: rem(40px);
+
+  @include desktop-1680 {
+    flex-direction: column;
+  }
+}
+
+.membership__right-price-width {
+  width: 45%;
+  flex-shrink: 0;
+  min-width: rem(175px);
+}
+
+.membership__item--padding {
+  padding-bottom: rem(30px);
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.membership__right-price-width {
+  h5 {
+    font-size: rem(14px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7a8ea5;
+  }
+}
+
+.membership__right-price {
+  margin-right: rem(5px);
+  min-width: rem(175px);
+
+  @include desktop-1680 {
+    width: 100%;
+  }
+
+  @include phones {
+    width: 160px;
+    height: 60px;
+  }
+}
+
+.membership__right-button {
+  transition: .3s;
+
+  &:hover {
+    filter: brightness(.9);
+  }
+
+  @include desktop-1680 {
+    width: 100%;
+  }
+
+  @include phones {
+    width: 160px;
+    height: 60px;
+  }
+}
+
+.membership__picture {
+  width: rem(13px);
+  height: rem(18px);
+  margin-right: rem(5px);
+  padding: 0 !important;
+}
+
+.subscription {
+  @include phones {
+    margin-left: rem(-15px);
+    margin-right: rem(-15px);
+    margin-top: 40px;
+  }
+}
+
+.membership__right-price--margin-bottom {
+
+  @include desktop-1680 {
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    margin-bottom: rem(30px) !important;
+  }
+}

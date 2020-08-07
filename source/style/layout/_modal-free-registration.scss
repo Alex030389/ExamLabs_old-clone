@@ -1,0 +1,299 @@
+.modal-free-registration {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(430px);
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0,0,0, .2), 0 rem(7px) rem(20px) 0 rgba(0,0,0, .17);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    border-radius: rem(10px);
+
+    @include phones {
+      width: 80%;
+    }
+
+    @include iphoneX-375 {
+      width: 90%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(30px);
+    align-items: center;
+    border-bottom: rem(1px) solid $border-color;
+  }
+
+  &__label-checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    width: 100%;
+
+    h2 {
+      @include GothamPro-Medium();
+      font-size: rem(24px);
+      font-weight: 500;
+      text-align: center;
+      color: #2b2c30;
+
+      @include phones {
+        text-align: left;
+      }
+    }
+  }
+
+  &__heading {
+    padding-bottom: rem(10px);
+
+    h4 {
+      font-size: rem(13px);
+      font-weight: normal;
+      text-align: left;
+      color: #7a8ea5;
+    }
+
+    span {
+      color: red;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: rem(1px) solid $border-color;
+    height: rem(50px);
+    border-radius: rem(5px);
+    background-color: #f7f7f9;
+    padding: rem(20px);
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    text-align: left;
+    color: #000;
+
+    @include desktop {
+      width: 100%;
+    }
+
+    &:focus {
+      background: #fff;
+      border: rem(1px) solid $green;
+    }
+  }
+
+  &__line {
+    padding-bottom: rem(20px);
+  }
+
+  &__line--padding {
+    padding-bottom: rem(36px);
+  }
+}
+
+.modal-free-registration__header-btn {
+  color: #8898c1;
+  cursor: pointer;
+  font-size: rem(20px);
+  transition: color .15s;
+  
+  &:hover {
+    color: #2b8aeb;
+  }
+
+  @include phones {
+    font-size: rem(30px);
+  }
+}
+
+.modal-free-registration__input-checkbox {
+  position: absolute;
+  top: 0;
+  left: rem(-9999px);
+}
+
+.modal-free-registration__pic {
+  width: rem(24px);
+  height: rem(24px);
+  border-radius: rem(5px);
+  border: solid rem(1px) transparent;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(315deg, #2dbe58, #78d76d);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: relative;
+  flex-shrink: 0;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: rem(2px);
+    background-image: linear-gradient(315deg, #2dbe58, #78d76d);
+    opacity: 0;
+  }
+}
+
+.modal-free-registration__input-checkbox:checked + .modal-free-registration__pic:before {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.modal-free-registration__heading-checkbox {
+  padding-left: rem(20px);
+
+  h4 {
+    font-size: rem(13px);
+    font-weight: normal;
+    line-height: 1.54;
+    text-align: left;
+    color: #7a8ea5;
+  }
+}
+
+.modal-free-registration__line-checkbox {
+  padding-bottom: rem(30px);
+}
+
+.modal-button__free-reg {
+  width: 80%;
+  height: rem(50px);
+  border-radius: rem(100px);
+  background-color: #0fc962;
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.modal-button__free-link {
+  @include GothamPro-Medium();
+  font-size: rem(15px);
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  line-height: rem(50px);
+  min-width: 352px;
+
+  @include desktop {
+    min-width: 100%;
+  }
+}
+
+.modal-button-width--margin-bottom {
+  margin-bottom: rem(30px);
+  flex-direction: column;
+  align-items: center;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: rem(1px) solid $border-color;
+    margin-top: rem(30px);
+  }
+}
+
+.modal-button-account {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-button-account__url {
+  width: 80%;
+  height: rem(50px);
+  border-radius: rem(100px);
+  background-color: #ffffff;
+  border: solid rem(1px) #d9e0ec;
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.modal-button-account__link {
+  text-decoration: none;
+  @include GothamPro-Medium;
+  font-size: rem(15px);
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7a8ea5;
+  display: block;
+  height: 100%;
+  line-height: rem(50px);
+
+  @include phones {
+    @include GothamPro-Medium;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7a8ea5;
+  }
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-free-registration__general-padding {
+  padding: rem(20px);
+}
+
+.free-registration--flex {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.modal-free-registration__form {
+
+  @include desktop {
+    width: 100%;
+  }
+}
+

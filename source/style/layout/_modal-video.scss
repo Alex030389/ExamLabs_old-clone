@@ -1,0 +1,306 @@
+.modal-video-content {
+  border-top-left-radius: rem(10px);
+  border-bottom-left-radius: rem(10px);
+  height: 100% !important;
+}
+
+.modal-video {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0, 0, 0, .2), 0 rem(7px) rem(20px) 0 rgba(0, 0, 0, .17);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    border-radius: rem(10px);
+
+    @include desktop-1600 {
+      width: 55%;
+      border-radius: rem(10px);
+    }
+
+    @include tablets-600 {
+      width: 70%;
+    }
+
+    @include phones {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    border-left: rem(1px) solid $border-color;
+    border-bottom-left-radius: rem(10px);
+    overflow-y: auto;
+  }
+
+  &__right-general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+      display: block;
+
+    }
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  .search-responsive-close-button {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    display: none;
+
+    @include phones {
+      display: block;
+    }
+
+    &:hover i {
+      color: #1aafff !important;
+    }
+  }
+
+  &__right-header {
+    padding: rem(27px) rem(30px);
+    background: $background;
+    border-radius: rem(10px);
+  }
+
+  &__general {
+    display: flex;
+    max-height: 100vh;
+    overflow-y: auto;
+
+    @include desktop-1600 {
+      flex-direction: column;
+    }
+  }
+
+  &__right-title {
+
+    h3 {
+      @include GothamPro-Medium;
+      font-size: rem(18px);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2b2c30;
+    }
+  }
+
+  &__right-lectures {
+    h3 {
+      @include GothamPro-Medium;
+      font-size: rem(15px);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #99a0b6;
+
+      @include phones {
+        text-align: left;
+        padding-top: rem(11px);
+      }
+    }
+  }
+}
+
+.modal-video__right-body {
+
+  .modal-video__right-item {
+    display: flex;
+    align-items: center;
+    padding: rem(14px) rem(30px);
+    border-top: rem(1px) solid $border-color;
+    border-right: rem(1px) solid $border-color;
+
+    &:last-child {
+      border-right: 0;
+      border-bottom: 0;
+    }
+  }
+
+  .modal-video__left-element {
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+
+  .modal-video__left-title {
+    h3 {
+      @include GothamPro-Medium;
+      font-size: rem(15px);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2b2c30;
+    }
+  }
+
+  .modal-video__right-element {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+  }
+
+  .modal-video__right-status {
+    h4 {
+      @include GothamPro-Medium;
+      font-size: rem(13px);
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #0fc962;
+    }
+  }
+
+  .modal-video__right-timing {
+    h4 {
+      font-size: rem(15px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #7a8ea5;
+    }
+  }
+
+  .modal-video__left-control {
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 50%;
+    display: block;
+    border: rem(1px) solid $green;
+    margin-right: rem(20px);
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: rem(10px);
+      height: rem(12px);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('../img/triangle-4.png');
+    }
+  }
+
+  .modal-video__left-control-color {
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 50%;
+    display: block;
+    border: rem(1px) solid $border-color;
+    margin-right: rem(20px);
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: rem(10px);
+      height: rem(12px);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('../img/icon-pause.png');
+    }
+  }
+
+  .modal-video__left-control-play {
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 50%;
+    display: block;
+    border: rem(1px) solid $border-color;
+    margin-right: rem(20px);
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: rem(10px);
+      height: rem(12px);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('../img/icon-play-grey.png');
+    }
+  }
+}
+
+.plyr--video {
+  height: 100% !important;
+  border-top-left-radius: rem(10px);
+  border-bottom-left-radius: rem(10px);
+
+  @include desktop-1600 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: rem(10px);
+  }
+
+  @include phones {
+    border-radius: 0;
+  }
+}
+
+.plyr__video-wrapper {
+  height: 100% !important;
+}
+

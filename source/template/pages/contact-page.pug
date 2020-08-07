@@ -1,0 +1,209 @@
+extends ../_template
+
+block variables
+    - var title = 'Contact page'
+
+block content
+    .wrapper
+        section.section.contact-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-first-page
+                include ../common/_practice-line
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 Contact page
+            .registration-page-mobile__header
+                .container
+                    .registration-page-mobile__title
+                        h3 Contact Form                  
+            .free-registration.free-registration--flex
+                .container
+                    .free-registration-block-general
+                        .free-registration__left-content
+                            .free-registration__title
+                                h2 Contact page
+                            .modal-contact-form-general-all
+                                .modal-contact-form__title
+                                    h4 Please, use this form If you have any specific question.
+                                form.modal-contact__form(name="v-form" method="post")
+                                    .modal-contact__form-general
+                                        .comments__form-lines.comments__form-lines--width
+                                            label.contact__form-label
+                                                h4 Your Name <span>*</span>
+                                                input.comments__form-input.comments__form-input--width(type="text")
+                                                .val_error#name_error
+                                        .comments__form-lines.comments__form-lines--width
+                                            label.contact__form-label
+                                                h4 Your Email <span>*</span>
+                                                input.comments__form-input.comments__form-input--width(type="email")
+                                                .val_error#email_error
+                                    .modal-contact__form-field-general
+                                        label.contact__form-label
+                                            h4 Comments <span>*</span>
+                                            textarea.comments__textarea-field
+                                    .comments__contact-form
+                                        label.contact__form-label
+                                            h4 Verification Code <span>*</span>
+                                            .comments__form-verification-general.comments__form-verification-general--width
+                                                .comments__form-verification-left
+                                                    input(type="text").comments__form-verification-input.comments__form-verification-input--width
+                                                .comments__form-verification-right
+                                                    .comments__form-verification-circle
+                                                        img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                                    .comments__form-verification-pic
+                                                        .comments__form-verification-bitmap
+                                                            img(src="./assets/img/bitmap-1.png")
+                                    .button-modal-contact
+                                        button(type="submit").button-modal__contact Send
+                        .free-registration__right-section
+                            .free-registration__title
+                                h4 Hot training courses
+                            .free-registration__title-right-sec
+                                h3 Hot training courses
+                            ul.practice__content-right-list.practice__content-right-list--padding-bottom.practice__content-right-list--position
+                                li.practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+                            .content-microsoft__right-pic
+                                a(href="#").content-microsoft__right-link
+                                    img(src="./assets/img/avanset-new.png").content-microsoft__right-img
+                            .trainig-course-responsive-sign-in-page
+                                .trainig-course
+                                    .trainig-course__title
+                                        h2 Hot Training Courses
+                                        .trainig-course__url
+                                            a(href="#").trainig-course__link See All
+                                    .trainig-course-general
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom
+                                            a(href="#").trainig-course__block-link
+                                                .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                    img(src="./assets/img/training-courses.png" data-rjs="3").trainig-course__block-img
+                                                    .trainig-course__price
+                                                        h3 $25,99
+                                                    .trainig-course__heading
+                                                        h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                    span.line
+                                                    .trainig-course__general
+                                                        .trainig-course__first
+                                                            .trainig-course__quantity
+                                                                h4 83 123
+                                                        .trainig-course__second
+                                                            .trainig-course__quantity
+                                                                h3 2.5h
+                                                        .trainig-course__third
+                                                            .trainig-course__quantity
+                                                                h5 4.9 (124)
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom
+                                            a(href="#").trainig-course__block-link
+                                                .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                    img(src="./assets/img/training-courses.png" data-rjs="3").trainig-course__block-img
+                                                    .trainig-course__price.trainig-course__price--color
+                                                        h3 FREE
+                                                    .trainig-course__heading
+                                                        h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                    span.line
+                                                    .trainig-course__general
+                                                        .trainig-course__first
+                                                            .trainig-course__quantity
+                                                                h4 83 123
+                                                        .trainig-course__second
+                                                            .trainig-course__quantity
+                                                                h3 2.5h
+                                                        .trainig-course__third
+                                                            .trainig-course__quantity
+                                                                h5 4.9 (124)
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom
+                                            a(href="#").trainig-course__block-link
+                                                .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                    img(src="./assets/img/training-courses.png" data-rjs="3").trainig-course__block-img
+                                                    .trainig-course__price
+                                                        h3 $25,99
+                                                    .trainig-course__heading
+                                                        h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                    span.line
+                                                    .trainig-course__general
+                                                        .trainig-course__first
+                                                            .trainig-course__quantity
+                                                                h4 83 123
+                                                        .trainig-course__second
+                                                            .trainig-course__quantity
+                                                                h3 2.5h
+                                                        .trainig-course__third
+                                                            .trainig-course__quantity
+                                                                h5 4.9 (124)
+                                        .trainig-course__block-index-page.trainig-course__block--margin-bottom
+                                            a(href="#").trainig-course__block-link
+                                                .trainig-course__block-pic.trainig-course__block-pic--index-page
+                                                    img(src="./assets/img/training-courses.png" data-rjs="3").trainig-course__block-img
+                                                    .trainig-course__price.trainig-course__price--color
+                                                        h3 FREE
+                                                    .trainig-course__heading
+                                                        h2 CCNP Implementing Cisco IP <br> Routing (ROUTE v2.0)
+                                                    span.line
+                                                    .trainig-course__general
+                                                        .trainig-course__first
+                                                            .trainig-course__quantity
+                                                                h4 83 123
+                                                        .trainig-course__second
+                                                            .trainig-course__quantity
+                                                                h3 2.5h
+                                                        .trainig-course__third
+                                                            .trainig-course__quantity
+                                                                h5 4.9 (124)
+                .button-modal-contact-responsive 
+                    .container
+                        button(type="submit").button-modal__contact Send                        
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works
+
+

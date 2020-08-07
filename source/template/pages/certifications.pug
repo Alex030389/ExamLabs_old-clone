@@ -1,0 +1,60 @@
+extends ../_template
+
+block variables
+    - var title = 'Exam page'
+
+block content
+    .wrapper
+        section.section.margin-bottom
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Cisco Exams    
+                                .breadcrumbs__text
+                                    h3 CCDP (Cisco Certified design Professional)
+                <div class="cert-page-slider">
+                    <div class="swiper-button-next-s9 swiper-button-disabled swiper-button-lock" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"><img src="/static/img/right.png"></div>
+                    <div class="swiper-button-prev-s9 swiper-button-disabled swiper-button-lock" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><img src="/static/img/left.png"></div>
+                    <div class="swiper-container s9 swiper-container-horizontal">
+                        <div class="swiper-wrapper gallery" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide--elem-width swiper-slide-active" style="margin-right: 30px;">
+                                <a href="/static/img/screen-qa/300-100/screen1.png">
+                                    <div class="block-content"><img src="/static/img/screen-qa/300-100/screen1.png" alt="300-100 screen 1"></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide--elem-width swiper-slide-next" style="margin-right: 30px;">
+                                <a href="/static/img/screen-qa/300-100/screen2.png">
+                                    <div class="block-content"><img src="/static/img/screen-qa/300-100/screen2.png" alt="300-100 screen 2"></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide--elem-width" style="margin-right: 30px;">
+                                <a href="/static/img/screen-qa/300-100/screen3.png">
+                                    <div class="block-content"><img src="/static/img/screen-qa/300-100/screen3.png" alt="300-100 screen 3"></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide--elem-width" style="margin-right: 30px;">
+                                <a href="/static/img/screen-qa/300-100/screen4.png">
+                                    <div class="block-content"><img src="/static/img/screen-qa/300-100/screen4.png" alt="300-100 screen 4"></div>
+                                </a>
+                            </div>
+                        </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                </div>
+            //- include ../common/_footer                                                       
+                                        

@@ -1,0 +1,412 @@
+extends ../_template
+
+block variables
+    - var title = 'File page'
+
+block content
+    .wrapper
+        section.section.margin-bottom
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Cisco Exams    
+                                .breadcrumbs__text
+                                    h3 CCDP (Cisco Certified design Professional)
+                .files__content
+                    .container
+                        .files__table-general  
+                            .content-general
+                                .files__table-left-vendor
+                                    .files__title-vendor.files__title-vendor--responsive
+                                        h2 Pass Microsoft Certification Exam in First Attempt Guaranteed! Get 100% Real Exam Questions, Accurate & Verified Answers As seen in the Real Exam! 30 Days Free Updates, Instant Download!  
+                                    .content-microsoft.content-microsoft--visibility
+                                        .content-microsoft__left
+                                            .content-microsoft__block
+                                                .content-microsoft__block-left
+                                                    .content-microsoft__block-verify 
+                                                        img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                        .content-microsoft__block-heading
+                                                            h4 Verified by experts 
+                                                    .content-microsoft__block-bundle 
+                                                        img(src="./assets/img/bitmap-three-elems.png") 
+                                                    .content-microsoft__block-empty-elem 
+                                                        img(src="./assets/img/empty-elem.png")
+                                                        .content-microsoft__block-empty-elem-text  
+                                                            span You save 
+                                                            span $73.65    
+                                                    .content-microsoft__block-exams
+                                                        span 3 exams 
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") Get unlimited Access to All Premium Files 
+                                                .content-microsoft__block-center
+                                                    .content-microsoft__block-heading
+                                                        h2 70-743 Premium Bundle
+                                                    .content-microsoft__block-subheading   
+                                                        h2 300-101 Premium Bundle 
+                                                    ul.content-microsoft__block-list
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                .content-microsoft__block-right.content-microsoft__block-right--position
+                                                    .content-microsoft__block-one
+                                                        h5 $110.48
+                                                        h4 $69,99
+                                                    .content-microsoft__block-two
+                                                        button(type="submit").content-microsoft__block-link Download Now
+                                            .content-microsoft__block
+                                                .content-microsoft__block-left
+                                                    .content-microsoft__block-verify 
+                                                        img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                        .content-microsoft__block-heading
+                                                            h4 Verified by experts 
+                                                    .content-microsoft__block-bundle 
+                                                        img(src="./assets/img/lab-qa.png") 
+                                                    .content-microsoft__block-empty-elem.content-microsoft__block-empty-elem--position
+                                                        img(src="./assets/img/empty-elem.png")
+                                                        .content-microsoft__block-empty-elem-text  
+                                                            span You save 
+                                                            span $73.65    
+                                                    .content-microsoft__block-exams
+                                                        span 3 exams 
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") Get unlimited Access to All Premium Files 
+                                                .content-microsoft__block-center
+                                                    .content-microsoft__block-heading
+                                                        h2 70-743 Premium Bundle
+                                                    .content-microsoft__block-subheading   
+                                                        h2 300-101 Premium Bundle 
+                                                    ul.content-microsoft__block-list
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                .content-microsoft__block-right.content-microsoft__block-right--position
+                                                    .content-microsoft__block-one
+                                                        h5 $110.48
+                                                        h4 $69,99
+                                                    .content-microsoft__block-two
+                                                        button(type="submit").content-microsoft__block-link Download Now    
+                                            .content-microsoft__block
+                                                .content-microsoft__block-left
+                                                    .content-microsoft__block-verify 
+                                                        img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                        .content-microsoft__block-heading
+                                                            h4 Verified by experts 
+                                                    .content-microsoft__block-bundle 
+                                                        img(src="./assets/img/lab-qa-one.png") 
+                                                    .content-microsoft__block-empty-elem.content-microsoft__block-empty-elem--position-another  
+                                                        img(src="./assets/img/empty-elem.png")
+                                                        .content-microsoft__block-empty-elem-text  
+                                                            span You save 
+                                                            span $73.65    
+                                                    .content-microsoft__block-exams
+                                                        span 3 exams 
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") Get unlimited Access to All Premium Files 
+                                                .content-microsoft__block-center
+                                                    .content-microsoft__block-heading
+                                                        h2 70-743 Premium Bundle
+                                                    .content-microsoft__block-subheading   
+                                                        h2 300-101 Premium Bundle 
+                                                    ul.content-microsoft__block-list
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                .content-microsoft__block-right.content-microsoft__block-right--position
+                                                    .content-microsoft__block-one
+                                                        h5 $110.48
+                                                        h4 $69,99
+                                                    .content-microsoft__block-two
+                                                        button(type="submit").content-microsoft__block-link Download Now                       
+                                            .cert-page-slider 
+                                                .swiper-container.s9
+                                                    .swiper-wrapper.gallery
+                                                        - for (let i = 0; i < 12; i++)
+                                                            .swiper-slide.swiper-slide--elem-width
+                                                                a(href="assets/img/screen1.png")
+                                                                    .block-content 
+                                                                        img(src="assets/img/screen1.png")
+                                                .swiper-button-next-s9
+                                                    img(src="assets/img/right.png")
+                                                .swiper-button-prev-s9
+                                                    img(src="assets/img/left.png")
+                                            include ../common/_responsive-content-downloads
+                                            .content-download
+                                                table.table-download.table
+                                                    thead
+                                                        tr
+                                                            th.content-download__logo
+                                                                .content-download__pic
+                                                                    img(src="./assets/img/icon-microsoft@2x.png").content-download__img
+                                                            th.content-download__heading
+                                                                .content-download__title
+                                                                    h5 <span>70-743:</span> Upgrading Your Skills to MCSA: Windows Server 2016
+                                                                    h4 Views: 2134
+                                                    tbody
+                                                        tr.content-download__border
+                                                            td.content-download__background
+                                                                .content-download__title.content-download__title--changed
+                                                                    h5 <span>Rating</span>
+                                                            td.content-download__flex-rating
+                                                                .content-download__progress-wrapper
+                                                                    .content-download__progress-line(style="width: 10%")#myRating 10 %
+                                                                .rating-buttons
+                                                                    .rating-buttons-like
+                                                                        label(for="like" value='1').rating-buttons-like-label
+                                                                            .rating-buttons-like-number
+                                                                                h4 10
+                                                                    .rating-buttons-dislike
+                                                                        label(for="dislike").rating-buttons-dislike-label
+                                                                            .rating-buttons-dislike-number
+                                                                                h4 1
+                                                        tr.content-download__border
+                                                            td.content-download__background
+                                                                .content-download__title.content-download__title--changed
+                                                                    h5 <span>Downloads</span>
+                                                            td.content-download__flex
+                                                                .content-download__info
+                                                                    h4 7271 <span>from May 2, 2018</span>
+                                                        td.content-download__background
+                                                            .content-download__title.content-download__title--changed
+                                                                h5 <span>Link to Download</span>
+                                                            td.content-download__flex
+                                                                .content-download__flex-left 
+                                                                    a(href="#").content-download__link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                                                .content-download__flex-right
+                                                                    .button-download#popupDownload
+                                                                        a(href="#" download).button-download__link Download
+                                            .content-notice
+                                                .content-notice__title
+                                                    h4 Notice before download file
+                                                .content-notice__desc
+                                                    p Please keep in mind before downloading file you need to install Avanset Exam Simulator Software to open VCE files. #[a(href="#") Click here] to download software.
+                                                .content-notice__pic
+                                                    .content-notice__warn                            
+                                    .comments-form-split
+                                        .comments__general
+                                            .comments__title-general-new 
+                                                h2 Comments
+                                            .comments__url 
+                                                a(href="#").comments__link +Add Comment
+                                        .comments-block-wrap
+                                            .comments__section 
+                                                - for (let i = 0; i < 2; i++)
+                                                    .comments__questions.comments__questions--padding
+                                                        .comments__header
+                                                            ul.comments__list
+                                                                li.comments__item
+                                                                    .comments__name 
+                                                                        h3 Alice
+                                                                    .comments__time 
+                                                                        h4 January 17, 2019, 01:51 PM
+                                                        .comments__body 
+                                                            .comments__heading.comments__heading--position
+                                                                h4 alice
+                                                    .comments__questions.comments__questions--padding 
+                                                        .comments__header
+                                                            ul.comments__list
+                                                                li.comments__item
+                                                                    i.spritesheet-flags.sprite-IN
+                                                                li.comments__item    
+                                                                    .comments__name 
+                                                                        h3 Alice
+                                                                    .comments__time 
+                                                                        h4 January 17, 2019, 01:51 PM
+                                                        .comments__body 
+                                                            .comments__heading.comments__heading--position
+                                                                h4 It is a nice platform to enhance knowledge and expertise in the technical field.            
+                                        .comments__submit
+                                            .comments__title
+                                                .comments__title__element
+                                                    h2 Add comment
+                                            .comments__form-general
+                                                form.comments__form#form
+                                                    .comments__form-all.comments__form-all--padding-top
+                                                        .comments__form-lines
+                                                            label.comments__form-label-line
+                                                                h4 Name <span>*</span>
+                                                                input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                                                #nameError
+                                                        .comments__form-lines
+                                                            label.comments__form-label-line
+                                                                h4 Email <span>*</span>
+                                                                input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                                                #emailError
+                                                    .comments__form-rating
+                                                        .comments__title.comments__title--padding
+                                                            .comments__title-general-padding
+                                                                h4 Rate file <span>*</span>
+                                                            .rating-buttons-form.form-field
+                                                                input(style="display: none" type="radio" name="commen[like]" value="1" id="likeComment")
+                                                                label(for="likeComment").rating-buttons-like-label
+                                                                    .rating-buttons-like-number
+                                                                        h4 Like
+                                                                input(style="display: none" type="radio" name="commen[like]" value="1" id="dislikeComment")
+                                                                label(for="dislikeComment").rating-buttons-dislike-label
+                                                                    .rating-buttons-dislike-number
+                                                                        h4 Dislike
+                                                    .comments__form-field
+                                                        label.comments__form-label-general
+                                                            .comments__title-general-padding
+                                                                h4 Comment
+                                                                span *
+                                                            textarea.comments__textarea-field#textArea
+                                                    .comments__form-verification
+                                                        label.comments__form-label
+                                                            .comments__title-general
+                                                                h4 Verification
+                                                                span *
+                                                            .comments__form-verification-general
+                                                                .comments__form-verification-left
+                                                                    input(type="text").comments__form-verification-input#verificationInput
+                                                                .comments__form-verification-right
+                                                                    .comments__form-verification-circle#animation
+                                                                        img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                                                    .comments__form-verification-pic
+                                                                        .comments__form-verification-bitmap
+                                                                            img(src="./assets/img/bitmap-1.png")
+                                                        button(type="submit").button-submit Submit
+                                .vendor__table-right
+                                    .first-screen__title-exam-det
+                                        h3 Purchase Individually
+                                    .content-general__purchases.content-general__purchases--padding
+                                        ul.content-general__purchases-list-cert-bundle-page
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-1.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 2 products
+                                                    .content-general__purchases-info-all
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart                
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-2.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all.content-general__purchases-info-all--width
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart                
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-3.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart  
+                                    .content-microsoft__right-pic
+                                        a(href="#").content-microsoft__right-link
+                                            img(src="./assets/img/avanset-new.png").content-microsoft__right-img  
+                                    .first-screen__title-exam-det
+                                        h3 Cisco CCDP Training Courses        
+                                    ul.practice__content-right-list-index
+                                            li.practice__content-right-item-elem
+                                                .practice__content-right-img
+                                                    a(href="#").practice__content-right-link
+                                                        img(src="./assets/img/block.png").practice__content-right-pic-general
+                                                        .practice__content-right-img-overplap
+                                                            img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                                        .button-price
+                                                            .button-price__link $25,99
+                                                        .practice__title-number
+                                                            h4 70-463
+                                                            .practice__title-name
+                                                                h2 CompTIA Security+
+                                                        span.line
+                                                        .practice__students-general
+                                                            .practice__students-first
+                                                                .practice__students-title
+                                                                    h3 Students
+                                                                .practice__line
+                                                                .practice__quantity
+                                                                    h4 83
+                                                            .practice__students-second
+                                                                .practice__students-title
+                                                                    h3 Duration
+                                                                .practice__line
+                                                                .practice__quantity
+                                                                    h4 2.5h
+                                                            .practice__students-third
+                                                                .practice__students-title-sign-in-page
+                                                                    h3 Rating
+                                                                    h4 4.9 (124)
+                                                                .practice__stars
+                                                                    ul.practice__stars-list
+                                                                        - for (let i = 0; i < 5; i++)
+                                                                            li.practice__stars-itme
+                                                                                .practice__stars-pic
+                                                                                    .practice__stars-img
+                                                            .practice__stars-title
+                                                                h4 4.9 (124)           
+                    .avanset-adv.avanset-adv--margin-bottom
+                        .container
+                            .avanset-adv__wrapper
+                                .avanset-adv__left 
+                                    .avanset-adv__title
+                                        h3 Download Avanset VCE Software to Open Exam Files
+                                .avanset-adv__right    
+                                    .avanset-adv__button
+                                        .avanset-adv__url 
+                                            a(href="#").avanset-adv__link Download 
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                    
+                                        

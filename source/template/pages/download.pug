@@ -1,0 +1,374 @@
+extends ../_template
+
+block variables
+    - var title = 'Download'
+
+block content
+    .wrapper
+        section.section.download
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-download-responsive
+                include ../common/_practice-line
+                .practice__info
+                    .container
+                        .practice__info-general.practice__info-general--position
+                            .practice__info-left.practice__info-left--width
+                                .practice__info-title
+                                    h2 You need Avanset VCE Software To Open Exam Files!
+                                .practice__info-text
+                                    h4 Avanset VCE Software available on the Windows, MacOS, iOS and Android.
+                            .practice__info-right.practice__info-right--width
+                                .button.button--files
+                                    a(href="#").button__link Download
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 Microsoft Certifications
+                            .breadcrumbs__text
+                                h3 70-743
+            .container
+               .content-general
+                    .content-general__left
+                        .first-screen__title
+                            h2 Microsoft 70-743 Tests
+                        .content-questions.content-questions--padding-bottom
+                            .content-questions__upper-part 
+                                .content-questions__title-mobile 
+                                    h3 70-743: Premium VCE File
+                            .content-questions__slider 
+                                .content-questions__slider-title 
+                                    h4 Verified by experts 
+                                .content-questions__title-mobile 
+                                    h4 70-743: Premium VCE File 
+                                .content-questions__slider-mobile 
+                                    .content-microsoft__block-left
+                                        .content-microsoft__container-slider-down-page
+                                            .content-microsoft__pic-down-image
+                                                img(src="./assets/img/box.png").content-microsoft__img
+                                            .content-microsoft__pic-down-image
+                                                img(src="./assets/img/box.png").content-microsoft__img
+                                            .content-microsoft__pic-down-image
+                                                img(src="./assets/img/box.png").content-microsoft__img
+                                            .content-microsoft__pic-down-image
+                                                img(src="./assets/img/box.png").content-microsoft__img
+                                            .content-microsoft__pic-down-image
+                                                img(src="./assets/img/box.png").content-microsoft__img
+                                            .content-microsoft__pic-down-image
+                                                img(src="./assets/img/box.png").content-microsoft__img
+                                        span.pagingInfo
+                                        .slider-arrows
+                                            a(href="#").arrow-link-left
+                                                .nextArrow.arrow-next
+                                                    img(src="./assets/img/icon-single-arrow-right.png")
+                                            a(href="#").arrow-link-right
+                                                .prevArrow.arrow-prev
+                                                    img(src="./assets/img/icon-single-arrow-left.png") 
+                                .content-questions__text 
+                                    .content-questions__text-left 
+                                        ul.content-microsoft__block-list
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                .content-microsoft__block-title
+                                                        h4 243 Questions & Answers
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                .content-microsoft__block-title
+                                                    h4 100% Accurate Answers
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                .content-microsoft__block-title
+                                                    h4 Instant Downloads  
+                                    .content-questions__text-right   
+                                        .content-questions__text-square 
+                                            h4 $69.99$    
+                                .content-questions__button-wrapper            
+                                    .content-questions__button               
+                                        button(type="submit").content-microsoft__block-link Add to Cart  
+                            .mcse-installing-block 
+                                .mcse-installing-block__header 
+                                    .mcse-installing-block__title 
+                                        h3 70-743
+                                    .mcse-installing-block__pic  
+                                        img(src="./assets/img/icon-microsoft.png").mcse-installing-block__img  
+                                .mcse-installing-block__body 
+                                    .mcse-installing-block__main-title 
+                                        h3 Upgrading Your Skills to MCSA: Windows Server 2016    
+                                    .mcse-installing-block__body-url 
+                                        a(href="#").mcse-private-cloud__columns-right-link cisco.ccna.routing.switching.braindumps.200-125.v2018-12-14.by.rona.605q.vce
+                                .content-questions__button-wrapper            
+                                    .content-questions__button               
+                                        button(type="submit").content-microsoft__block-download Download (8.2MB)  
+                        .content-download
+                            table.table-download.table
+                                thead
+                                    tr
+                                        th.content-download__logo
+                                            .content-download__pic
+                                                img(src="./assets/img/icon-microsoft@2x.png").content-download__img
+                                        th.content-download__heading
+                                            .content-download__title
+                                                h5 <span>70-743:</span> Avaya Aura Experience Portal with POM Implementation and Maintenance
+                                                h4 Views: 2134
+                                tbody
+                                    tr.content-download__border
+                                        td.content-download__background
+                                            .content-download__title.content-download__title--changed
+                                                h5 <span>Rating</span>
+                                        td.content-download__flex-rating
+                                            .content-download__progress-wrapper
+                                                .content-download__progress-line(style="width: 10%")#myRating 10 %
+                                            .rating-buttons
+                                                .rating-buttons-like
+                                                    label(for="like" value='1').rating-buttons-like-label
+                                                        button.like#like
+                                                        .rating-buttons-like-number
+                                                            h4 10
+                                                .rating-buttons-dislike
+                                                    label(for="dislike").rating-buttons-dislike-label
+                                                        button.dislike#dislike
+                                                        .rating-buttons-dislike-number
+                                                            h4 1
+                                    tr.content-download__border
+                                        td.content-download__background
+                                            .content-download__title.content-download__title--changed
+                                                h5 <span>Downloads</span>
+                                        td.content-download__flex
+                                            .content-download__info
+                                                h4 7271 <span>from May 2, 2018</span>
+                                    td.content-download__background
+                                        .content-download__title.content-download__title--changed
+                                            h5 <span>Link to Download</span>
+                                        td.content-download__flex
+                                            .content-download__flex-left 
+                                                a(href="#").content-download__link cisco.ccna.routing.switching.braindumps.200-125.v2018-12-14.by.rona.605q.vce
+                                            .content-download__flex-right
+                                                .button-download#popupDownload
+                                                    a(href="#" download).button-download__link Download
+                        .content-notice
+                            .content-notice__title
+                                h4 Notice before download file
+                            .content-notice__desc
+                                p Please keep in mind before downloading file you need to install Avanset Exam Simulator Software to open VCE files. #[a(href="#") Click here] to download software.
+                            .content-notice__pic
+                                .content-notice__warn
+                        .slider-main-page
+                            .trainig-course__title-vendor
+                                h2 Hot Training Courses
+                                a(href="#").practice__heading-link See All
+                            .swiper-container.s3
+                                .swiper-wrapper.slider-third-mobile
+                                    li.practice__content-right-item-responsive-elem.swiper-slide
+                                        a(href="#").practice__content-right-link    
+                                            .practice__content-right-item-responsive-eleSm
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25.99
+                                                .practice__title-number-responsive
+                                                    .practice__title-name-responsive
+                                                        h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                    li.practice__content-right-item-responsive-elem.swiper-slide
+                                        a(href="#").practice__content-right-link    
+                                            .practice__content-right-item-responsive-elem
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25.99
+                                                .practice__title-number-responsive
+                                                    .practice__title-name-responsive
+                                                        h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                    li.practice__content-right-item-responsive-elem.swiper-slide
+                                        a(href="#").practice__content-right-link    
+                                            .practice__content-right-item-responsive-elem
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25.99
+                                                .practice__title-number-responsive
+                                                    .practice__title-name-responsive
+                                                        h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                    li.practice__content-right-item-responsive-elem.swiper-slide
+                                        a(href="#").practice__content-right-link    
+                                            .practice__content-right-item-responsive-elem
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25.99
+                                                .practice__title-number-responsive
+                                                    .practice__title-name-responsive
+                                                        h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                    li.practice__content-right-item-responsive-elem.swiper-slide
+                                        a(href="#").practice__content-right-link    
+                                            .practice__content-right-item-responsive-elem
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25.99
+                                                .practice__title-number-responsive
+                                                    .practice__title-name-responsive
+                                                        h2 CCNP <br> Implementing <br> Cisco IP Routing
+                                    li.practice__content-right-item-responsive-elem.swiper-slide
+                                        a(href="#").practice__content-right-link    
+                                            .practice__content-right-item-responsive-elem
+                                                .practice__content-right-img-overplap
+                                                    img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                .button-price
+                                                    .button-price__link $25.99
+                                                .practice__title-number-responsive
+                                                    .practice__title-name-responsive
+                                                        h2 CCNP <br> Implementing <br> Cisco IP Routing         
+                    .content-microsoft__right
+                        .first-screen__title
+                            h3 Hot training courses
+                        ul.practice__content-right-list.practice__content-right-list--padding-bottom
+                            li.practice__content-right-item
+                                .practice__content-right-img
+                                    a(href="#").practice__content-right-link
+                                        img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                        .practice__content-right-img-overplap
+                                            img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                        .button-price
+                                            .button-price__link $25,99
+                                        .practice__title-number
+                                            h4 70-463
+                                            .practice__title-name
+                                                h2 CompTIA Security+
+                                        span.line
+                                        .practice__students-general
+                                            .practice__students-first
+                                                .practice__students-title
+                                                    h3 Students
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 83 123
+                                            .practice__students-second
+                                                .practice__students-title
+                                                    h3 Duration
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 2.5h
+                                            .practice__students-third
+                                                .practice__students-title-sign-in-page
+                                                    h3 Rating
+                                                    h4 4.9 (124)
+                                                .practice__stars
+                                                    ul.practice__stars-list
+                                                        - for (let i = 0; i < 5; i++)
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                            .practice__stars-title
+                                                h4 4.9 (124)
+                        .content-microsoft__right-pic
+                            a(href="#").content-microsoft__right-link
+                                img(src="./assets/img/avanset-new.png").content-microsoft__right-img
+            .comments.comments--border.comments--width.comments--pad-bot
+                .container
+                    .comments__general.comments__general--width.comments__general--width-sec
+                        .comments__title
+                            h2 Comments
+                        .comments__add-comment
+                            h4 + Add Comment
+                    .comments__section.comments__section--width.comments__general--width-sec
+                        .comments__questions
+                            .comments__header
+                                ul.comments__list
+                                    li.comments__item
+                                        .comments__pic
+                                            img(src='./assets/img/united-states-icon.jpg').comments__pic-flag
+                                    li.comments__item
+                                        .comments__name
+                                            h3 Bruce Adams
+                                        .comments__time
+                                            h4 Dec 13 2019, 11:42 AM
+                            .comments__body
+                                .comments__heading.comments__heading--position
+                                    h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                        include ../common/_question
+                    .comments__submit-download-page
+                        .comments__title
+                            h2 Add comment
+                        .comments__form-general.comments__form-general--padding-bottom
+                            form.comments__form#form
+                                .comments__form-all-elements.comments__form-all--padding
+                                    .comments__form-lines-general
+                                        .comments__form-lines
+                                            label.comments__form-label-line
+                                                h4 Name <span>*</span>
+                                                input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                                #nameError
+                                        .comments__form-lines
+                                            label.comments__form-label-line.comments__form-label-line--padding-bottom
+                                                h4 Email <span>*</span>
+                                                input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                                #emailError
+                                    .comments__form-rating
+                                        .comments__title.comments__title--padding
+                                            h4 Rate file <span>*</span>
+                                            .rating-buttons-form
+                                                .like-wrapper
+                                                    label(for="likeForm" value="1")
+                                                        button.like-form#likeForm 
+                                                    .like-form__text
+                                                        h4 Like    
+                                                .dislike-wrapper
+                                                    label(for="dislikeForm" value="-1")
+                                                        button.dislike-form#dislikeForm 
+                                                    .dislike-form__text
+                                                        h4 Dislike     
+                                        .comments__form-rating-images
+                                .comments__form-field.comments__form-all--padding
+                                    label.comments__form-label-general
+                                        .comments__title-general-padding
+                                            h4 Comment
+                                            span *
+                                        textarea.comments__textarea-field#textArea
+                                .comments__form-verification
+                                    label.comments__form-label
+                                        .comments__title-general
+                                            h4 Verification
+                                            span *
+                                            #verificationError
+                                        .comments__form-verification-general
+                                            .comments__form-verification-left
+                                                input(type="text").comments__form-verification-input#verificationInput
+                                            .comments__form-verification-right
+                                                .comments__form-verification-circle#animation
+                                                    img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                                .comments__form-verification-pic
+                                                    .comments__form-verification-bitmap
+                                                        img(src='./assets/img/bitmap-1.png')
+                                    button(type="submit").button-submit Submit
+                .avanset-adv 
+                        .container
+                            .avanset-adv__wrapper
+                                .avanset-adv__left 
+                                    .avanset-adv__title
+                                        h3 Download Avanset VCE Software to Open Exam Files
+                                .avanset-adv__right    
+                                    .avanset-adv__button
+                                        .avanset-adv__url 
+                                            a(href="#").avanset-adv__link Download                    
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-download
+    include ../common/_modal-free-registration
+    include ../common/_modal-how-it-works
+    //- include ../common/_modal-download-page
+

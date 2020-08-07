@@ -1,0 +1,503 @@
+extends ../_template
+
+block variables
+  - var title = 'Home page'
+
+block content
+  .wrapper
+      section.section.margin-bottom
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        .header__adv 
+           .container   
+            .header__adv-title
+                h3 <span> Limited Time Discount Offer </span>
+                    span 10% Off - Ends in 
+                        span#ad-timer 10:10:10
+                .close-btn X
+        header.header
+            include ../common/_header
+        header.header 
+            .header__first
+                .container
+                    .header__first-all-elements
+                        .header__first-left
+                            .search-responsive-element#search-element
+                                .search-responsive-pic
+                                    svg#svgElementFocus.button-svg-search-elem-responsive
+                                        use(xlink:href='./assets/img/sprite.svg#group-35')
+                            .toggle-btn#toggle-btn
+                                span.toggle-class.toggle-class-top
+                                span.toggle-class.toggle-class-middle
+                                span.toggle-class.toggle-class-bottom
+                            .header__first-logo
+                                .header__first-url
+                                    a(href="index.html").header__first-link-logo
+                                        img(src="./assets/img/logo-png2.png" alt="ExamLabs Home Page").header__first-img
+                            .header__first-search
+                                form.header__first-form
+                                    input#inputElementFocus.header__first-input(type='search', placeholder='Search')
+                                    button#buttonElementFocus.information__button-submit-general.information__button-submit-focus(type='submit')
+                                        svg#svgElementFocus.button-svg-search-elem
+                                            use(xlink:href='./assets/img/sprite.svg#group-35')
+                        .header__first-right
+                            .header__first-works
+                                a(href="#").header__first-link.header__first-link--user How it works
+                                    .header__second-img.header__second-img--user
+                                        svg.header__first-pic-elem
+                                            use(xlink:href='./assets/img/sprite.svg#icon-question')
+                            a(href="#").sign-ing.sign-ing-index
+                                .header__first-enter-pic-entry
+                                    .header__first-laptop
+                                    .header__second-repsonsive-pic
+                                        svg.header__user-pic#userPic
+                                            use(xlink:href='./assets/img/sprite.svg#user')
+                            a(href="#").header__first-vendor-link 
+                                .header__first-vendor-page
+                                    .header__first-enter-picture
+                                        .header__first-enter-image
+                                            .header__first-enter-img-second-header
+                                    .header__first-enter-name
+                                        p
+                                            | My Account                      
+                            .header__first-general
+                                a(href="#").header__first-link-elem
+                                    .header__first-basket
+                                        svg.header__first-pic
+                                            use(xlink:href="assets/img/sprite.svg#icon-cart")
+                                        .header__first-circle 12
+                                    .header__first-cart
+                                        .header__first-link-cart Cart (1)    
+        .container
+          .header__second
+            include ../common/_nav    
+        .avanset-adv.avanset-adv--responsive
+          .container
+            .avanset-adv__wrapper
+              .avanset-adv__left 
+                .avanset-adv__title
+                  h3 Download Avanset VCE Software to Open Exam Files
+              .avanset-adv__right    
+                .avanset-adv__button
+                  .avanset-adv__url 
+                    a(href="#").avanset-adv__link Download      
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line            
+            .information
+                .container.container--changed 
+                    .information__title 
+                        h1 Passing Certification Exam Made Easy!
+                    .information__text 
+                        p Everething you need to prepare and quickly pass the tough certification exams in the first Attempt! 
+                        p Real Questions, 100% Accurate & Verified Answers
+                    .information-form
+                        form.information-form__element 
+                            input(type="search" placeholder="Search") 
+                            .information-form__button  
+                                button(type="submit") Search 
+        .certification
+            .certification__content
+                .container
+                    .certification__title.certification__title-margin-top
+                        h2 Hot Certifications
+                    //- .practice__heading-responsive-index-page
+                    //-     h2 Hot Certifications
+                    //-     a(href="#").practice__heading-link See All
+                    .swiper-wrapper-index
+                        .swiper-container.swiper1
+                          include ../common/_slider
+                        .swiper-button-prev
+                            img(src="./assets/img/left.png")
+                        .swiper-button-next
+                            img(src="./assets/img/right.png") 
+                    //- .practice__heading-responsive-index-page-second
+                    //-       h2 Top 50 Practice Exams
+                    //-       a(href="#").practice__heading-link See All
+            .files__content
+                .container
+                    .files__table-general
+                        .files__table-left-vendor
+                            .files__title-vendor.files__title-vendor--margin-top2
+                                h2 Top 50 Practice Exams
+                            .for--table-certificate-bundle.for--table-certificate-bundle--index
+                                table.table
+                                    colgroup
+                                        col.table__col-1
+                                        col.table__col-2
+                                        col.table__col-3
+                                        col.table__col-4
+                                        col.table__col-5
+                                    thead.table__padding
+                                        tr
+                                            th
+                                                h5 Vendor
+                                            th
+                                                h5 Exam
+                                            th
+                                                h4 File Name
+                                            th
+                                                h5 Downloads
+                                            th
+                                                h5 Added
+                                    tbody
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table__margin-cisco-background(rowspan="2")
+                                                .practice__content-left-pic-flex
+                                                    .logo__width
+                                                        a(href="http://www.devlabs.tk/vendor/Microsoft")
+                                                            img(src="assets/img/logo-microsoft.png" alt="Microsoft")
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/70-346")
+                                                    .table__cell-padding-numbers 70-346
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/microsoft/testking.70-346.1.vce") microsoft<wbr>.testking<wbr>.70-346<wbr>.v2018-03-23<wbr>.by<wbr>.123saraT<wbr>.123q<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Sep 12, 2018
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/70-346")
+                                                    .table__cell-padding-numbers 70-346
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/microsoft/testking.70-346.1.vce") microsoft<wbr>.testking<wbr>.70-346<wbr>.v2018-03-23<wbr>.by<wbr>.123saraT<wbr>.123q<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Sep 12, 2018
+                                    tbody
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table__margin-cisco-background(rowspan="3")
+                                                .practice__content-left-pic-flex
+                                                    .logo__width
+                                                        a(href="http://www.devlabs.tk/vendor/Cisco")
+                                                            img(src="assets/img/logo-cisco.png" alt="Cisco")
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/100-105")
+                                                    .table__cell-padding-numbers 100-105
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/cisco/test.100-105.24.vce") cisco<wbr>.test<wbr>.100-105<wbr>.v2018-01-08<wbr>.by<wbr>.sam<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Jan 21, 2019
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/100-105")
+                                                    .table__cell-padding-numbers 100-105
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/cisco/test.100-105.24.vce") cisco<wbr>.test<wbr>.100-105<wbr>.v2018-01-08<wbr>.by<wbr>.sam<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Jan 21, 2019
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/100-105")
+                                                    .table__cell-padding-numbers 100-105
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/cisco/test.100-105.24.vce") cisco<wbr>.test<wbr>.100-105<wbr>.v2018-01-08<wbr>.by<wbr>.sam<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Jan 21, 2019
+                                    tbody
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table__margin-cisco-background
+                                                .practice__content-left-pic-flex
+                                                    .logo__width
+                                                        a(href="http://www.devlabs.tk/vendor/ACI")
+                                                            img(src="assets/img/logo-aci.png" alt="ACI")
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/3I0-008")
+                                                    .table__cell-padding-numbers 3I0-008
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/aci/aurinko.3i0-008.25.vce") aci<wbr>.aurinko<wbr>.3i0-008<wbr>.v2018-01-21<wbr>.by<wbr>.test<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Jan 21, 2019
+                                    tbody
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table__margin-cisco-background
+                                                .practice__content-left-pic-flex
+                                                    .logo__width
+                                                        a(href="http://www.devlabs.tk/vendor/ITIL")
+                                                            img(src="assets/img/logo-itil.png" alt="ITIL")
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/ITIL-Practitioner")
+                                                    .table__cell-padding-numbers ITIL Practitioner
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/itil/testing.itil-practitioner.6.vce") itil<wbr>.testing<wbr>.itil practitioner<wbr>.v2018-12-18<wbr>.by<wbr>.test<wbr>.152q<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4 12
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Dec 18, 2018
+                                    tbody
+                                        tr.table__margin-cisco.table__margin-cisco--border-top
+                                            td.table__margin-cisco-background
+                                                .practice__content-left-pic-flex
+                                                    .logo__width
+                                                        a(href="http://www.devlabs.tk/vendor/Juniper")
+                                                            img(src="assets/img/logo-juniper.png" alt="Juniper")
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__cell-second-link(href="http://www.devlabs.tk/dumps/JN0-210")
+                                                    .table__cell-padding-numbers JN0-210
+                                            td.table-cisco.table__margin-cisco--padding-top.table-cisco--pb
+                                                a.table__link-cisco(href="http://www.devlabs.tk/juniper/40.jn0-210.8.vce") juniper<wbr>.40<wbr>.jn0-210<wbr>.v2018-01-08<wbr>.by<wbr>.sam<wbr>.vce
+                                            td.table-cisco-color.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h4 1
+                                            td.table-cisco.table-cisco--pt.table__margin-cisco--padding-top.table-cisco--pb
+                                                h5 Jan 8, 2019
+                        .vendor__table-right.vendor__table-right--responsive
+                            .files__title-vendor.files__title-vendor--margin-top2
+                                h2 Hot Training Courses
+                            ul.practice__content-right-list-index
+                                li.right-side-elem
+                                    .right-side-elem__img
+                                        a.right-side-elem__link(href="http://www.devlabs.tk/video-training/70-767-microsoft-implementing-a-data-warehouse-using-sql")
+                                            img.right-side-elem__pic(src="/assets/img/block.png")
+                                            .right-side-elem__overlap
+                                                img.right-side-elem__overlap-elem(src="/assets/img/7640.jpg")
+                                            .right-side-elem__button
+                                                .right-side-elem__button-price $21.24
+                                            .right-side-elem__number
+                                                h4 70-767
+                                                .right-side-elem__name
+                                                    h2 Implementing a SQL Data Warehouse (beta)
+                                                span.right-elem-line
+                                            .right-side-elem__general
+                                                .right-side-elem__first
+                                                    .right-side-elem__first-title
+                                                        h3 Students
+                                                    .right-side-elem__line
+                                                    .right-side-elem__quantity
+                                                        h4 95
+                                                .right-side-elem__second
+                                                    .right-side-elem__first-title
+                                                        h3 Duration
+                                                    .right-side-elem__line
+                                                    .right-side-elem__quantity
+                                                        h4 6h
+                                                .right-side-elem__third
+                                                    .right-side-elem__stars-title
+                                                        h3 Rating
+                                                        h4 4.6 (79)
+                                                    .right-side-elem__stars
+                                                        ul.right-side-elem__stars-list
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                .right-side-elem__stars-title-last
+                                                    h4 4.6 (79)
+                                li.right-side-elem
+                                    .right-side-elem__img
+                                        a.right-side-elem__link(href="http://www.devlabs.tk/video-training/70-767-microsoft-implementing-a-data-warehouse-using-sql")
+                                            img.right-side-elem__pic(src="/assets/img/block.png")
+                                            .right-side-elem__overlap
+                                                img.right-side-elem__overlap-elem(src="/assets/img/7640.jpg")
+                                            .right-side-elem__button
+                                                .right-side-elem__button-price $21.24
+                                            .right-side-elem__number
+                                                h4 70-767
+                                                .right-side-elem__name
+                                                    h2 Implementing a SQL Data Warehouse (beta)
+                                                span.right-elem-line
+                                            .right-side-elem__general
+                                                .right-side-elem__first
+                                                    .right-side-elem__first-title
+                                                        h3 Students
+                                                    .right-side-elem__line
+                                                    .right-side-elem__quantity
+                                                        h4 95
+                                                .right-side-elem__second
+                                                    .right-side-elem__first-title
+                                                        h3 Duration
+                                                    .right-side-elem__line
+                                                    .right-side-elem__quantity
+                                                        h4 6h
+                                                .right-side-elem__third
+                                                    .right-side-elem__stars-title
+                                                        h3 Rating
+                                                        h4 4.6 (79)
+                                                    .right-side-elem__stars
+                                                        ul.right-side-elem__stars-list
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                                .right-side-elem__stars-title-last
+                                                    h4 4.6 (79)
+        //- .practice
+        //-       .container
+        //-           .practice__heading-responsive-wrapper 
+        //-                 .practice__heading-responsive
+        //-                     h2 Top 50 Practice Exam
+        //-                     a(href="#").practice__heading-link See All
+        //-           .practice__general
+        //-                 .practice__content-left
+        //-                     .practice__heading
+        //-                         h2 Top 50 Practice Exam
+        //-                 .practice__content-right
+        //-                     .practice__heading
+        //-                         h3 Hot Training Courses
+        //-                     ul.practice__content-right-list-index
+        //-                         li.practice__content-right-item-elem
+        //-                             .practice__content-right-img
+        //-                                 a(href="#").practice__content-right-link
+        //-                                     img(src="./assets/img/block.png").practice__content-right-pic-general
+        //-                                     .practice__content-right-img-overplap
+        //-                                         img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+        //-                                     .button-price
+        //-                                         .button-price__link $25,99
+        //-                                     .practice__title-number
+        //-                                         h4 70-463
+        //-                                         .practice__title-name
+        //-                                             h2 CompTIA Security+
+        //-                                     span.line
+        //-                                     .practice__students-general
+        //-                                         .practice__students-first
+        //-                                             .practice__students-title
+        //-                                                 h3 Students
+        //-                                             .practice__line
+        //-                                             .practice__quantity
+        //-                                                 h4 83
+        //-                                         .practice__students-second
+        //-                                             .practice__students-title
+        //-                                                 h3 Duration
+        //-                                             .practice__line
+        //-                                             .practice__quantity
+        //-                                                 h4 2.5h
+        //-                                         .practice__students-third
+        //-                                             .practice__students-title-sign-in-page
+        //-                                                 h3 Rating
+        //-                                                 h4 4.9 (124)
+        //-                                             .practice__stars
+        //-                                                 ul.practice__stars-list
+        //-                                                     - for (let i = 0; i < 5; i++)
+        //-                                                         li.practice__stars-itme
+        //-                                                             .practice__stars-pic
+        //-                                                                 .practice__stars-img
+        //-                                         .practice__stars-title
+        //-                                             h4 4.9 (124)
+        //-                         li.right-side-elem 
+        //-                             .right-side-elem__img 
+        //-                                 a(href="").right-side-elem__link
+        //-                                     img(src="./assets/img/block.png").right-side-elem__pic 
+        //-                                     .right-side-elem__overlap 
+        //-                                         img(src="./assets/img/first-image.jpg").right-side-elem__overlap-elem
+        //-                                     .right-side-elem__button 
+        //-                                         .right-side-elem__button-price $29.99
+        //-                                     .right-side-elem__number
+        //-                                         h4 70-463 
+        //-                                         .right-side-elem__name 
+        //-                                             h2 CompTIA Security+
+        //-                                     span.line    
+        //-                                     .right-side-elem__general 
+        //-                                         .right-side-elem__first 
+        //-                                             .right-side-elem__first-title 
+        //-                                                 h3 Students
+        //-                                             .right-side-elem__line 
+        //-                                             .right-side-elem__quantity 
+        //-                                                 h4 83
+        //-                                         .right-side-elem__second 
+        //-                                             .right-side-elem__first-title 
+        //-                                                 h3 Duration
+        //-                                             .right-side-elem__line 
+        //-                                             .right-side-elem__quantity 
+        //-                                                 h4 2.5h
+        //-                                         .right-side-elem__third 
+        //-                                             .right-side-elem__stars-title
+        //-                                                 h3 Rating
+        //-                                                 h4 4.9 (1234)
+        //-                                             .right-side-elem__stars-wrapper    
+        //-                                                 .right-side-elem__stars
+        //-                                                     ul.right-side-elem__stars-list
+        //-                                                         - for (let i = 0; i < 5; i++)
+        //-                                                             li.practice__stars-itme
+        //-                                                                 .practice__stars-pic
+        //-                                                                     .practice__stars-img
+        //-                                                 .right-side-elem__stars-title-last
+        //-                                                     h4 4.9 (1234)                 
+        //-           .slider-main-page
+        //-             .trainig-course__title-vendor
+        //-               h2 Hot Training Courses
+        //-               a(href="#").practice__heading-link See All
+        //-             .swiper-mobile
+        //-                     .swiper-container.s3
+        //-                         .swiper-wrapper.slider-third-mobile
+        //-                             - for (let i = 0; i < 5; i++)
+        //-                                 li.practice__content-right-item-responsive-elem.swiper-slide
+        //-                                     a(href="#").practice__content-right-link    
+        //-                                         .practice__content-right-item-responsive-elem
+        //-                                             .practice__content-right-img-overplap
+        //-                                                 img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+        //-                                             .button-price
+        //-                                                 .button-price__link $25.99
+        //-                                             .practice__title-number-responsive
+        //-                                                 .practice__title-name-responsive
+        //-                                                     h2 CCNP <br> Implementing <br> Cisco IP Routing 
+        //-           .top-practice-exams
+        //-             .trainig-course__title-responsive
+        //-               h2 Top 50 Practice Exams
+        //-               a(href="#").practice__heading-link See All   
+        //-             .top-practice-exams__block
+        //-                 ul.top-practice-exams__left
+        //-                   - for (let i = 0; i < 1; i++)
+        //-                     li.top-practice-exams__left-number 
+        //-                       h3 156-215.80
+        //-                 ul.top-practice-exams__right 
+        //-                   - for (let i = 0; i < 1; i++)
+        //-                     li.top-practice-exams__right-url
+        //-                       a(href="#").top-practice-exams__right-link Microsoft.Pass4sure.70841..
+        //-           .button-load-more-index-page
+        //-             .button-load-more-index-page-pic
+        //-                 i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+        //-             a(href="#").button-load-link Load More            
+        <button class="button-to-top" onclick="blur();" type="button">
+            <span class="visually-hidden">Up</span>
+            <svg class="button-to-top__arrow" width="20" height="20" aria-hidden="true" viewBox="0 0 492 492">
+                <path d="M464.344 207.418l.768.168H135.888l103.496-103.724c5.068-5.064 7.848-11.924 7.848-19.124 0-7.2-2.78-14.012-7.848-19.088L223.28 49.538c-5.064-5.064-11.812-7.864-19.008-7.864-7.2 0-13.952 2.78-19.016 7.844L7.844 226.914C2.76 231.998-.02 238.77 0 245.974c-.02 7.244 2.76 14.02 7.844 19.096l177.412 177.412c5.064 5.06 11.812 7.844 19.016 7.844 7.196 0 13.944-2.788 19.008-7.844l16.104-16.112c5.068-5.056 7.848-11.808 7.848-19.008 0-7.196-2.78-13.592-7.848-18.652L134.72 284.406h329.992c14.828 0 27.288-12.78 27.288-27.6v-22.788c0-14.82-12.828-26.6-27.656-26.6z"></path>
+            </svg>
+        </button>
+        include ../common/_archive-table
+        include ../common/_footer
+        include ../common/_sidebar
+        include ../common/user-sidebar
+        include ../common/limited-offer
+        include ../common/limited-offer-second
+        include ../common/free-demo
+        include ../common/_discount-popup
+        include ../common/_modal-how-it-works
+        include ../common/_modal-thanks
+        include ../common/_modal-premium
+        include ../common/_modal-definitions
+        include ../common/_modal-video
+        include ../common/not-convinced-popup
+        include ../common/not-convinced-popup
+        include ../common/_modal-contact-form
+        

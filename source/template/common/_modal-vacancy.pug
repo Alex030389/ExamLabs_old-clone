@@ -1,0 +1,83 @@
+.modal-vacancy
+    .modal-vacancy__content
+        .modal-vacancy__general
+            .modal-vacancy__header
+                .modal-vacancy__title
+                    h2 Apply to Job
+                span.modal-free-registration__header-btn &times
+            .modal-vacancy__sub-header
+                p We are looking for people who can provide updated exam questions, write answers (explanations) and write IT Guides, articles and tutorials.
+            .modal-vacancy__submit
+                form.modal-vacancy__form
+                    .modal-vacancy__line-general
+                        .modal-vacancy__line
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Your Name
+                                        span *
+                                input(type="text" placeholder="Andrew Romanenko").modal-vacancy__input
+                        .modal-vacancy__line
+                            label.modal-vacancy__label
+                                .modal-vacancy__title
+                                    h4 Skype
+                                        span *
+                                input(type="text").modal-vacancy__input
+                    .modal-vacancy__line-email
+                        label.modal-vacancy__label
+                            .modal-vacancy__title
+                                h4 Email
+                                    span *
+                            input(type="email" placeholder="alex.gurinenko@streamtechltd.com").modal-vacancy__input
+                    .modal-vacancy__title
+                        h4 Experience
+                            span *
+                    .modal-vacancy__experience
+                        .modal-vacancy__left
+                            label.modal-vacancy__label-checkbox
+                                input(type="checkbox").modal-vacancy__input-checkbox
+                                .modal-vacancy__img
+                                .modal-vacancy__heading
+                                    h3 I can Provide Updated Exam Questions
+                            label.modal-vacancy__label-checkbox
+                                input(type="checkbox").modal-vacancy__input-checkbox
+                                .modal-vacancy__img
+                                .modal-vacancy__heading
+                                    h3 I can Write Answers & Explanations
+                        .modal-vacancy__right
+                            label.modal-vacancy__label-checkbox
+                                input(type="checkbox").modal-vacancy__input-checkbox
+                                .modal-vacancy__img
+                                .modal-vacancy__heading
+                                    h3 I can Write IT Guides, Articles & Tutorials
+                            label.modal-vacancy__label-checkbox
+                                input(type="checkbox").modal-vacancy__input-checkbox
+                                .modal-vacancy__img
+                                .modal-vacancy__heading
+                                    h3 I am a Trainer
+                    .modal-vacancy__comments
+                        .modal-vacancy__title
+                            h4 Comments
+                                span *
+                        .modal-vacancy__field
+                            textarea.modal-vacancy__textarea
+                    .comments__form-verification.comments__form-verification--flex.comments__form-verification--margin-bottom
+                        label.comments__form-label.comments__form-label--width
+                            .comments__title.comments__title--padding
+                                h4 Verification Code *
+                            .comments__form-verification-general
+                                .comments__form-verification-left
+                                    input(type="text").comments__form-verification-input
+                                .comments__form-verification-right
+                                    .comments__form-verification-circle
+                                    .comments__form-verification-pic
+                                        img(src="./assets/img/bitmap-1.png").comments__form-verification-bitmap
+                    .modal-vacancy__add-file
+                        .button-add-file
+                            label.button-add-file__label(for='files') + Add File
+                            input(type='file').button-add-file__input#files
+                        .button-add-file__size
+                            h3 Max Size
+                            h4 60 Mb
+                    .button-submit-form
+                        button(type="submit").button-submit-form__info Send
+

@@ -1,0 +1,176 @@
+extends ../_template
+
+block variables
+  - var title = 'Questions'
+
+block content
+  .wrapper
+      section.section
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        header.header
+            include ../common/_header
+        .header-search-element.visually-hidden 
+          .container
+              form.information__input
+                input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search  
+        .container
+          .header__second
+            include ../common/_nav         
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line
+        .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home     
+                            .breadcrumbs__text
+                                h3 New Files   
+        .files__content
+            .container
+                .files__table-general.files__table-general--padding-bottom
+                    .files__table-left-vendor
+                        <div class="practice__heading practice__heading--responsive">
+                            <h2>IT Exam Questions Discussion</h2>
+                        </div>
+                        <div class="files__table-cell-vendor">
+                            <table class="table-vendor table table-questions">
+                                <thead class="table__padding-vendor table__padding-vendor--thead-width">
+                                <tr class="table__padding-full-width">
+                                    <th class="table__padding-heading table__padding-heading--width">
+                                        <h5>Topic</h5>
+                                    </th>
+                                    <th class="table__padding-title table__padding-title--width">
+                                        <h5>Date</h5>
+                                    </th>
+                                    <th class="table__padding-heading-second table__padding-heading-second--width">
+                                        <h5>Status</h5>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="tbody-width">
+                                    <tr class="table-hover">
+                                        <td class="table__cell-padding-numbers-vendor-page-number table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-number--width">
+                                            <a class="table__link" href="http://www.devlabs.tk/question/7">70-410 question 32 discussion</a>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-content table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-content--width">
+                                            <div class="table__link table__link--padding-left"></div>
+                                            <div class="color table__cell-padding-numbers">Apr 17, 2017</div>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-exam table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-exam--width">
+                                            <div class="wrapper-for-elems">
+                                                <div class="color answered-tick">answered</div>
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-hover">
+                                        <td class="table__cell-padding-numbers-vendor-page-number table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-number--width">
+                                            <a class="table__link" href="http://www.devlabs.tk/question/42">HP0-Y52 question 14 discussion</a>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-content table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-content--width">
+                                            <div class="table__link table__link--padding-left"></div>
+                                            <div class="color table__cell-padding-numbers">Apr 18, 2017</div>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-exam table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-exam--width">
+                                            <div class="wrapper-for-elems">
+                                                <div class="color answered-tick">answered</div>
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-hover">
+                                        <td class="table__cell-padding-numbers-vendor-page-number table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-number--width">
+                                            <a class="table__link" href="http://www.devlabs.tk/question/64">70-480 question 54 discussion</a>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-content table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-content--width">
+                                            <div class="table__link table__link--padding-left"></div>
+                                            <div class="color table__cell-padding-numbers">Apr 18, 2017</div>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-exam table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-exam--width">
+                                            <div class="wrapper-for-elems">
+                                                <div class="color answered-tick">answered</div>
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-hover">
+                                        <td class="table__cell-padding-numbers-vendor-page-number table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-number--width">
+                                            <a class="table__link" href="http://www.devlabs.tk/question/75">220-901 question 11 discussion</a>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-content table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-content--width">
+                                            <div class="table__link table__link--padding-left"></div>
+                                            <div class="color table__cell-padding-numbers">Apr 18, 2017</div>
+                                        </td>
+                                        <td class="table__cell-padding-numbers-vendor-page-exam table__cell-padding-numbers--padding-left-and-right table__cell-padding-numbers-vendor-page-exam--width">
+                                            <div class="wrapper-for-elems">
+                                                <div class="color answered-tick">answered</div>
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                .vendor__table-right
+                        .first-screen__title-exam-det
+                            h3 Hot Training Courses
+                        ul.practice__content-right-list-index
+                            li.practice__content-right-item-elem
+                                .practice__content-right-img
+                                    a(href="#").practice__content-right-link
+                                        img(src="./assets/img/block.png").practice__content-right-pic-general
+                                        .practice__content-right-img-overplap
+                                            img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                        .button-price
+                                            .button-price__link $25,99
+                                        .practice__title-number
+                                            h4 70-463
+                                            .practice__title-name
+                                                h2 CompTIA Security+
+                                        span.line
+                                        .practice__students-general
+                                            .practice__students-first
+                                                .practice__students-title
+                                                    h3 Students
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 83
+                                            .practice__students-second
+                                                .practice__students-title
+                                                    h3 Duration
+                                                .practice__line
+                                                .practice__quantity
+                                                    h4 2.5h
+                                            .practice__students-third
+                                                .practice__students-title-sign-in-page
+                                                    h3 Rating
+                                                    h4 4.9 (124)
+                                                .practice__stars
+                                                    ul.practice__stars-list
+                                                        - for (let i = 0; i < 5; i++)
+                                                            li.practice__stars-itme
+                                                                .practice__stars-pic
+                                                                    .practice__stars-img
+                                            .practice__stars-title
+                                                h4 4.9 (124)                        
+                        .content-microsoft__right-pic
+                            a(href="#").content-microsoft__right-link
+                                img(src="./assets/img/avanset-new.png").content-microsoft__right-img       
+            include ../common/adv                           
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                
+
+
+               
+                      

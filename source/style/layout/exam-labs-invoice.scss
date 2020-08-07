@@ -1,0 +1,361 @@
+.exam-labs-popup {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .exam-labs-popup__content-main {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0, 0, 0, .2), 0 rem(7px) rem(20px) 0 rgba(0, 0, 0, .17);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rem(3px) solid #2b8aeb;
+    padding-bottom: rem(30px);
+    padding-top: rem(30px);
+  }
+
+  &__header-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: rem(15px);
+  }
+
+  &__header-right {
+    width: 50%;
+  }
+
+  &__pic {
+    width: rem(210px);
+    height: rem(33px);
+  }
+
+  &__header-title {
+
+    p {
+      @include Montserrat-Regular();
+      font-size: rem(15px);
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: right;
+      color: #2b2c30;
+    }
+  }
+}
+
+.exam-labs-popup__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(15px);
+  padding-top: rem(30px);
+
+  .exam-labs-popup__content-left {
+    width: 15%;
+  }
+
+  .exam-labs-popup__content-right {
+    padding-top: rem(14px);
+    width: 80%;
+  }
+}
+
+.exam-labs-popup__content-left-title {
+
+  h3 {
+    @include Montserrat-Regular();
+    font-size: rem(15px);
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2b2c30;
+    padding-top: rem(15px);
+  }
+
+  h4 {
+    @include Montserrat-Regular();
+    font-size: rem(15px);
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2b2c30;
+  }
+}
+
+.exam-labs-popup__content-general {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(30px);
+}
+
+.exam-labs-popup__content-left {
+  width: 15%;
+}
+
+.exam-labs-popup__content-right {
+  width: 80%;
+}
+
+.exam-labs-popup__content-right-title {
+
+
+  h3 {
+    @include Montserrat-Regular();
+    font-size: rem(15px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7a8ea5;
+    padding-bottom: rem(15px);
+    line-height: 1.67;
+  }
+
+  h4 {
+      @include Montserrat-Regular();
+      font-size: rem(15px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+      color: #7a8ea5;
+  }
+
+  span {
+    font-weight: 600;
+    color: #183557;
+  }
+}
+
+.exam-labs-popup__table {
+  border: rem(1px) solid $border-color;
+}
+
+.exam-labs-popup__table-header {
+  display: flex;
+}
+
+.exam-labs-popup__table-header-desc {
+  width: 60%;
+  border-right: rem(1px) solid $border-color;
+  padding: rem(15px) rem(30px);
+  background: $background;
+}
+
+.exam-labs-popup__table-header-column {
+  width: 20%;
+  border-right: rem(1px) solid $border-color;
+  padding: rem(15px) rem(30px);
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.exam-labs-popup__table-header-title {
+
+  h3 {
+    font-size: rem(13px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7a8ea5;
+  }
+}
+
+.exam-labs-popup__table-order {
+  display: flex;
+}
+
+.exam-labs-popup__table-order-heading {
+
+  h3 {
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2b2c30;
+  }
+}
+
+.exam-labs-popup__table-order-desc {
+  width: 60%;
+  border-right: rem(1px) solid $border-color;
+  border-top: rem(1px) solid $border-color;
+  padding: rem(15px) rem(30px);
+  display: flex;
+  align-items: center;
+}
+
+.exam-labs-popup__table-order-column {
+  width: 20%;
+  border-right: rem(1px) solid $border-color;
+  border-top: rem(1px) solid $border-color;
+  padding: rem(15px) rem(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.exam-labs-popup__table-header-title {
+
+  h3 {
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #7a8ea5;
+  }
+}
+
+.exam-labs-popup__table-general {
+  display: flex;
+  border: rem(1px) solid $border-color;
+  border-top: 0;
+  margin-bottom: rem(45px);
+}
+
+.exam-labs-popup__table-list {
+  width: 80%;
+  border: rem(1px) solid $border-color;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.exam-labs-popup__table-list-row {
+  padding: rem(15px) rem(30px);
+  border-bottom: rem(1px) solid $border-color;
+  background: $background;
+}
+
+.exam-labs-popup__table-list-price {
+  width: 20%;
+}
+
+.exam-labs-popup__table-list-title {
+
+  h3 {
+    @include GothamPro-Medium();
+    font-size: rem(13px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7a8ea5;
+  }
+}
+
+.exam-labs-popup__table-list-heading {
+
+  h3 {
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b2c30;
+  }
+}
+
+.exam-labs-popup__table-list-row-height {
+  padding: rem(14px) rem(30px);
+  border-bottom: rem(1px) solid $border-color;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.exam-labs-popup__table-thanks {
+  padding-bottom: rem(45px);
+
+  h2 {
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b2c30;
+  }
+}
+
+.exam-labs-popup__table-site {
+  text-align: center;
+  padding-bottom: rem(30px);
+}
+
+.exam-labs-popup__table-link {
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b8aeb;
+    text-decoration: none;
+}
+
+.exam-labs-popup__content-all-files {
+  padding: rem(30px);
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+

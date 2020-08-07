@@ -1,0 +1,293 @@
+extends ../_template
+
+block variables
+    - var title = 'FAQ'
+
+block content
+    .wrapper
+        section.section.faq-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-preorder
+                .practice-row.practice-row--preorder
+                    .container
+                        .practice__general-row
+                            .practice__title
+                                h4 practice exams:
+                            .practice__nav
+                                nav.practice__navigation
+                                    ul.practice__navigation-list
+                                        li.practice__navigation-item.practice__navigation-item--microsoft
+                                            a(href="#").practice__navigation-link Microsoft
+                                        li.practice__navigation-item.practice__navigation-item--cisco
+                                            a(href="#").practice__navigation-link Cisco
+                                        li.practice__navigation-item.practice__navigation-item--comptia
+                                            a(href="#").practice__navigation-link CompaTIA
+                                        li.practice__navigation-item.practice__navigation-item--redhat
+                                            a(href="#").practice__navigation-link RedHat
+                                        li.practice__navigation-item.practice__navigation-item--citrix
+                                            a(href="#").practice__navigation-link Citrix
+                                        li.practice__navigation-item.practice__navigation-item--hp
+                                            a(href="#").practice__navigation-link HP
+                                        li.practice__navigation-item.practice__navigation-item--ibm
+                                            a(href="#").practice__navigation-link IBM
+                                        li.practice__navigation-item.practice__navigation-item--checkpoint
+                                            a(href="#").practice__navigation-link CheckPoint
+                                        li.practice__navigation-item.practice__navigation-item--ciw
+                                            a(href="#").practice__navigation-link CIW
+                                        li.practice__navigation-item.practice__navigation-item--novell
+                                            a(href="#").practice__navigation-link Novell
+                                        li.practice__navigation-item.practice__navigation-item--vmware
+                                            a(href="#").practice__navigation-link WMware
+                                        li.practice__navigation-item.practice__navigation-item--other
+                                            a(href="#").practice__navigation-link Other
+            .search
+                .container
+                    .search__title
+                        h1 No question left unanswered. No bug left unsolved.
+            .questions
+                .container.container--width-faq
+                    .questions__blocks
+                        .questions__blocks-wrapper
+                            a(href="#").questions__link
+                                .questions__blocks-one
+                                    .questions__blocks-pic
+                                        .questions__blocks-image
+                                            img(src="./assets/img/icon-general-questions.svg")
+                                    .questions__blocks-text.questions__blocks-text--padding
+                                        h3 General <br> Questions
+                            a(href="#").questions__link
+                                .questions__blocks-two
+                                    .questions__blocks-pic
+                                        .questions__blocks-image
+                                            img(src="./assets/img/icon-vce.svg")
+                                    .questions__blocks-text
+                                        h3 About VCE Files <br> and Software
+                        .questions__blocks-wrapper
+                            a(href="#").questions__link
+                                .questions__blocks-three
+                                    .questions__blocks-pic
+                                        .questions__blocks-image
+                                            img(src="./assets/img/icon-premium-files.svg")
+                                    .questions__blocks-text
+                                        h3 Premium <br> Files
+                            a(href="#").questions__link
+                                .questions__blocks-four
+                                    .questions__blocks-pic
+                                        .questions__blocks-image
+                                            img(src="./assets/img/icon-tech-details.svg")
+                                    .questions__blocks-text
+                                        h3 Account and Other <br> Technical Details
+            .faq-information
+                .container.container--changed.container--width-section
+                    .information__title.information__title--padding
+                        .content-responsive__form
+                            form.content-responsive__form-element
+                                .content-responsive__form-search
+                                    input(type="search" placeholder="Find your question").content-responsive__form-search-input.content-responsive__form-search-input--background-color
+                                .content-responsive__form-button 
+                                    button(type="submit").content-responsive__form-button-element Search
+            include ../common/_acco-responsive            
+            .general-questions-wrapper
+                .general-questions
+                    .container.container--width-faq
+                        .general-questions__acco-line
+                            .general-questions__acco-line-elements
+                                .general-questions__acco-line-elements-all
+                                    .general-questions__contact-title
+                                        h3#general-block General questions
+                                    .general-questions__acco
+                                        ul.general-questions__acco-list
+                                            li.general-questions__acco-item.general-questions__acco-item--border-bottom
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') What is Exam-labs.tk?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-question
+                                                    p
+                                                        | ExamLabs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.        
+                                                .general-questions__acco-content
+                                                    p
+                                                        | Exam-labs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                                                        | Please note that Exam-labs is basically an information sharing platform: we do not sell software, neither do we support or troubleshoot it (keep reading to find out where you can get your VCE software). All we do is let people share their VCE uploads, download files and post their feedback.
+                                            li.general-questions__acco-item
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') What exactly are VCE files?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-content
+                                                    p
+                                                        | VCE (Virtual CertExam) is a file #[a(href="#") format that] realistically realistically simulates IT exam environment, allowing for the most convenient exam  preparation you can get - in the convenience of your own home or on the go. If you have ever seen IT exam simulations, chances are, they were in the VCE format.     For details on how to create, use and convert VCE files, please refer to the separate section below.
+                                            li.general-questions__acco-item
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') Who can upload the files?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-content
+                                                    p
+                                                        | All files are uploaded by Exam-labs community members. We encourage everyone who has recently taken an exam and/or has come across some braindumps that have  turned out to be true to share this information with the community by creating and uploading VCE files.
+                                            li.general-questions__acco-item
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') Who can download the files?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-content
+                                                    p
+                                                        | The files may be downloaded by individuals for their personal use - your exam preparation. This means that downloading files for commercial use/reselling is not  permitted. Exam-labs reserves the right to block users suspected of reselling the files at our sole discretion.
+                                            li.general-questions__acco-item
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') How many files can I upload/download per day?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-content
+                                                    p
+                                                        | You can upload an unlimited number of VCE files. Downloading is restricted to maximum 15 files per day. The limit was imposed with the goal to prevent commercial     use of VCE files created by our members.
+                                .general-questions__acco-line-elements-all
+                                    .general-questions__contact-title
+                                        h3#general-block General questions
+                                    .general-questions__acco
+                                        ul.general-questions__acco-list
+                                            li.general-questions__acco-item.general-questions__acco-item--border-bottom
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') What is Exam-labs.tk?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-question
+                                                    p
+                                                        | ExamLabs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                                                .general-questions__acco-content
+                                                    p
+                                                        | Exam-labs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                                                        | Please note that Exam-labs is basically an information sharing platform: we do not sell software, neither do we support or troubleshoot it (keep reading to find out where you can get your VCE software). All we do is let people share their VCE uploads, download files and post their feedback.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') What exactly are VCE files?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | VCE (Virtual CertExam) is a file #[a(href="#") format that] realisticallyformat that realistically simulates IT exam environment, allowing for the most convenient exam preparation you can get - in the convenience of your own home or on the go. If you have ever seen IT exam simulations, chances are, they were in the VCE format. For details on how to create, use and convert VCE files, please refer to the separate section below.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') Who can upload the files?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | All files are uploaded by Exam-labs community members. We encourage everyone who has recently taken an exam and/or has come across some braindumps that have turned out to be true to share this information with the community by creating and uploading VCE files.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') Who can download the files?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | The files may be downloaded by individuals for their personal use - your exam preparation. This means that downloading files for commercial use/reselling is not permitted. Exam-labs reserves the right to block users suspected of reselling the files at our sole discretion.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') How many files can I upload/download per day?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | You can upload an unlimited number of VCE files. Downloading is restricted to maximum 15 files per day. The limit was imposed with the goal to prevent commercial use of VCE files created by our members.                    
+                                .general-questions__acco-line-elements-all
+                                    .general-questions__contact-title
+                                        h3#general-block General questions
+                                    .general-questions__acco
+                                        ul.general-questions__acco-list
+                                            li.general-questions__acco-item.general-questions__acco-item--border-bottom
+                                                .general-questions__all
+                                                    .general-questions__acco-line
+                                                        a.general-questions__acco-trigger(href='#') What is Exam-labs.tk?
+                                                    .general-questions__acco-sign
+                                                        .general-questions__acco-sign-top
+                                                        .general-questions__acco-sign-bottom
+                                                .general-questions__acco-question
+                                                    p
+                                                        | ExamLabs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                                                .general-questions__acco-content
+                                                    p
+                                                        | Exam-labs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                                                        | Please note that Exam-labs is basically an information sharing platform: we do not sell software, neither do we support or troubleshoot it (keep reading to find out where you can get your VCE software). All we do is let people share their VCE uploads, download files and post their feedback.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') What exactly are VCE files?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | VCE (Virtual CertExam) is a file #[a(href="#") format that] realistically simulates IT exam environment, allowing for the most convenient exam preparation you can get - in the convenience of your own home or on the go. If you have ever seen IT exam simulations, chances are, they were in the VCE format. For details on how to create, use and convert VCE files, please refer to the separate section below.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') Who can upload the files?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | All files are uploaded by Exam-labs community members. We encourage everyone who has recently taken an exam and/or has come across some braindumps that have turned out to be true to share this information with the community by creating and uploading VCE files.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') Who can download the files?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | The files may be downloaded by individuals for their personal use - your exam preparation. This means that downloading files for commercial use/reselling is not permitted. Exam-labs reserves the right to block users suspected of reselling the files at our sole discretion.
+                                        li.general-questions__acco-item
+                                            .general-questions__all
+                                                .general-questions__acco-line
+                                                    a.general-questions__acco-trigger(href='#') How many files can I upload/download per day?
+                                                .general-questions__acco-sign
+                                                    .general-questions__acco-sign-top
+                                                    .general-questions__acco-sign-bottom
+                                            .general-questions__acco-content
+                                                p
+                                                    | You can upload an unlimited number of VCE files. Downloading is restricted to maximum 15 files per day. The limit was imposed with the goal to prevent commercial use of VCE files created by our members.
+                            .general-questions__right-wrapper
+                                .general-questions__right
+                                    .general-questions__contact-form
+                                        .general-questions__contact-title
+                                            h2 Contact Form
+                                        .general-questions__contact-desc
+                                            p Please, contact us if you still can’t find answer for your problem.
+                                        .button-questions
+                                            a(href="#").button-questions__link Contact
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_search-responsive-element
+    include ../common/_modal-how-it-works

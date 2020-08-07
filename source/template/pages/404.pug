@@ -1,0 +1,110 @@
+extends ../_template
+
+block variables
+  - var title = 'Home page'
+
+block content
+  .wrapper
+      section.section.margin-bottom
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        .header__adv 
+           .container   
+            .header__adv-title
+                h3 <span> Limited Time Discount Offer </span>
+                    span 10% Off - Ends in 
+                        span#ad-timer 10:10:10
+                .close-btn X
+        header.header
+            include ../common/_header
+        //- header.header 
+        //-     .header__first
+        //-         .container
+        //-             .header__first-all-elements
+        //-                 .header__first-left
+        //-                     .search-responsive-element#search-element
+        //-                         .search-responsive-pic
+        //-                             svg#svgElementFocus.button-svg-search-elem-responsive
+        //-                                 use(xlink:href='./assets/img/sprite.svg#group-35')
+        //-                     .toggle-btn#toggle-btn
+        //-                         span.toggle-class.toggle-class-top
+        //-                         span.toggle-class.toggle-class-middle
+        //-                         span.toggle-class.toggle-class-bottom
+        //-                     .header__first-logo
+        //-                         .header__first-url
+        //-                             a(href="index.html").header__first-link-logo
+        //-                                 img(src="./assets/img/logo-png2.png" alt="ExamLabs Home Page").header__first-img
+        //-                     .header__first-search
+        //-                         form.header__first-form
+        //-                             input#inputElementFocus.header__first-input(type='search', placeholder='Search')
+        //-                             button#buttonElementFocus.information__button-submit-general.information__button-submit-focus(type='submit')
+        //-                                 svg#svgElementFocus.button-svg-search-elem
+        //-                                     use(xlink:href='./assets/img/sprite.svg#group-35')
+        //-                 .header__first-right
+        //-                     .header__first-works
+        //-                         a(href="#").header__first-link How it works
+        //-                             .header__second-img
+        //-                                 svg.header__first-pic-elem
+        //-                                     use(xlink:href='./assets/img/sprite.svg#icon-question')
+        //-                     a(href="#").sign-ing.sign-ing-index
+        //-                         .header__first-enter-pic-entry
+        //-                             .header__first-laptop
+        //-                             .header__second-repsonsive-pic
+        //-                                 svg.header__user-pic#userPic
+        //-                                     use(xlink:href='./assets/img/sprite.svg#user')
+        //-                     a(href="#").header__first-vendor-link 
+        //-                         .header__first-vendor-page
+        //-                             .header__first-enter-picture
+        //-                                 .header__first-enter-image
+        //-                                     .header__first-enter-img-second-header
+        //-                             .header__first-enter-name
+        //-                                 p
+        //-                                     | My Account                      
+        //-                     .header__first-general
+        //-                         a(href="#").header__first-link-elem
+        //-                             .header__first-basket
+        //-                                 svg.header__first-pic
+        //-                                     use(xlink:href="assets/img/sprite.svg#icon-cart")
+        //-                                 .header__first-circle 12
+        //-                             .header__first-cart
+        //-                                 .header__first-link-cart Cart (1)    
+        .container
+          .header__second
+            include ../common/_nav    
+        .avanset-adv.avanset-adv--responsive
+          .container
+            .avanset-adv__wrapper
+              .avanset-adv__left 
+                .avanset-adv__title
+                  h3 Download Avanset VCE Software to Open Exam Files
+              .avanset-adv__right    
+                .avanset-adv__button
+                  .avanset-adv__url 
+                    a(href="#").avanset-adv__link Download      
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line
+        .align
+          .grid
+            .container
+              .grid__row
+                .grid__col
+                  .box.animation.animation--shake--vertical 4
+                .grid__col
+                  .box.animation.animation--reverse.animation--shake--vertical 0
+                .grid__col
+                  .box.animation.animation--shake--vertical 4
+              .grid__title
+                h2 Sorry, page not found
+              .grid__subtitle
+                h3 It may have moved, or it may no longer be available. Please try one of the following options:
+              ul.grid__list
+                li.grid__item
+                  .grid__item-text
+                    h4 Check the URL for proper spelling and capitalization.
+                li.grid__item
+                  .grid__item-text
+                    h4 Try to access the page directly from the 
+                      a(href="/") Exam-Labs homepage
+                      | . If the page has moved, please reset your bookmark
+        include ../common/_footer

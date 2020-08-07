@@ -1,0 +1,226 @@
+extends ../_template
+
+block variables
+    - var title = 'Cart'
+
+block content
+    .wrapper
+        section.section.cart-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-card
+                include ../common/_practice-line
+            .cart
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 Shopping Cart
+            .files__content
+                .container
+                    .files__table-general
+                        .files__table-left-vendor
+                            section.cart(style="display: none;")
+                                h2.cart__heading.heading-true Cart Contents
+                                .cart__products-wrapper
+                                    table.cart__products
+                                        colgroup
+                                            col.cart__col-1
+                                            col.cart__col-2
+                                        thead.cart__products-head
+                                            tr.cart__head-row
+                                                th.cart__head-cell.table-title-true Product Description
+                                                th.cart__head-cell.table-title-true Price
+                                        tbody.cart__products-body
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true Exam-Labs.com: 300-135 Premium Bundle
+                                                td.cart__body-cell.text-true.text-true--bold $24.99
+                                                    button.cart__button-remove
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true Dev-Labs.com: 250-348 Unlimited Pack
+                                                td.cart__body-cell.text-true.text-true--bold $1 599.99
+                                .cart__total-container
+                                    table.cart__total-table
+                                        tr
+                                            td.cart__total-word Total:
+                                            td.cart__total-number $924.97
+                                        tr
+                                            td.cart__total-word Total2:
+                                            td.cart__total-number $3 224.97
+                                        tr
+                                            td.cart__total-word Total-23:
+                                            td.cart__total-number $24.97
+                                .cart__button-submit-wrapper
+                                    button.cart__button-submit.button-true(type="button") Pay with card
+                                .cart__notify * - In order to avoid duplicate orders only 1 copy of each product can be purchased. If you are interested in multiple copies please contact <a class="cart__link link-true" href="#">support@devlabs.tk</a>
+
+
+                            section.cart
+                                h2.cart__heading.heading-true Cart Contents
+                                .cart__products-wrapper
+                                    table.cart__products
+                                        colgroup
+                                            col.cart__col-1
+                                            col.cart__col-2
+                                            col.cart__col-3
+                                            col.cart__col-4
+                                        thead.cart__products-head
+                                            tr.cart__head-row
+                                                th.cart__head-cell.table-title-true Product Description
+                                                th.cart__head-cell.table-title-true Qty *
+                                                th.cart__head-cell.table-title-true Price
+                                                th.cart__head-cell.table-title-true
+                                        tbody.cart__products-body
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true Unlimited Access to Premium Files: Semi-Annual Subscription
+                                                td.cart__body-cell.text-true 1
+                                                td.cart__body-cell.text-true
+                                                    .cart__price-wrapper
+                                                        span.cart__product-new-price $143.96
+                                                        .cart__new-price-wrapper
+                                                            span.cart__product-old-price $239.94
+                                                            span.cart__product-save-sum Save 40% Off
+                                                td.cart__body-cell
+                                                    button.cart__button-remove Remove
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true
+                                                    a.cart__link.link-true(href="#") Amazon AWS Certified Solutions Architect - Associate 2018 Training Course
+                                                td.cart__body-cell.text-true 1
+                                                td.cart__body-cell.text-true
+                                                    .cart__price-wrapper
+                                                        span.cart__product-new-price $143.96
+                                                        .cart__new-price-wrapper
+                                                            span.cart__product-old-price $239.94
+                                                            span.cart__product-save-sum Save 40% Off
+                                                td.cart__body-cell
+                                                    button.cart__button-remove Remove
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true
+                                                    a.cart__link.link-true(href="#") CompTIA CAS-003 Study Guide
+                                                    .cart__select-container
+                                                        span.cart__sample-text Get New Question Updates for:
+                                                        .categories__select-wrapper-card
+                                                            .categories__border-card
+                                                            .categories__triangle
+                                                            select.selectize.form-field(name="pay[country_id]" data-field="country_id" id="stripe_country")
+                                                                option(value) Select
+                                                                option(value="1") Afghanistan
+                                                                option(value="2") Albania
+                                                                option(value="3") Algeria
+                                                td.cart__body-cell.text-true 1
+                                                td.cart__body-cell.text-true
+                                                    .cart__price-wrapper
+                                                        span.cart__product-new-price $143.96
+                                                        .cart__new-price-wrapper
+                                                            span.cart__product-old-price $239.94
+                                                            span.cart__product-save-sum Save 40% Off
+                                                td.cart__body-cell
+                                                    button.cart__button-remove Remove
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true Exam-Pre-Order: 14981 test
+                                                td.cart__body-cell.text-true 1
+                                                td.cart__body-cell.text-true
+                                                    .cart__price-wrapper
+                                                        span.cart__product-new-price $143.96
+                                                        .cart__new-price-wrapper
+                                                            span.cart__product-old-price $239.94
+                                                            span.cart__product-save-sum Save 40% Off
+                                                td.cart__body-cell
+                                                    button.cart__button-remove Remove
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true
+                                                    a.cart__link.link-true(href="#") Juniper JN0-102 Premium File
+                                                    ul.cart__list
+                                                        li - 220-901 Premium File
+                                                        li - 220-901 Training Course
+                                                        li - 220-901 Study Guide
+                                                        li - 220-902 Premium File
+                                                        li - 220-902 Training Course
+                                                        li - 220-902 Study Guide
+                                                    .cart__select-container
+                                                        span.cart__sample-text Get New Question Updates for:
+                                                        .categories__select-wrapper-card
+                                                            .categories__border-card
+                                                            .categories__triangle
+                                                            select.selectize.form-field(name="pay[country_id]" data-field="country_id" id="stripe_country1")
+                                                                option(value) Select
+                                                                option(value="1") Afghanistan
+                                                                option(value="2") Albania
+                                                                option(value="3") Algeria
+                                                                option(value="4") American Samoa
+                                                td.cart__body-cell.text-true 1
+                                                td.cart__body-cell.text-true
+                                                    .cart__price-wrapper
+                                                        span.cart__product-new-price $143.96
+                                                        .cart__new-price-wrapper
+                                                            span.cart__product-old-price $239.94
+                                                            span.cart__product-save-sum Save 40% Off
+                                                td.cart__body-cell
+                                                    button.cart__button-remove Remove
+                                            tr.cart__body-row
+                                                td.cart__body-cell.text-true
+                                                    a.cart__link.link-true(href="#") CompTIA CompTIA A+ Bundle
+                                                    ul.cart__list
+                                                        li - SY0-501 Premium File
+                                                        li - SY0-501 Training Course
+                                                        li - SY0-501 Study Guide
+                                                td.cart__body-cell.text-true 1
+                                                td.cart__body-cell.text-true
+                                                    .cart__price-wrapper
+                                                        span.cart__product-new-price $143.96
+                                                        .cart__new-price-wrapper
+                                                            span.cart__product-old-price $239.94
+                                                            span.cart__product-save-sum Save 40% Off
+                                                td.cart__body-cell
+                                                    button.cart__button-remove Remove
+                                .cart__total-container
+                                    .cart-contents-block__promotion-code-another-title(style="display: none;")
+                                        h3 Promotion code 'SPRING40': 40.00% discount
+                                        a.recycle-bin(href="#")
+                                            img(src="/static/img/recycle-bin.svg")
+                                    .cart__coupon-text.cart__coupon-text--cart(style="display: none;") Do you have promotion code?
+                                    .coupon__wrapper.coupon__wrapper--cart
+                                        form(id="promo-form" action="http://www.devlabs.tk/checkout" method="post")
+                                            input(name="act" value="update" type="hidden")
+                                            label.coupon__label
+                                                span Promotion code:
+                                            .coupon__input-wrapper
+                                                input.coupon__field.promo-input(type="text" name="promocode")
+                                                button.coupon__submit.button-true(type="submit") Apply
+                                            .val_error
+                                    table.cart__total-table
+                                        tr
+                                            td.cart__total-word Subtotal:
+                                            td.cart__total-number $924.97
+                                        tr
+                                            td.cart__total-word Discount:
+                                            td.cart__total-number $3 224.97
+                                        tr
+                                            td.cart__total-word Total:
+                                            td.cart__total-number $24.97
+                                .cart__button-submit-wrapper
+                                    button.cart__button-submit.button-true(type="button") Checkout
+                                .cart__notify * - In order to avoid duplicate orders only 1 copy of each product can be purchased. If you are interested in multiple copies please contact <a class="cart__link link-true" href="#">support@devlabs.tk</a>
+
+                    
+                        <div class="vendor__table-right vendor__table-right--responsive">
+                            <div class="content-microsoft__right-pic-sign-in">
+                                <a class="content-microsoft__right-link" href="https://www.avanset.com" rel="nofollow" target="_blank">
+                                    <img class="content-microsoft__right-img" src="/assets/img/avanset-new.png">
+                                </a>
+                            </div>
+                        </div>
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works

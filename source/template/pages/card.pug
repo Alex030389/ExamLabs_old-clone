@@ -1,0 +1,286 @@
+extends ../_template
+
+block variables
+    - var title = 'Cart'
+
+block content
+    .wrapper
+        section.section.first-screen
+            header.header.header--height.header--checkout
+                .header__first
+                    .container
+                        .header__first-general-block.header__first-general-block--checkout
+                            .header__first-logo.header__first-logo--checkout
+                                .header__first-url
+                                    a.header__first-link-logo(href="/")
+                                        img.header__first-img(src="./assets/img/logo-png2.png")
+            .cart
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a.breadcrumbs__url(href="/") Home
+                                .breadcrumbs__text
+                                    h3 Checkout
+            .cart__content.margin-bottom
+                .cart__title
+                    .container.container--width-95
+                        h2 Secure Billing Information
+                        .your-cart-responsive
+                            h3 Your Cart
+                .cart__general
+                    .container.container--flex-second
+                        .cart__left.cart__left--padding
+                            form(id="pay-form" action="#" method="post")
+                                .cart__form
+                                    .cart__form-general
+                                        .cart__form-left
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 Full name 
+                                                        span *
+                                                .cart__form-input-line
+                                                    input.cart__form-input.form-field(name="pay[full_name]" data-field="full_name" id="stripe_name" type="text")
+                                                .val_error
+                                        .cart__form-right
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 Email 
+                                                        span *
+                                                .cart__form-input-line
+                                                    input.cart__form-input.form-field(value="sam@testking.com" disabled="disabled" name="pay[email]" data-field="email" type="email")
+                                                .val_error
+                                    .cart__user-place
+                                        .cart__user-country-new
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 Country 
+                                                        span *
+                                                .cart__form-input-line-new
+                                                    .categories__select
+                                                        .categories__select-wrapper-card
+                                                            .categories__border-card
+                                                            .categories__triangle
+                                                            select.selectize.form-field(name="pay[country_id]" data-field="country_id" id="stripe_country")
+                                                                option(value) Select
+                                                                option(value="1") Afghanistan
+                                                                option(value="2") Albania
+                                                                option(value="3") Algeria
+                                                                option(value="4") American Samoa
+                                                                option(value="5") Andorra
+                                                                option(value="6") Angola
+                                                                option(value="7") Afghanistan
+                                                                option(value="8") Albania
+                                                                option(value="9") Algeria
+                                                                option(value="10") American Samoa
+                                                                option(value="11") Andorra
+                                                                option(value="12") Angola
+                                                    .val_error
+                                        .cart__user-state
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 State/Province  
+                                                        span *
+                                                .cart__form-input-line
+                                                    input.cart__form-input.form-field(name="pay[state]" data-field="state" id="stripe_state" type="text")
+                                                .val_error
+                                        .cart__user-city
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 City 
+                                                        span *
+                                                .cart__form-input-line
+                                                    input.cart__form-input.form-field(name="pay[city]" data-field="city" id="stripe_city" type="text")
+                                                .val_error
+                                    .cart__user-address
+                                        .cart__user-address-line
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 Address 
+                                                        span *
+                                                .cart__form-input-line
+                                                    input.cart__form-input.form-field(name="pay[address]" data-field="address" id="stripe_address" type="text")
+                                                .val_error
+                                        .cart__user-zip
+                                            label.cart__form-label.form-element
+                                                .cart__form-title
+                                                    h4 Zip/Postal 
+                                                        span *
+                                                .cart__form-input-line
+                                                    input.cart__form-input.form-field.address_zip(name="pay[zip]" data-field="zip" id="stripe_zip" type="text")
+                                                .val_error
+                                .card__information
+                                    .card__title
+                                        h2 Credit Card Information
+                                    .card__form
+                                        .card__form-number
+                                            .card__form-general
+                                                .card__form-card-number
+                                                    label.card__form-label-card
+                                                        .card__form-title.form-element
+                                                            h4 Card Number 
+                                                                span *
+                                                            .card__form-input-line
+                                                                input.card__form-input.form-field.card-number(name="pay[card_number]" data-field="card_number" type="text" placeholder="0000 0000 0000 0000" maxlength="19")
+                                                                .card__input-pic
+                                                                    i.general-sprite.general-sprite-icon-lock-grey
+                                                            .val_error
+                                                .cart__user-place-general-block
+                                                    .cart__user-place.cart__user-place--width
+                                                        .cart__user-country
+                                                            label.cart__form-label-date.form-element
+                                                                .cart__form-title
+                                                                    h4 Expiration date 
+                                                                        span *
+                                                                .cart__form-input-line.cart__form-input-line--width
+                                                                    .categories__select
+                                                                        .categories__select-wrapper-card
+                                                                            .categories__border-card.categories__border-card--position
+                                                                            .categories__triangle
+                                                                            select.selectize.form-field(data-field="card_expired_month" id="card-expiry-month" name="pay[card_expired_month]")
+                                                                                option 1
+                                                                                option 2
+                                                                                option 3
+                                                                                option 4
+                                                                                option 5
+                                                                                option 6
+                                                                                option 7
+                                                                                option 8
+                                                                                option 9
+                                                                                option 10
+                                                                                option 11
+                                                                                option 12
+                                                .cart__user-place-general-block
+                                                    .cart__user-place
+                                                        .cart__user-country.form-element
+                                                            label.cart__form-label-year
+                                                                .cart__form-title-hidden
+                                                                    br
+                                                                .cart__form-input-line.cart__form-input-line--width
+                                                                    .categories__select
+                                                                        .categories__select-wrapper-card
+                                                                            .categories__border-card.categories__border-card--position
+                                                                            .categories__triangle
+                                                                            select.selectize.form-field(name="pay[card_expired_year]" data-field="card_expired_year" id="card-expiry-year")
+                                                                                option 19
+                                                                                option 20
+                                                                                option 21
+                                                                                option 22
+                                                                                option 23
+                                                                                option 24
+                                                                                option 25
+                                                                                option 26
+                                                                                option 27
+                                                                                option 28
+                                                            .val_error
+                                                .card__form-title.form-element.card__form-title--width
+                                                    label.cart__form-label-security
+                                                        h4 Security Code (CVV)
+                                                            span *
+                                                        .card__form-input-line.card__form-input-line--width-50
+                                                            input.cart__form-input.form-field(name="pay[card_cvv]" data-field="card_cvv" id="card-cvv" type="text" maxlength="4")
+                                                            .card__form-security-pic
+                                                                i.general-sprite.general-sprite-icon-card
+                                                        .val_error--general-wrapper
+                                                            .val_error
+                                        .card__form-security
+                                            label.card__form-label-second.form-element
+                                                .val_error
+                                                .checkbox.form-element
+                                                    .checkbox-line
+                                                        label.checkbox-label
+                                                            input.checkbox-input.form-field.accept-billing-policy(data-domain="Devlabs.tk" data-field="accept_billing_policy" type="checkbox" name="checkbox-test")
+                                                            span.checkbox-img
+                                                            .checkbox-desc
+                                                                p I have read and agree to Devlabs.tk 
+                                                                    a(href="#" id="billing-policy-modal") Billing Policy
+                                            .button-card
+                                                button.button-submit.button-submit--card(type="submit") Pay
+                                                p.payment-error
+                            .card__pay-methods
+                                .card__pay-logos
+                                    .card__pay-logos-responsive
+                                        .card__pay-pic-visa
+                                            img.card__pay-img(src="./assets/img/visa-logo.png")
+                                        .card__pay-pic-master-card
+                                            img.card__pay-img(src="./assets/img/mastercard-logo.png")
+                                        .card__pay-pic-maestro-card
+                                            img.card__pay-img(src="./assets/img/maestrocard-logo.png")
+                                    .card__pay-logos-responsive
+                                        .card__pay-pic-american-express
+                                            img.card__pay-img(src="./assets/img/american-express-card-logo.png")
+                                        .card__pay-pic-solo
+                                            img.card__pay-img(src="./assets/img/solo-logo.png")
+                                        .card__pay-pic-jcb
+                                            img.card__pay-img(src="./assets/img/jcb-logo.png")
+                                .card__pay-text
+                                    p Your purchase with Exam-Labs is safe and fast. Your products will be available for immediate download after your payment has been received.
+                        .card__right.cart__right--padding
+                            .card__right-wrapper
+                                .card__right-title.card__right-title--border-visibility
+                                    h2 Your cart (1)
+                                ul.cart__product-list
+                                    li.cart__product-item
+                                        .cart__product-all-info-wrpper
+                                            .cart__product-description-wrapper
+                                                .cart__product-complectation
+                                                    a.cart__product-link(href="#") CompTIA A+ Premium Bundle
+                                                span.cart__product-title XML Master Certification
+                                            p.cart__product-price.cart__product-price--no-order
+                                                span.cart__product-old-price $169.99
+                                                span.cart__product-new-price $269.99
+                                                br.cart__product-price-break
+                                                span.cart__product-save-sum Save 40% Off
+                                        .cart__select-wrapper
+                                            .cart__border-card
+                                            .cart__triangle
+                                            select.selectize.form-field(name="trial")
+                                                option(value="30-days-free") 30 Days Free
+                                                option(value="40-days-free") 40 Days Free
+                                                option(value="50-days-free") 50 Days Free
+                                                option(value="60-days-free") 60 Days Free
+                                                option(value="70-days-free") 70 Days Free
+                                                option(value="80-days-free") 80 Days Free
+                                        button.cart__button-remove(type="button") Remove
+                                    li.cart__product-item
+                                        a.cart__product-link(href="#") 70-743 Premium File
+                                        span.cart__product-title Microsoft
+                                        p.cart__product-price
+                                            span.cart__product-old-price $69.99
+                                            span.cart__product-new-price $69.99
+                                            br.cart__product-price-break
+                                            span.cart__product-save-sum Save 40% Off
+                                        .cart__select-wrapper
+                                            .cart__border-card
+                                            .cart__triangle
+                                            select.selectize.form-field(name="trial")
+                                                option(value="30-days-free") 30 Days Free
+                                                option(value="40-days-free") 40 Days Free
+                                                option(value="50-days-free") 50 Days Free
+                                                option(value="60-days-free") 60 Days Free
+                                                option(value="70-days-free") 70 Days Free
+                                                option(value="80-days-free") 80 Days Free
+                                        button.cart__button-remove(type="button") Remove
+                                .cart__total-wrapper
+                                    span.cart__subtotal-text Subtotal
+                                    span.cart__subtotal-sum $139.98
+                                    //- a.cart__coupon-link Do you have a coupon?
+                                    p.coupon__wrapper
+                                        form(action="#")
+                                            label.coupon__label(for="coupon-field")
+                                                span Coupon Number
+                                            input.coupon__field.form-field(type="text" id="coupon-field" name="coupon-number")
+                                            button.coupon__submit.button-true Apply
+                                    span.cart__total-text Total price
+                                    span.cart__total-sum $139.98
+                            section.help
+                                h3.help__heading Need Help? Contact Us
+                                a.help__link(href="#") Customer Support
+
+                            .cart__title-responsive-element
+                                h2 Secure Billing Information
+            include ../common/_modal-definitions
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works

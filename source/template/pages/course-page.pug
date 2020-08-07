@@ -1,0 +1,393 @@
+extends ../_template
+
+block variables
+    - var title = 'Course Page'
+
+block content
+    .wrapper
+        section.section
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Training Course    
+                                .breadcrumbs__text
+                                    h3 CCNA Collaboration Implementing Cisco Video Network Devicrs (CIVND)
+                .content-first
+                    .container
+                        .content__general
+                            .content__left
+                                .content__left-pic
+                                    img(src="./assets/img/code.png").content__left-img
+                            .content__right
+                                .content__right-title.content__right-title--padding-bottom
+                                    h2 CCNA Collaboration Implementing Cisco Collaboration Devices (CICD)
+                                .content__right-general
+                                    .content__right-price-second
+                                        ul.content__right-list
+                                            li.content__right-item.content__right-item--start
+                                                .content__right-pic
+                                                    i.spritesheet-icons.spritesheet-icon-timer-hours
+                                                .content__right-text
+                                                    h4 43 hours
+                                            li.content__right-line
+                                            li.content__right-item.content__right-item--center
+                                                .content__right-pic
+                                                    i.spritesheet-icons.spritesheet-icon-user
+                                                .content__right-text
+                                                    h4 43 students
+                                            li.content__right-line
+                                            li.content__right-item.content__right-item--right
+                                                .content__right-pic
+                                                    i.spritesheet-icons.spritesheet-star-orange
+                                                .content__right-text
+                                                    h4 4.9 (125) 
+                                    .content__right-price
+                                        .content__right-wrapper
+                                            .content__old-price 
+                                                h3 $43.99
+                                            .content__right-amount
+                                                h3 $29.99
+                                        form.content__right-form.content__right-form--course
+                                            .content__right-form-button
+                                                button(type="submit").content__right-form-input.content__right-form-input--cart Add to Cart
+                                .content__right-description 
+                                    p PDFs and exam guides are not so efficient, right? Prepare for your Cisco examination wiht our training course. The 210-065 course contains a complete batch of videos that will provide you with profound and thorough knowledge related to Cisco certification exam. Pass the Cisco 210-065 test with flying colors.           
+                        .certification__content
+                                        .certification__title
+                                            h2 Course Structure
+                                        .practice__heading-responsive-index-page
+                                            h2 Course Structure
+                                            a(href="#").practice__heading-link See All
+                                        .video-slider-wrapper
+                                            .video-slider.swiper-container.s8
+                                                ul.video-slider__list.swiper-wrapper
+                                                    - for (let i = 0; i < 4; i++)
+                                                        li.video-slider__item.swiper-slide
+                                                            .structure__blocks-circle 1
+                                                            .structure__blocks-general
+                                                                .structure__blocks-burger
+                                                                    .structure__blocks-img
+                                                                .structure__blocks-hours
+                                                                    h4 2 hours
+                                                            .structure__blocks-all
+                                                                .structure__blocks-heading
+                                                                    h3 Domain 3 : Information Security Program Development and Management
+                                                            .structure__blocks-bottom
+                                                                h3 1 lecture / -2 hours
+                                                    li.video-slider__item.swiper-slide
+                                                        .structure__blocks-circle 1
+                                                        .structure__blocks-general
+                                                            .structure__blocks-burger
+                                                                .structure__blocks-img
+                                                            .structure__blocks-hours
+                                                                h4 2 hours
+                                                        .structure__blocks-all
+                                                            .structure__blocks-heading
+                                                                h3 Domain 3 : Information Security Program Development and Management Domain 3 : Information Security Program Development and Management Domain 3 : Information Security Program Development and Management
+                                                        .structure__blocks-bottom
+                                                            h3 1 lecture / -2 hours
+                                                    - for (let i = 0; i < 8; i++)
+                                                        li.video-slider__item.swiper-slide
+                                                            .structure__blocks-circle 1
+                                                            .structure__blocks-general
+                                                                .structure__blocks-burger
+                                                                    .structure__blocks-img
+                                                                .structure__blocks-hours
+                                                                    h4 2 hours
+                                                            .structure__blocks-all
+                                                                .structure__blocks-heading
+                                                                    h3 Domain 3 : Information Security Program Development and Management
+                                                            .structure__blocks-bottom
+                                                                h3 1 lecture / -2 hours
+                                            .swiper-button-prev
+                                                img(src="./assets/img/left.png")
+                                            .swiper-button-next
+                                                img(src="./assets/img/right.png")
+                                   
+                        .about-course-block 
+                            .about-course-block__title
+                                h2 About This Course
+                            .content__right-description 
+                                p Cisco 210-065, precisely known as Implementing Cisco Video Network Devices, will allow the students to. grab adequate knowledge that will help them in describing and implementing the Cisco Video solution. The Cisco 210-065 architectures consist of products… #[a(href="#") Read More]
+                        .files__content
+                            .files__table-general
+                                .content-general
+                                    .files__table-left-vendor
+                                        .files__title-vendor.files__title-vendor--responsive
+                                            h2 Pass Cisco CCNP 300-101 Exam in First Attempt Easily Real Exam Questions, Accurate & Verified Answers as Experienced in the Actual Test! Instant Download, 30 Days Free Update
+                                        .content-microsoft.content-microsoft--visibility
+                                            .content-microsoft__left
+                                                .content-microsoft__block
+                                                    .content-microsoft__block-left
+                                                        .content-microsoft__block-verify 
+                                                            img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                            .content-microsoft__block-heading
+                                                                h4 Verified by experts 
+                                                        .content-microsoft__block-bundle 
+                                                            img(src="./assets/img/bitmap-three-elems.png") 
+                                                        .content-microsoft__block-empty-elem 
+                                                            img(src="./assets/img/empty-elem.png")
+                                                            .content-microsoft__block-empty-elem-text  
+                                                                span You save 
+                                                                span $73.65    
+                                                        .content-microsoft__block-exams
+                                                            span 3 exams 
+                                                        .content-microsoft__block-link-elem 
+                                                            a(href="#") Get unlimited Access to All Premium Files 
+                                                    .content-microsoft__block-center
+                                                        .content-microsoft__block-heading
+                                                            h2 70-743 Premium Bundle 
+                                                        ul.content-microsoft__block-list
+                                                            li.content-microsoft__block-item
+                                                                .content-microsoft__block-pic
+                                                                    i.spritesheet-succes.spritesheet-tick
+                                                                .content-microsoft__block-title
+                                                                    h4 Premium File 719 Questions & Answers
+                                                            li.content-microsoft__block-item
+                                                                .content-microsoft__block-pic
+                                                                    i.spritesheet-succes.spritesheet-tick
+                                                                .content-microsoft__block-title
+                                                                    h4 Last Update: Dec 07, 2018
+                                                            li.content-microsoft__block-item
+                                                                .content-microsoft__block-pic
+                                                                    i.spritesheet-succes.spritesheet-tick
+                                                                .content-microsoft__block-title
+                                                                    h4 Training Course 98 Lectures
+                                                            li.content-microsoft__block-item
+                                                                .content-microsoft__block-pic
+                                                                    i.spritesheet-succes.spritesheet-tick
+                                                                .content-microsoft__block-title
+                                                                    h4 Study Guide 66 Pages 
+                                                    .content-microsoft__block-right.content-microsoft__block-right--position
+                                                        .content-microsoft__block-one
+                                                            h5 $110.48
+                                                            h4 $69,99
+                                                        .content-microsoft__block-two
+                                                            button(type="submit").content-microsoft__block-link Download Now
+                                                        .convinced 
+                                                            a(href="#") Not convinced?  
+                                                .certification__title 
+                                                    h2 Download Free Cisco 300-101 Exam Questions
+                                                table.table-certificate-bundle.table
+                                                    colgroup.table-certificate-bundle__col-1
+                                                    colgroup.table-certificate-bundle__col-2
+                                                    colgroup.table-certificate-bundle__col-3
+                                                    colgroup.table-certificate-bundle__col-4
+                                                    colgroup.table-certificate-bundle__col-5
+                                                    thead.table-certificate-bundle-header
+                                                        tr
+                                                            th.table-certificate-bundle-padding
+                                                                .table-certificate-bundle-title
+                                                                    h4 File name
+                                                            th.table-certificate-bundle-padding
+                                                                .table-certificate-bundle-title-padding
+                                                                    h4 Votes
+                                                            th.table-certificate-bundle-padding
+                                                                .table-certificate-bundle-title
+                                                                    h4 Size
+                                                            th.table-certificate-bundle-padding
+                                                                .table-certificate-bundle-title
+                                                                    h4 Downloads  
+                                                            th.table-certificate-bundle-padding
+                                                                .table-certificate-bundle-title
+                                                                    h4             
+                                                    tbody
+                                                        - for (let i = 0; i < 2; i++)
+                                                            tr
+                                                                td.first-screen__border
+                                                                    .first-screen__left-offer-right-body-url
+                                                                        a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                                                td.first-screen__border
+                                                                    .first-screen__left-offer-right-body-quantity
+                                                                        h3 4 
+                                                                td.first-screen__border
+                                                                    .first-screen__left-offer-files-number
+                                                                        h4 13.9 Mb
+                                                                td.first-screen__border
+                                                                    .first-screen__left-offer-files-number
+                                                                        h4 200  
+                                                                td.first-screen__border
+                                                                    .first-screen__left-offer-files-number
+                                                                        a(href="#") Download                     
+                                                .comments-form-split
+                                                    .comments__general
+                                                        .comments__title-general-new 
+                                                            h2 Comment 
+                                                        .comments__url 
+                                                            a(href="#").comments__link +Add Comment
+                                                    .comments-block-wrap
+                                                        .comments__section 
+                                                            - for (let i = 0; i < 2; i++)
+                                                                .comments__questions.comments__questions--padding
+                                                                    .comments__header
+                                                                        ul.comments__list
+                                                                            li.comments__item
+                                                                                .comments__name 
+                                                                                    h3 Alice
+                                                                                .comments__time 
+                                                                                    h4 January 17, 2019, 01:51 PM
+                                                                    .comments__body 
+                                                                        .comments__heading.comments__heading--position
+                                                                            h4 alice
+                                                                .comments__questions.comments__questions--padding 
+                                                                    .comments__header
+                                                                        ul.comments__list
+                                                                            li.comments__item
+                                                                                i.spritesheet-flags.sprite-IN
+                                                                            li.comments__item    
+                                                                                .comments__name 
+                                                                                    h3 Alice
+                                                                                .comments__time 
+                                                                                    h4 January 17, 2019, 01:51 PM
+                                                                    .comments__body 
+                                                                        .comments__heading.comments__heading--position
+                                                                            h4 It is a nice platform to enhance knowledge and expertise in the technical field.            
+                                                    .comments__submit
+                                                        .comments__title
+                                                            .comments__title__element
+                                                                h2 Add comment
+                                                        .comments__form-general
+                                                            form.comments__form#comment-form
+                                                                .comments__form-all.comments__form-all--padding-top
+                                                                    .comments__form-lines
+                                                                        label.comments__form-label-line.form-element
+                                                                            h4 Name <span>*</span>
+                                                                            input.comments__form-input.form-field(type="text" data-field="name" name="comment[name]")
+                                                                            .val_error
+                                                                    .comments__form-lines
+                                                                        label.comments__form-label-line.comments__form-label-line--margin-right.form-element
+                                                                            h4 Email <span>*</span>
+                                                                            input.comments__form-input.form-field(data-field="email" disabled="disabled" value="sam@testking.com" name="comment[email]" type="email")
+                                                                            .val_error
+                                                                    .comments__form-rating.comments__form-rating--stars
+                                                                        //- .comments__title.comments__title--padding
+                                                                        //-     h4 Rate file <span>*</span>
+                                                                        //- .comments__stars
+                                                                        //-     .rating-stars.text-center
+                                                                        //-         ul.comments__stars-list#stars
+                                                                        //-             li.star(title='Good', data-value='1')
+                                                                        //-                 svg.comments__stars-picture-empty
+                                                                        //-                     use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        //-             li.star(title='Good', data-value='2')
+                                                                        //-                 svg.comments__stars-picture-empty
+                                                                        //-                     use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        //-             li.star(title='Good', data-value='3')
+                                                                        //-                 svg.comments__stars-picture-empty
+                                                                        //-                     use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        //-             li.star(title='Excellent', data-value='4')
+                                                                        //-                 svg.comments__stars-picture-empty
+                                                                        //-                     use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        //-             li.star(title='Perfect', data-value='5')
+                                                                        //-                 svg.comments__stars-picture-empty
+                                                                        //-                     use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        h4.comments__form-rating-title Rate file 
+                                                                            span *
+                                                                        .comments__stars-list
+                                                                            input.visually-hidden(type="radio" name="rating" value="5" id="five-star")
+                                                                            label(for="five-star")
+                                                                            input.visually-hidden(type="radio" name="rating" value="4" id="four-star")
+                                                                            label(for="four-star")
+                                                                            input.visually-hidden(type="radio" name="rating" value="3" id="three-star")
+                                                                            label(for="three-star")
+                                                                            input.visually-hidden(type="radio" name="rating" value="2" id="two-star")
+                                                                            label(for="two-star")
+                                                                            input.visually-hidden(type="radio" name="rating" value="1" id="one-star")
+                                                                            label(for="one-star")
+                                                                .comments__form-field
+                                                                    label.comments__form-label-general.form-element
+                                                                        .comments__form-general-elements
+                                                                            .comments__title-general-padding
+                                                                                h4 Comment
+                                                                                span *
+                                                                            .comments__form-answer
+                                                                                h3 Comments will be moderated and published within 1-4 hours
+                                                                        textarea.comments__textarea-field.form-field(data-field="comment" name="comment[comment]")
+                                                                        .val_error
+                                                                .comments__form-verification
+                                                                    label.comments__form-label.form-element
+                                                                        .comments__title-general
+                                                                            h4 Verification
+                                                                            span *
+                                                                        .comments__form-verification-general
+                                                                            .comments__form-verification-left
+                                                                                input.comments__form-verification-input.form-field(autocomplete="off" name="comment[code]" data-field="code" type="text")
+                                                                            .comments__form-verification-right
+                                                                                .comments__form-verification-pic
+                                                                                    .comments__form-verification-bitmap
+                                                                                        img.comments__form-verification-bitmap__img(data-s="http://www.devlabs.tk/captcha?cid=FGP" src='http://www.devlabs.tk/captcha?cid=FGP')
+                                                                                .comments__form-verification-circle.animationRefresh
+                                                                                        img.image__form-verification-circle(src="./assets/img/icon-refresh.png")
+                                                                        .val_error
+                                                                    button(type="submit").button-submit Submit
+                                    .vendor__table-right
+                                        .practice__heading 
+                                            h3 Similar Courses
+                                        ul.practice__content-right-list-index
+                                            - for (let i = 0; i < 4; i++)
+                                                li.practice__content-right-item-elem
+                                                    .practice__content-right-img
+                                                        a(href="#").practice__content-right-link
+                                                            img(src="./assets/img/block.png").practice__content-right-pic-general
+                                                            .practice__content-right-img-overplap
+                                                                img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                                            .button-price
+                                                                .button-price__link $25,99
+                                                            .practice__title-number
+                                                                h4 70-463
+                                                                .practice__title-name
+                                                                    h2 CompTIA Security+
+                                                            span.line
+                                                            .practice__students-general
+                                                                .practice__students-first
+                                                                    .practice__students-title
+                                                                        h3 Students
+                                                                    .practice__line
+                                                                    .practice__quantity
+                                                                        h4 83
+                                                                .practice__students-second
+                                                                    .practice__students-title
+                                                                        h3 Duration
+                                                                    .practice__line
+                                                                    .practice__quantity
+                                                                        h4 2.5h
+                                                                .practice__students-third
+                                                                    .practice__students-title-sign-in-page
+                                                                        h3 Rating
+                                                                        h4 4.9 (124)
+                                                                    .practice__stars
+                                                                        ul.practice__stars-list
+                                                                            - for (let i = 0; i < 5; i++)
+                                                                                li.practice__stars-itme
+                                                                                    .practice__stars-pic
+                                                                                        .practice__stars-img
+                                                                .practice__stars-title
+                                                                    h4 4.9 (124)    
+            include ../common/adv
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart     
+            include ../common/_modal-video
+            include ../common/_vce-player                                                                
+                                                       

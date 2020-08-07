@@ -1,0 +1,630 @@
+extends ../_template
+
+block variables
+    - var title = 'Vendor page'
+
+block content
+    .wrapper
+        section.section.vendor
+            header.header
+                    .header__first
+                        .container.container--flex-align
+                            .header__first-left.header__first-left--width
+                                .search-responsive-element#search-element
+                                    .search-responsive-pic
+                                        img(src="./assets/img/search-responsive.png").search-responsive-img
+                                .toggle-btn#toggle-btn
+                                    span.toggle-class.toggle-class-top
+                                    span.toggle-class.toggle-class-middle
+                                    span.toggle-class.toggle-class-bottom
+                                .header__first-logo.header__first-logo--margin-left
+                                    a(href="index.html").header__first__link
+                                        img(src="./assets/img/logo-png2.png").header__first-img
+                                .header__first-search
+                                    form.header__first-form
+                                        label.header__first-label
+                                            input.header__first-input(type="search" placeholder="Search")
+                                            .header__first-search-img
+                                                img(src="assets/img/search.png")
+                            .header__first-right.header__first-right--width
+                                a(href="#").header__first-vendor-link 
+                                    .header__first-vendor-page
+                                        .header__first-enter-picture
+                                            .header__first-enter-image
+                                                .header__first-enter-img-second-header
+                                        .header__first-enter-name
+                                            p
+                                                | My Account
+                                a(href="sign-in.html").sign-ing
+                                    .header__first-enter-pic
+                                        img(src="./assets/img/entry.png").header__first-enter-img
+                                    .header__first-enter-pic-entry
+                                        svg.header__first-enter-pic-entry-img
+                                            use(xlink:href='./assets/img/sprite.svg#if_login')
+                                .header__first-general
+                                    .header__first-general
+                                        .header__first-basket
+                                            svg.header__first-pic
+                                                use(xlink:href="assets/img/sprite.svg#icon-cart")
+                                        .header__first-cart
+                                            h4 Cart (1)
+                    .container
+                        .header__second
+                            include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search  
+            .content-vendor
+                .practice__info-vendor
+                    .container
+                        .practice__info-general.practice__info-general--position
+                            .practice__info-left
+                                .practice__info-title
+                                    h2 You need Avanset VCE Software To Open Exam Files!
+                                .practice__info-text
+                                    h4 Avanset VCE Software available on the Windows, MacOS, iOS and Android.
+                            .practice__info-right
+                                .button.button--files
+                                    a(href="#").button__link Download
+            .section.files
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 New Files
+            .files__content-responsive
+                .container
+                    .files__title-vendor-responsive
+                        h2 Top Microsoft Exams
+                    .files__table-exams
+                        .files__table-exams-left 
+                            - for (let i = 0; i < 10; i++)
+                                .files__table-exams-number 
+                                    h4 156-215.80
+                        .files__table-exams-right 
+                            - for (let i = 0; i < 10; i++)
+                                .files__table-exams-url 
+                                    a(href="#").files__table-exams-link Microsoft.Pass4sure.70841..
+                    .button-load-more-index-page
+                        .button-load-more-index-page-pic
+                            i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                        a(href="#").button-load-link Load More
+                    .files__table-certification
+                        .files__title-vendor-responsive
+                            h3 Microsoft Certifications
+                        .files__table-certification-wrapper
+                            .files__table-certification-title 
+                                h4 mcsa
+                            .files__table-certification-url 
+                                a(href="#").files__table-certification-link Configuring and Deploying a Private Cloud with System Center 2012
+                        .files__table-certification-wrapper
+                            .files__table-certification-title 
+                                h4 MCSA: Cloud Platform
+                            .files__table-certification-url 
+                                a(href="#").files__table-certification-link Microsoft Certified Solutions Associate Cloud Platform
+                        .files__table-certification-wrapper
+                            .files__table-certification-title 
+                                h4 MCSA: Linux on Azure
+                            .files__table-certification-url 
+                                a(href="#").files__table-certification-link Microsoft Certified Solutions Associate Linux on Azure
+                        .files__table-certification-wrapper
+                            .files__table-certification-title 
+                                h4 MCSA: Linux on Azure
+                            .files__table-certification-url 
+                                a(href="#").files__table-certification-link Microsoft Certified Solutions Associate Cloud Platform  
+                        .files__table-certification-wrapper
+                            .files__table-certification-title 
+                                h4 MCSD: Application  Lifecycle Management
+                            .files__table-certification-url 
+                                a(href="#").files__table-certification-link Microsoft Certified Solutions Developer SharePoint Applications  
+                        .files__table-certification-wrapper
+                            .files__table-certification-title 
+                                h4 MCSD: SharePoint Applications
+                            .files__table-certification-url 
+                                a(href="#").files__table-certification-link Microsoft Certified Solutions Developer SharePoint Applications                  
+                    .button-load-more-index-page
+                        .button-load-more-index-page-pic
+                            i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                        a(href="#").button-load-link Load More            
+            .files__content
+                .container.container--flex-another
+                    .files__table-general.files__table-general--margin-bottom 
+                        .files__table-left-vendor
+                            .files__title-vendor
+                                h2 Top Microsoft Exams
+                            .files__table-description
+                                p.
+                                    AWS Certified Solutions Architect is a certification and training program, which is currently among the top IT certifications. The examination course is designed for the individuals that come with some good experience in designing applications, along with systems. AWS Certified Solutions Architect is a certification and training program, which is currently among the top IT certifications.
+                            include ../common/_responsive-content-vendor
+                            .files__table-cell-vendor
+                                table.table-vendor.table
+                                    thead.table__padding-vendor.table__padding-vendor--thead-width
+                                        tr.table__padding-full-width
+                                            th.table__padding-heading
+                                                h5 Exam
+                                            th.table__padding-title
+                                                h5 Title
+                                            th.table__padding-heading-second
+                                                h5 Files
+                                    tbody.tbody-width
+                                        - for (let i = 0; i < 15; i++)
+                                            tr.table-hover
+                                                td.table__cell-padding-numbers-vendor-page-number.table__cell-padding-numbers--padding-left-and-right  
+                                                    .color.table__cell-padding-numbers 70-247
+                                                td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right 
+                                                    .table__link.table__link--padding-left
+                                                        a(href="#").table__link Configuring and Deploying a Private Cloud with System Center 2012
+                                                td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right  
+                                                    .color 2
+                            .button-general
+                                .button-vendor
+                                    a(href="#").button-load__link See more
+                            .files__title-vendor
+                                h2 Microsoft Certifications        
+                            .files__table-cell-vendor
+                                table.table-vendor.table
+                                    thead.table__padding-vendor-border.table__padding-vendor--thead-width
+                                        tr.table__padding-full-width
+                                            th.table__padding-heading-width
+                                                h5 Certification name
+                                            th.table__padding-title
+                                                h5 Title
+                                            th.table__padding-heading-second
+                                                h5 Files
+                                    tbody.tbody-width
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right 
+                                                .color.table__cell-padding-numbers MCSA
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Configuring and Deploying a Private Cloud with System Center 2012
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2   
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers MCSA: Cloud Platform
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Associate Cloud Platform
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2  
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers MCSA: Linux on Azure
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Associate Linux on Azure
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2     
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers MCSD: Application <br> Lifecycle Management
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Developer Application Lifecycle Management (MCSD: Application Lifecycle Management)
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2  
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right 
+                                                .color.table__cell-padding-numbers MCSD: SharePoint Applications
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Developer SharePoint Applications (MCSD: SharePoint Applications)
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2   
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers MCSE: Cloud Platform and <br> Infrastructure
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Cloud Platform and Infrastructure
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right
+                                                .color 2   
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers MCSE: Communication
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Communication (MCSE: Communication)
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2   
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers  MCSE: Enterprise Devices <br> and Apps
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Enterprise Devices and Apps
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2     
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers  MCSA
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Enterprise Devices and Apps
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2 
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers  MCSA: Cloud Platform
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Enterprise Devices and Apps
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2   
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers  MCSA: Linux on Azure
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Enterprise Devices and Apps
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2
+                                        tr.table-hover
+                                            td.table__cell-padding-numbers-vendor-page-number-background.table__cell-padding-numbers--padding-left-and-right
+                                                .color.table__cell-padding-numbers  MCSE: Communication
+                                            td.table__cell-padding-numbers-vendor-page-content.table__cell-padding-numbers--padding-left-and-right
+                                                .table__link.table__link--padding-left
+                                                    a(href="#").table__link Microsoft Certified Solutions Expert Enterprise Devices and Apps
+                                            td.table__cell-padding-numbers-vendor-page-exam.table__cell-padding-numbers--padding-left-and-right 
+                                                .color 2                                                                                     
+                            .button-general
+                                .button-vendor
+                                    a(href="#").button-load__link See more
+                        .vendor__table-right
+                            .files__title-vendor
+                                h3 Hot Microsoft Tutorials
+                            ul.practice__content-right-list
+                                li.practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/third-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $29,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)
+            .slider-main-page
+                .container
+                    .trainig-course__title-vendor
+                      h2 Hot Training Courses
+                      a(href="#").practice__heading-link See All
+                    .swiper-container.s3
+                        .swiper-wrapper.slider-third-mobile
+                          li.practice__content-right-item-responsive-elem.swiper-slide
+                            a(href="#").practice__content-right-link    
+                                .practice__content-right-item-responsive-elem
+                                    .practice__content-right-img-overplap
+                                        img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                    .button-price
+                                        .button-price__link $25.99
+                                    .practice__title-number-responsive
+                                        .practice__title-name-responsive
+                                            h2 CCNP <br> Implementing <br> Cisco IP Routing
+                            li.practice__content-right-item-responsive-elem.swiper-slide
+                              a(href="#").practice__content-right-link    
+                                  .practice__content-right-item-responsive-elem
+                                      .practice__content-right-img-overplap
+                                          img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                      .button-price
+                                          .button-price__link $25.99
+                                      .practice__title-number-responsive
+                                          .practice__title-name-responsive
+                                              h2 CCNP <br> Implementing <br> Cisco IP Routing
+                            li.practice__content-right-item-responsive-elem.swiper-slide
+                              a(href="#").practice__content-right-link    
+                                  .practice__content-right-item-responsive-elem
+                                      .practice__content-right-img-overplap
+                                          img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                      .button-price
+                                          .button-price__link $25.99
+                                      .practice__title-number-responsive
+                                          .practice__title-name-responsive
+                                              h2 CCNP <br> Implementing <br> Cisco IP Routing
+                            li.practice__content-right-item-responsive-elem.swiper-slide
+                              a(href="#").practice__content-right-link    
+                                  .practice__content-right-item-responsive-elem
+                                      .practice__content-right-img-overplap
+                                          img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                      .button-price
+                                          .button-price__link $25.99
+                                      .practice__title-number-responsive
+                                          .practice__title-name-responsive
+                                              h2 CCNP <br> Implementing <br> Cisco IP Routing
+                            li.practice__content-right-item-responsive-elem.swiper-slide
+                              a(href="#").practice__content-right-link    
+                                  .practice__content-right-item-responsive-elem
+                                      .practice__content-right-img-overplap
+                                          img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                      .button-price
+                                          .button-price__link $25.99
+                                      .practice__title-number-responsive
+                                          .practice__title-name-responsive
+                                              h2 CCNP <br> Implementing <br> Cisco IP Routing
+                            li.practice__content-right-item-responsive-elem.swiper-slide
+                              a(href="#").practice__content-right-link    
+                                  .practice__content-right-item-responsive-elem
+                                      .practice__content-right-img-overplap
+                                          img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                      .button-price
+                                          .button-price__link $25.99
+                                      .practice__title-number-responsive
+                                          .practice__title-name-responsive
+                                              h2 CCNP <br> Implementing <br> Cisco IP Routing   
+            .comments.comments--margin-top.comments--border.comments--width.comments--pad-bot
+                .container
+                    .comments__general.comments__general--padding-top
+                        .comments__title-main
+                            h2 Comments
+                        .comments__url
+                            a(href="#").comments__link + Add Comment
+                    .comments__section
+                        .comments__questions
+                            .comments__header
+                                ul.comments__list
+                                    li.comments__item
+                                        i.spritesheet-flags.sprite-US    
+                                    li.comments__item
+                                        .comments__name
+                                            h3 Bruce Adams
+                                        .comments__time
+                                            h4 Dec 13 2019, 11:42 AM
+                            .comments__body
+                                .comments__heading.comments__heading--position
+                                    h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                        include ../common/_question
+                        .button-load-more-index-page
+                            .button-load-more-index-page-pic
+                                i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                            a(href="#").button-load-link Load More
+                    .comments__submit
+                                .comments__title-form
+                                    h2 Add comment
+                                    #textMessage    
+                                .comments__form-general.comments__form-general--padding-bottom
+                                    form.comments__form#form
+                                        .comments__form-all.comments__form-all--padding-top
+                                            .comments__form-lines
+                                                label.comments__form-label-line
+                                                    h4 Name <span>*</span>
+                                                    input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                                    #nameError
+                                            .comments__form-lines
+                                                label.comments__form-label-line.comments__form-label-line--margin-right
+                                                    h4 Email <span>*</span>
+                                                    input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                                    #emailError
+                                        .comments__form-field
+                                            label.comments__form-label-general
+                                                .comments__form-general-elements
+                                                    .comments__title-general-padding
+                                                        h4 Comment <span>*</span>
+                                                    .comments__form-answer
+                                                        h3 Comments will be moderated and published within 1-4 hours     
+                                                textarea.comments__textarea-field#textArea
+                                        .comments__form-verification
+                                            label.comments__form-label
+                                                .comments__title-general
+                                                    h4 Verification <span>*</span>
+                                                .comments__form-verification-general
+                                                    .comments__form-verification-left
+                                                        input(type="text").comments__form-verification-input#verificationInput
+                                                    .comments__form-verification-right
+                                                        .comments__form-verification-circle#animation
+                                                        .comments__form-verification-pic
+                                                            img(src="./assets/img/bitmap-1.png")
+                                                #verificationError            
+                                            button(type="submit").button-submit Submit
+            .avanset-adv 
+                .container
+                    .avanset-adv__wrapper
+                        .avanset-adv__left 
+                            .avanset-adv__title
+                                h3 Download Avanset VCE Software to Open Exam Files
+                        .avanset-adv__right    
+                            .avanset-adv__button
+                                .avanset-adv__url 
+                                    a(href="#").avanset-adv__link Download 
+        include ../common/_footer
+        include ../common/_modal-download
+        include ../common/_sidebar
+        include ../common/_modal-how-it-works
+        include ../common/_modal-contact-form
+        include ../common/_modal-how-it-works
+        include ../common/_modal-download-two
+        include ../common/_modal-add-to-cart
+        include ../common/_modal-download
+        include ../common/_modal-vip-subs
+        include ../common/_modal-popup-download
+        include ../common/_modal-thanks
+
+
+
+
+

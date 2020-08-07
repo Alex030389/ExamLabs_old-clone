@@ -1,0 +1,508 @@
+extends ../_template
+
+block variables
+    - var title = 'Cert page'
+
+block content
+    .wrapper
+        section.section.cert-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Cisco Exams    
+                                .breadcrumbs__text
+                                    h3 CCDP (Cisco Certified design Professional)
+                .files__content
+                    .container
+                        .files__table-general  
+                            .content-general
+                                .files__table-left-vendor
+                                    .files__title-vendor.files__title-vendor--responsive
+                                        h2 Pass Microsoft Certification Exam in First Attempt Guaranteed! Get 100% Real Exam Questions, Accurate & Verified Answers As seen in the Real Exam! 30 Days Free Updates, Instant Download!  
+                                    .content-microsoft.content-microsoft--visibility
+                                        .content-microsoft__left
+                                            .content-microsoft__block
+                                                .content-microsoft__block-left
+                                                    .content-microsoft__block-verify 
+                                                        img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                        .content-microsoft__block-heading
+                                                            h4 Verified by experts 
+                                                    .content-microsoft__block-bundle 
+                                                        img(src="./assets/img/bitmap-three-elems.png") 
+                                                    .content-microsoft__block-empty-elem 
+                                                        img(src="./assets/img/empty-elem.png")
+                                                        .content-microsoft__block-empty-elem-text  
+                                                            span You save 
+                                                            span $73.65    
+                                                    .content-microsoft__block-exams
+                                                        span 3 exams 
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") Get unlimited Access to All Premium Files 
+                                                .content-microsoft__block-center
+                                                    .content-microsoft__block-heading
+                                                        h2 70-743 Premium Bundle
+                                                    .content-microsoft__block-subheading   
+                                                        h2 300-101 Premium Bundle 
+                                                    ul.content-microsoft__block-list
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                            .content-microsoft__block-link-elem 
+                                                                a(href="#") 3 Products    
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                            .content-microsoft__block-link-elem 
+                                                                a(href="#") 3 Products    
+                                                        li.content-microsoft__block-item
+                                                            .content-microsoft__block-pic
+                                                                i.spritesheet-succes.spritesheet-tick
+                                                            .content-microsoft__block-title
+                                                                h4 300-101 Exam
+                                                            .content-microsoft__block-link-elem  
+                                                                a(href="#") 3 Products    
+                                                .content-microsoft__block-right.content-microsoft__block-right--position
+                                                    .content-microsoft__block-one
+                                                        h5 $110.48
+                                                        h4 $69,99
+                                                    .content-microsoft__block-two
+                                                        button(type="submit").content-microsoft__block-link Download Now
+                                    .cert-page-slider 
+                                        .swiper-container.s9
+                                            .swiper-wrapper
+                                                - for (let i = 0; i < 12; i++)
+                                                    a(href="#").swiper-slide
+                                                        .block-content
+                                                            img(src="assets/img/original.jpeg")        
+                                        .swiper-button-next-s9
+                                            img(src="assets/img/right.png")
+                                        .swiper-button-prev-s9
+                                            img(src="assets/img/left.png")
+                                    .certification__title
+                                        h2 About Cisco CCDP Certification
+                                    .files__table-description
+                                        p Cisco Certified Design Professional (CCDP) is a professional-level certificate (the third step toward the Cisco Certification program) that buids innovative knowledge of the network design principles and concepts necessary for… #[a(href="#") Read More]     
+                                    .certification__title 
+                                        h2 300-101 Exam - CCDP Cisco IP Switched Netwoirks (SWITCH v2.0)
+                                    .content-microsoft.content-microsoft--visibility
+                                        .content-microsoft__left
+                                            .content-microsoft__block
+                                                .content-microsoft__block-left
+                                                    .content-microsoft__block-verify 
+                                                        img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                        .content-microsoft__block-heading
+                                                            h4 Verified by experts 
+                                                    .content-microsoft__block-bundle 
+                                                        img(src="./assets/img/bitmap-three-elems.png") 
+                                                    .content-microsoft__block-empty-elem 
+                                                        img(src="./assets/img/empty-elem.png")
+                                                        .content-microsoft__block-empty-elem-text  
+                                                            span You save 
+                                                            span $73.65    
+                                                    .content-microsoft__block-exams
+                                                        span 3 exams 
+                                                .content-microsoft__block-center
+                                                    .content-microsoft__block-heading
+                                                        h2 70-743 Premium Bundle
+                                                    .content-microsoft__block-subheading   
+                                                        h2 300-101 Premium Bundle 
+                                                    ul.content-microsoft__block-list
+                                                        each item in ['Premium File 719 Questions & Answers', 'Last Update: Dec 07, 2018', 'Training Course 98 Lectures', 'Study Guide 66 Pages']
+                                                            li.content-microsoft__block-item
+                                                                .content-microsoft__block-pic
+                                                                    i.spritesheet-succes.spritesheet-tick
+                                                                .content-microsoft__block-title
+                                                                    h4 #{item}
+                                                .content-microsoft__block-right.content-microsoft__block-right--position
+                                                    .content-microsoft__block-one
+                                                        h5 $110.48
+                                                        h4 $69,99
+                                                    .content-microsoft__block-two
+                                                        button(type="submit").content-microsoft__block-link Download Now
+                                    .files__table-description 
+                                        p Cisco Certified Design Professional (CCDP) is a professional-level certificate (the third step toward the Cisco Certification program) that buids innovative knowledge of the network design principles and concepts necessary for… #[a(href="#") Read More]                  
+                                    .certification__title 
+                                        h2 Download Free Cisco 300-115 Exam Questions
+                                    table.table-certificate-bundle.table
+                                        colgroup.table-certificate-bundle__col-1
+                                        colgroup.table-certificate-bundle__col-2
+                                        colgroup.table-certificate-bundle__col-3
+                                        colgroup.table-certificate-bundle__col-4
+                                        colgroup.table-certificate-bundle__col-5
+                                        thead.table-certificate-bundle-header
+                                            tr
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4 File name
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title-padding
+                                                        h4 Votes
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4 Size
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4 Downloads  
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4             
+                                        tbody
+                                            - for (let i = 0; i < 2; i++)
+                                                tr
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-right-body-url
+                                                            a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-right-body-quantity
+                                                            h3 4 
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-files-number
+                                                            h4 13.9 Mb
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-files-number
+                                                            h4 200  
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-files-number
+                                                            a(href="#") Download              
+                                    .certification__title
+                                        h2 300-115 Exam - CCDP Cisco IP Switched Netwoirks (SWITCH v2.0)
+                                    .content-microsoft.content-microsoft--visibility
+                                        .content-microsoft__left
+                                            .content-microsoft__block
+                                                .content-microsoft__block-left
+                                                    .content-microsoft__block-verify 
+                                                        img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                        .content-microsoft__block-heading
+                                                            h4 Verified by experts 
+                                                    .content-microsoft__block-bundle 
+                                                        img(src="./assets/img/two-elems-bundle.png") 
+                                                    .content-microsoft__block-empty-elem.content-microsoft__block-empty-elem--position
+                                                        img(src="./assets/img/empty-elem.png")
+                                                        .content-microsoft__block-empty-elem-text  
+                                                            span You save 
+                                                            span $73.65    
+                                                    .content-microsoft__block-exams
+                                                        span 3 exams 
+                                                .content-microsoft__block-center
+                                                    .content-microsoft__block-heading
+                                                        h2 70-743 Premium Bundle
+                                                    .content-microsoft__block-subheading   
+                                                        h2 300-101 Premium Bundle 
+                                                    ul.content-microsoft__block-list
+                                                        each item in ['Premium File 719 Questions & Answers', 'Last Update: Dec 07, 2018', 'Training Course 98 Lectures']
+                                                            li.content-microsoft__block-item
+                                                                .content-microsoft__block-pic
+                                                                    i.spritesheet-succes.spritesheet-tick
+                                                                .content-microsoft__block-title
+                                                                    h4 #{item}
+                                                .content-microsoft__block-right.content-microsoft__block-right--position
+                                                    .content-microsoft__block-one
+                                                        h5 $110.48
+                                                        h4 $69,99
+                                                    .content-microsoft__block-two
+                                                        button(type="submit").content-microsoft__block-link Download Now
+                                    .files__table-description 
+                                        p Cisco Certified Design Professional (CCDP) is a professional-level certificate (the third step toward the Cisco Certification program) that buids innovative knowledge of the network design principles and concepts necessary for… #[a(href="#") Read More]
+                                    .certification__title 
+                                        h2 Download Free Cisco 300-115 Exam Questions
+                                    table.table-certificate-bundle.table
+                                        colgroup.table-certificate-bundle__col-1
+                                        colgroup.table-certificate-bundle__col-2
+                                        colgroup.table-certificate-bundle__col-3
+                                        colgroup.table-certificate-bundle__col-4
+                                        colgroup.table-certificate-bundle__col-5
+                                        thead.table-certificate-bundle-header
+                                            tr
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4 File name
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title-padding
+                                                        h4 Votes
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4 Size
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4 Downloads  
+                                                th.table-certificate-bundle-padding
+                                                    .table-certificate-bundle-title
+                                                        h4             
+                                        tbody
+                                            - for (let i = 0; i < 2; i++)
+                                                tr
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-right-body-url
+                                                            a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-right-body-quantity
+                                                            h3 4 
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-files-number
+                                                            h4 13.9 Mb
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-files-number
+                                                            h4 200  
+                                                    td.first-screen__border
+                                                        .first-screen__left-offer-files-number
+                                                            a(href="#") Download          
+                                    .comments-form-split
+                                        .comments__general
+                                            .comments__title-general-new 
+                                                h2 Comment 
+                                            .comments__url 
+                                                a(href="#").comments__link +Add Comment
+                                        .comments-block-wrap
+                                            .comments__section 
+                                                - for (let i = 0; i < 2; i++)
+                                                    .comments__questions.comments__questions--padding
+                                                        .comments__header
+                                                            ul.comments__list
+                                                                li.comments__item
+                                                                    .comments__name 
+                                                                        h3 Alice
+                                                                    .comments__time 
+                                                                        h4 January 17, 2019, 01:51 PM
+                                                        .comments__body 
+                                                            .comments__heading.comments__heading--position
+                                                                h4 alice
+                                                    .comments__questions.comments__questions--padding 
+                                                        .comments__header
+                                                            ul.comments__list
+                                                                li.comments__item
+                                                                    i.spritesheet-flags.sprite-IN
+                                                                li.comments__item    
+                                                                    .comments__name 
+                                                                        h3 Alice
+                                                                    .comments__time 
+                                                                        h4 January 17, 2019, 01:51 PM
+                                                        .comments__body 
+                                                            .comments__heading.comments__heading--position
+                                                                h4 It is a nice platform to enhance knowledge and expertise in the technical field.            
+                                        .comments__submit
+                                            .comments__title
+                                                .comments__title__element
+                                                    h2 Add comment
+                                            .comments__form-general
+                                                form.comments__form#form
+                                                    .comments__form-all.comments__form-all--padding-top
+                                                        .comments__form-lines
+                                                            label.comments__form-label-line
+                                                                h4 Name <span>*</span>
+                                                                input.comments__form-input(type="text" placeholder="Andrew Romanenko")#nameInput
+                                                                #nameError
+                                                        .comments__form-lines
+                                                            label.comments__form-label-line
+                                                                h4 Email <span>*</span>
+                                                                input.comments__form-input(type="email" placeholder="andrew.romanenko@outlook.com")#emailInput
+                                                                #emailError
+                                                        .comments__form-rating
+                                                            .comments__title.comments__title--padding
+                                                                h4 Rate file <span>*</span>
+                                                            .comments__stars
+                                                                .rating-stars.text-center
+                                                                    ul.comments__stars-list#stars
+                                                                        li.star(title='Good', data-value='1')
+                                                                            svg.comments__stars-picture-empty
+                                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        li.star(title='Good', data-value='2')
+                                                                            svg.comments__stars-picture-empty
+                                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        li.star(title='Good', data-value='3')
+                                                                            svg.comments__stars-picture-empty
+                                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        li.star(title='Excellent', data-value='4')
+                                                                            svg.comments__stars-picture-empty
+                                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                                        li.star(title='Perfect', data-value='5')
+                                                                            svg.comments__stars-picture-empty
+                                                                                use(xlink:href=`./assets/img/sprite.svg#star`)
+                                                    .comments__form-field
+                                                        label.comments__form-label-general
+                                                            .comments__title-general-padding
+                                                                h4 Comment
+                                                                span *
+                                                            textarea.comments__textarea-field#textArea
+                                                    .comments__form-verification
+                                                        label.comments__form-label
+                                                            .comments__title-general
+                                                                h4 Verification
+                                                                span *
+                                                            .comments__form-verification-general
+                                                                .comments__form-verification-left
+                                                                    input(type="text").comments__form-verification-input#verificationInput
+                                                                .comments__form-verification-right
+                                                                    .comments__form-verification-circle#animation
+                                                                        img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                                                    .comments__form-verification-pic
+                                                                        .comments__form-verification-bitmap
+                                                                            img(src="./assets/img/bitmap-1.png")
+                                                        button(type="submit").button-submit Submit
+                                .vendor__table-right
+                                    .first-screen__title-exam-det
+                                        h3 Purchase Individually
+                                    .content-general__purchases.content-general__purchases--padding
+                                        ul.content-general__purchases-list-cert-bundle-page
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-1.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 2 products
+                                                    .content-general__purchases-info-all
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart                
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-2.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all.content-general__purchases-info-all--width
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-2.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all.content-general__purchases-info-all--width
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart                
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-3.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-3.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart  
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    img(src="./assets/img/bitmap-elem-3.png").content-general__purchases-img
+                                                .content-general__purchases-info
+                                                    h4 Premium Bundle
+                                                    .content-microsoft__block-link-elem 
+                                                        a(href="#") 3 products
+                                                    .content-general__purchases-info-all
+                                                        span $53.32
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart                              
+                                    .content-microsoft__right-pic
+                                        a(href="#").content-microsoft__right-link
+                                            img(src="./assets/img/avanset-new.png").content-microsoft__right-img  
+                                    .first-screen__title-exam-det
+                                        h3 Cisco CCDP Training Courses        
+                                    ul.practice__content-right-list-index
+                                        - for (let i = 0; i < 4; i++)
+                                            li.practice__content-right-item-elem
+                                                .practice__content-right-img
+                                                    a(href="#").practice__content-right-link
+                                                        img(src="./assets/img/block.png").practice__content-right-pic-general
+                                                        .practice__content-right-img-overplap
+                                                            img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                                        .button-price
+                                                            .button-price__link $25,99
+                                                        .practice__title-number
+                                                            h4 70-463
+                                                            .practice__title-name
+                                                                h2 CompTIA Security+
+                                                        span.line
+                                                        .practice__students-general
+                                                            .practice__students-first
+                                                                .practice__students-title
+                                                                    h3 Students
+                                                                .practice__line
+                                                                .practice__quantity
+                                                                    h4 83
+                                                            .practice__students-second
+                                                                .practice__students-title
+                                                                    h3 Duration
+                                                                .practice__line
+                                                                .practice__quantity
+                                                                    h4 2.5h
+                                                            .practice__students-third
+                                                                .practice__students-title-sign-in-page
+                                                                    h3 Rating
+                                                                    h4 4.9 (124)
+                                                                .practice__stars
+                                                                    ul.practice__stars-list
+                                                                        - for (let i = 0; i < 5; i++)
+                                                                            li.practice__stars-itme
+                                                                                .practice__stars-pic
+                                                                                    .practice__stars-img
+                                                            .practice__stars-title
+                                                                h4 4.9 (124)                     
+                    .avanset-adv.avanset-adv--margin-bottom
+                        .container
+                            .avanset-adv__wrapper
+                                .avanset-adv__left 
+                                    .avanset-adv__title
+                                        h3 Download Avanset VCE Software to Open Exam Files
+                                .avanset-adv__right    
+                                    .avanset-adv__button
+                                        .avanset-adv__url 
+                                            a(href="#").avanset-adv__link Download 
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                                             
+                                        

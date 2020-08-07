@@ -1,0 +1,586 @@
+extends ../_template
+
+block variables
+    - var title = 'Exam Details Questions And Answers'
+
+block content
+    .wrapper
+        section.section.exam-det-ques-and-answers
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content
+                include ../common/_practice-line
+                .practice__info
+                    .container
+                        .practice__info-general.practice__info-general--position
+                            .practice__info-left
+                                .practice__info-title
+                                    h2 You need Avanset VCE Software To Open Exam Files!
+                                .practice__info-text
+                                    h4 Avanset VCE Software available on the Windows, MacOS, iOS and Android.
+                            .practice__info-right
+                                .button.button--files
+                                    a(href="#").button__link Download
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 Microsoft Certifications
+                            .breadcrumbs__text
+                                h3 Microsoft MCSE
+                            .breadcrumbs__text
+                                h3 70-743
+            .container
+                .content-general.content-general--quest-and-answers
+                    .content-general__left.content-general--quest-and-answers
+                        .content-microsoft.content-microsoft--visibility
+                            .content-microsoft__left
+                                .first-screen__title.first-screen__title--display-none
+                                    h2 Microsoft 70-743 Exam
+                                .content-microsoft__block
+                                    .content-microsoft__block-left
+                                        .content-microsoft__body.content-microsoft__body--flex
+                                            .content-microsoft__pic
+                                                img(src="./assets/img/left-offer.png").content-microsoft__img
+                                            .content-microsoft__text
+                                                h4 70-361 Exam
+                                                h3 4 products
+                                    .content-microsoft__block-center
+                                        ul.content-microsoft__block-list
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                                .content-microsoft__block-heading
+                                                    h4 Verified by experts
+                                        .content-microsoft__block-heading
+                                            h2 70-743 Premium Bundle
+                                        ul.content-microsoft__block-list
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    i.spritesheet-succes.spritesheet-tick
+                                                .content-microsoft__block-title
+                                                    h4 Premium File 243 Questions & Answers
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    i.spritesheet-succes.spritesheet-tick
+                                                .content-microsoft__block-title
+                                                    h4 Training Course 19 Lectures
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    i.spritesheet-succes.spritesheet-tick
+                                                .content-microsoft__block-title
+                                                    h4 Study Guide 180 Pages
+                                            li.content-microsoft__block-item
+                                                .content-microsoft__block-pic
+                                                    i.spritesheet-succes.spritesheet-tick
+                                                .content-microsoft__block-title
+                                                    h4 Audio Guide 135 minutes
+                                    .content-microsoft__block-right.content-microsoft__block-right--position
+                                        .content-microsoft__block-one
+                                            h4 $69,99
+                                        .content-microsoft__block-two
+                                            button(type="submit").content-microsoft__block-link Add to Cart
+                        .content-download.content-download--exam-details-comments
+                                thead.table-certificate-bundle-header
+                                table.table-exam-detail-first-border.table
+                                    thead.table-exam-detail-first-padding
+                                        tr
+                                            th.table-exam-detail-first-border-right
+                                                .content-download__pic.content-download__pic--margin
+                                                    img(src="./assets/img/icon-microsoft@2x.png").content-download__img
+                                            th
+                                                .content-download__title
+                                                    h5 MCSE Installing and Configuring Windows Server 2012
+                                    tbody
+                                        tr
+                                            td.table-exam-detail-first-background
+                                                h5 Description
+                                            td.table-exam-detail-first-padding.table-exam-detail-first-border-left
+                                                p.
+                                                    Free Microsoft MCSA 70-743 Latest & Updated Exam Questions for candidates to study and pass exams fast. Microsoft MCSA 70-743 exam dumps are frequently updated and reviewed for passing the exams quickly and hassle free!
+                                                    <br>
+                                                    <br>
+                                                    You can pass your MCSA 70-743 Microsoft Exam Fast by using.vce Software which simulates real exam testing environment.
+                        .content-files
+                            .content-files__title
+                                h2 Files
+                            include ../common/_responsive-sertificate-bundle-table
+                            table.table-exam-detail.table-exam-detail--responsive.table
+                                colgroup.table-exam-detail__col-1
+                                colgroup.table-exam-detail__col-2
+                                colgroup.table-exam-detail__col-3
+                                colgroup.table-exam-detail__col-4
+                                thead.table-certificate-bundle-header
+                                    tr
+                                        th.table-certificate-bundle-padding
+                                            h5 File Name
+                                        th.table-certificate-bundle-padding
+                                            h5 Views
+                                        th.table-certificate-bundle-padding
+                                            h5 Downloads
+                                        th.table-certificate-bundle-padding
+                                            h5 Size
+                                tbody
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 178205
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 178205
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 178205
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 1244
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td.first-screen__border
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                                    tr
+                                        td
+                                            .first-screen__left-offer-right-body-url
+                                                a(href="#").first-screen__left-offer-right-body-link Microsoft.BrainDumps.70-743.v2017-01-16.by.OZ.90q.vce
+                                        td
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 1245
+                                        td
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 21
+                                        td
+                                            .first-screen__left-offer-right-body-quantity
+                                                h4 5.38 Mb
+                            .button-general
+                                .button-vendor
+                                    a(href="#").button-load__link Load more
+                    .first-screen__right.first-screen__right--margin-top
+                        .first-screen__title-exam-det
+                            h3 Purchase Individually
+                        .content-general__purchases.content-general__purchases--padding
+                            ul.content-general__purchases-list
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        .content-general__purchases-img
+                                            img(src="./assets/img/file-sg.png").content-general__purchases-image
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Study Guide
+                                        h5 143 Pages
+                                        .content-general__purchases-info-all
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                    .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                        button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        .content-general__purchases-img
+                                            img(src="./assets/img/file-qa.png").content-general__purchases-image
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Premium File
+                                        h5 252 Questions & Answers
+                                        .content-general__purchases-info-all.content-general__purchases-info-all--width
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                    .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                        button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        .content-general__purchases-img
+                                            img(src="./assets/img/file-lab.png").content-general__purchases-image
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Training Course
+                                        h5 37 Lectures
+                                        .content-general__purchases-info-all
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                    .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                        button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                li.content-general__purchases-item-certif-bundle-page
+                                    .content-general__purchases-pic
+                                        .content-general__purchases-img
+                                            img(src="./assets/img/file-sound.png").content-general__purchases-image
+                                    .content-general__purchases-info
+                                        h3 70-462
+                                        h4 Audio Guide
+                                        h5 90 Minutes
+                                        .content-general__purchases-info-all
+                                            h6 $32
+                                            button(type="submit").content-general__purchases-link
+                                            .button-exam-details-responsive
+                                                button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                    .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                        button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                        .content-microsoft__right-pic
+                            a(href="#").content-microsoft__right-link
+                                img(src="./assets/img/avanset-new.png").content-microsoft__right-img
+            .content-questions-general.content-questions-general--padding
+                    .content-questions-wrapper
+                        .content-questions.content-questions--padding-bottom
+                            .content-questions__upper-part 
+                                .container
+                                    .content-questions__title-mobile 
+                                        h3 70-743: Premium VCE File
+                            .content-questions__slider 
+                                .container
+                                    .content-questions__slider-title 
+                                        h4 Verified by experts 
+                                    .content-questions__title-mobile 
+                                        h4 70-743: Premium VCE File 
+                                    .content-questions__slider-mobile 
+                                        .content-microsoft__block-left
+                                            .content-microsoft__container-slider-down-page
+                                                .content-microsoft__pic-down-image
+                                                    img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                .content-microsoft__pic-down-image
+                                                    img(src="../assets/img/left-offer.png").content-microsoft__img
+                                                .content-microsoft__pic-down-image
+                                                    img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                .content-microsoft__pic-down-image
+                                                    img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                .content-microsoft__pic-down-image
+                                                    img(src="./assets/img/left-offer.png").content-microsoft__img
+                                                .content-microsoft__pic-down-image
+                                                    img(src="./assets/img/left-offer.png").content-microsoft__img
+                                            span.text-info 4 products
+                                            .slider-arrows
+                                                a(href="#").arrow-link-left
+                                                    .nextArrow.arrow-next
+                                                        img(src="./assets/img/icon-single-arrow-right.png")
+                                                a(href="#").arrow-link-right
+                                                    .prevArrow.arrow-prev
+                                                        img(src="./assets/img/icon-single-arrow-left.png") 
+                                    .content-questions__text 
+                                        .content-questions__text-left 
+                                            ul.content-microsoft__block-list
+                                                li.content-microsoft__block-item
+                                                    .content-microsoft__block-pic
+                                                        img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                    .content-microsoft__block-title
+                                                            h4 243 Questions & Answers
+                                                li.content-microsoft__block-item
+                                                    .content-microsoft__block-pic
+                                                        img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                    .content-microsoft__block-title
+                                                        h4 100% Accurate Answers
+                                                li.content-microsoft__block-item
+                                                    .content-microsoft__block-pic
+                                                        img(src="./assets/img/tick.png").content-microsoft__block-image
+                                                    .content-microsoft__block-title
+                                                        h4 Instant Downloads  
+                                        .content-questions__text-right   
+                                            .content-questions__text-square 
+                                                h4 $69.99$    
+                                    .content-questions__button-wrapper            
+                                        .content-questions__button               
+                                            button(type="submit").content-microsoft__block-link Add to Cart  
+                            .mcse-installing-block 
+                                .container
+                                    .mcse-installing-block__header 
+                                        .mcse-installing-block__title 
+                                            h3 70-743
+                                        .mcse-installing-block__pic  
+                                            img(src="./assets/img/icon-microsoft.png").mcse-installing-block__img  
+                                    .mcse-installing-block__body 
+                                        .mcse-installing-block__subtitle 
+                                            h3 MSCE Installing and Configuring Windows Server 2012   
+                                        .mcse-installing-block__text 
+                                            p Free Microsoft MCSA 70-743 Latest & Updated Exam Questions for candidates to study and pass exams fast. Microsoft MCSA 70-743 exam dumps are frequently updated and reviewed for passing the exams quickly and hassle free!    
+                                            p You can pass your MCSA 70-743 Microsoft Exam Fast by using.vce Software which simulates real exam testing environment.
+                                .mcse-private-cloud 
+                                    .container
+                                        .mcse-private-cloud__title 
+                                            h3 MCSE: Private Cloud VCE Files    
+                                        .mcse-private-cloud__columns 
+                                            .mcse-private-cloud__columns-left 
+                                                ul.mcse-private-cloud__columns-left-list 
+                                                    li.mcse-private-cloud__columns-left-item 
+                                                        h4 70-743
+                                                    li.mcse-private-cloud__columns-left-item 
+                                                        h4 70-743
+                                                    li.mcse-private-cloud__columns-left-item 
+                                                        h4 70-743
+                                                    li.mcse-private-cloud__columns-left-item 
+                                                        h4 70-743
+                                                    li.mcse-private-cloud__columns-left-item 
+                                                        h4 70-743                
+                                            .mcse-private-cloud__columns-right  
+                                                ul.mcse-private-cloud__columns-right-list
+                                                - for (let i = 0; i < 5; i++)
+                                                    li.mcse-private-cloud__columns-right-item 
+                                                        a(href="#").mcse-private-cloud__columns-right-link Microsoft.BrainDumps.70-7.. 
+                                .button-load-more-wrapper
+                                    .button-load-more-index-page-pic
+                                        i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                    a(href="#").button-load-link Load More  
+                            .advertisment-block-mobile-wrapper          
+                                .advertisment-block-mobile-width 
+                                    .first-screen__title-exam-det
+                                        h3 Purchase Individually
+                                    .content-general__purchases.content-general__purchases--padding
+                                        ul.content-general__purchases-list
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    .content-general__purchases-img
+                                                        img(src="./assets/img/file-sg.png").content-general__purchases-image
+                                                .content-general__purchases-info
+                                                    h3 70-462
+                                                    h4 Study Guide
+                                                    h5 143 Pages
+                                                    .content-general__purchases-info-all
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                                .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                                    button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    .content-general__purchases-img
+                                                        img(src="./assets/img/file-qa.png").content-general__purchases-image
+                                                .content-general__purchases-info
+                                                    h3 70-462
+                                                    h4 Premium File
+                                                    h5 252 Questions & Answers
+                                                    .content-general__purchases-info-all.content-general__purchases-info-all--width
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                                .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                                    button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    .content-general__purchases-img
+                                                        img(src="./assets/img/file-lab.png").content-general__purchases-image
+                                                .content-general__purchases-info
+                                                    h3 70-462
+                                                    h4 Training Course
+                                                    h5 37 Lectures
+                                                    .content-general__purchases-info-all
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                                .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                                    button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                            li.content-general__purchases-item-certif-bundle-page
+                                                .content-general__purchases-pic
+                                                    .content-general__purchases-img
+                                                        img(src="./assets/img/file-sound.png").content-general__purchases-image
+                                                .content-general__purchases-info
+                                                    h3 70-462
+                                                    h4 Audio Guide
+                                                    h5 90 Minutes
+                                                    .content-general__purchases-info-all
+                                                        h6 $32
+                                                        button(type="submit").content-general__purchases-link
+                                                        .button-exam-details-responsive
+                                                            button(type="submit").first-screen__left-offer-discount-button-link Add to Cart
+                                                .first-screen__left-offer-discount-button-two.first-screen__left-offer-discount-button-two--responsive
+                                                    button(type="submit").first-screen__left-offer-discount-button-link Add to Cart    
+                            .content-questions-title-block-desk
+                                .container
+                                    .content-questions__title
+                                        h2 Questions & Answers for Microsoft 70-410
+                                    .content-questions__sub-title
+                                        h4 70-410 was last updated at : April 10th, 2018
+                                    .content-questions__block.content-questions__block--width
+                                        .content-questions__topic
+                                            h2 Question #1 = Topic 1
+                                        .content-questions__info
+                                            p.
+                                                You have a server named Server1 that runs Windows Server 2012 R2.<br>
+                                                Server1 has the Hyper-V server role installed.<br>
+                                                On Server1, you create a virtual machine named VM1.<br>
+                                                VM1 has a legacy network adapter.<br>
+                                                You need to assign a specific amount of available network bandwidth to VM1.<br>
+                                                What should you do first?
+                                        .content-questions__variants
+                                            .content-questions__heading.content-questions__heading--border-bottom.content-questions__heading--border-top
+                                                h3 <span>A.</span> Remove the legacy network adapter, and then run the Set-VMNetworkAdapter cmdlet.
+                                            .content-questions__heading.content-questions__heading--border-bottom
+                                                h3 <span>B.</span> Add a second legacy network adapter, and then run the Set-VMNetworkAdopter cmdlet.
+                                            .content-questions__heading.content-questions__heading--border-bottom
+                                                h3 <span>C.</span> Add a second legacy network adapter, and then configure network adapter teaming.
+                                            .content-questions__heading.content-questions__heading--border-bottom-radius
+                                                h3 <span>D.</span> Remove the legacy network adapter, and then run the Set-VMNetworkAdapter cmdlet.
+                                            .buttons.buttons--position
+                                                .buttons__answer
+                                                    a(href="#").buttons__link Show correct answer
+                                                .buttons__comments
+                                                    a(href="#").buttons__link Hide Comments (25)
+                        .comments-general-block                 
+                                .comments.comments--border-top.comments--background-color
+                                    .container   
+                                        .comments__general.comments__general--padding-top
+                                            .comments__title.comments__title--padding-bottom
+                                                h2 Comments for Question #1 - Topic 1 (3)
+                                        .comments__section
+                                            .comments__questions
+                                                .comments__header
+                                                    ul.comments__list
+                                                        li.comments__item
+                                                            .comments__pic
+                                                                img(src="./assets/img/united-states-icon.png").comments__img
+                                                        li.comments__item-info
+                                                            .comments__name
+                                                                h3 Bruce Adams
+                                                            .comments__date 
+                                                                h4 Dec 13 2019    
+                                                .comments__body
+                                                    .comments__heading.comments__heading--position
+                                                        h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                                                    .comments__likes
+                                                        .comments__likes-left
+                                                            .comments__likes-url
+                                                                a(href="#").comments__likes-link 10 likes
+                                                        .comments__likes-right
+                                                            .comments__likes-url
+                                                                a(href="#").comments__likes-reply Reply
+                                            .comments__questions
+                                                .comments__header
+                                                    ul.comments__list
+                                                        li.comments__item
+                                                            .comments__pic
+                                                                img(src="./assets/img/united-states-icon.png").comments__img
+                                                        li.comments__item-info
+                                                            .comments__name
+                                                                h3 Bruce Adams
+                                                            .comments__date 
+                                                                h4 Dec 13 2019     
+                                                .comments__body
+                                                    .comments__heading.comments__heading--position
+                                                        h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                                                    .comments__likes
+                                                        .comments__likes-left
+                                                            .comments__likes-url
+                                                                a(href="#").comments__likes-link 10 likes
+                                                        .comments__likes-right
+                                                            .comments__likes-url
+                                                                a(href="#").comments__likes-reply Reply
+                                            .comments__questions
+                                                .comments__header
+                                                    ul.comments__list
+                                                        li.comments__item
+                                                            .comments__pic
+                                                                img(src="./assets/img/united-states-icon.png").comments__img
+                                                        li.comments__item-info
+                                                            .comments__name
+                                                                h3 Bruce Adams
+                                                            .comments__date 
+                                                                h4 Dec 13 2019     
+                                                .comments__body
+                                                    .comments__heading.comments__heading--position
+                                                        h4 Question 1 <br> A session in the traffic log is reporting the application is "incomplete" <br>
+                                                    .comments__likes
+                                                        .comments__likes-left
+                                                            .comments__likes-url
+                                                                a(href="#").comments__likes-link 10 likes
+                                                        .comments__likes-right
+                                                            .comments__likes-url
+                                                                a(href="#").comments__likes-reply Reply
+                        .content-questions-wrapper-background-color                                
+                            .content-questions-padding
+                                .content-questions-and-answers-wrapper
+                                    .content-questions
+                                        .container
+                                            .content-questions__block.content-questions__block--width
+                                                .content-questions__topic
+                                                    h2 Question #1 = Topic 2
+                                                .content-questions__info
+                                                    p.
+                                                        You have a server named Server1 that runs Windows Server 2012 R2.<br>
+                                                        Server1 has the Hyper-V server role installed.<br>
+                                                        On Server1, you create a virtual machine named VM1.<br>
+                                                        VM1 has a legacy network adapter.<br>
+                                                        You need to assign a specific amount of available network bandwidth to VM1.<br>
+                                                        What should you do first?
+                                                .content-questions__variants
+                                                    .content-questions__heading.content-questions__heading--border-bottom.content-questions__heading--border-top
+                                                        h3 <span>A.</span> Remove the legacy network adapter, and then run the Set-VMNetworkAdapter cmdlet.
+                                                    .content-questions__heading.content-questions__heading--border-bottom
+                                                        h3 <span>B.</span> Add a second legacy network adapter, and then run the Set-VMNetworkAdopter cmdlet.
+                                                    .content-questions__heading.content-questions__heading--border-bottom
+                                                        h3 <span>C.</span> Add a second legacy network adapter, and then configure network adapter teaming.
+                                                    .content-questions__heading.content-questions__heading--border-bottom-radius.content-questions__heading--background
+                                                        h3 <span>D.</span> Remove the legacy network adapter, and then run the Set-VMNetworkAdapter cmdlet.
+                                                    .buttons.buttons--position
+                                                        .buttons__answer
+                                                            a(href="#").buttons__link Show correct answer
+                                                        .buttons__comments
+                                                            a(href="#").buttons__link Hide Comments (25)
+                                .comments__pages-exam-det-quest-and-answers
+                                    .container
+                                        ul.comments__pages-list
+                                            li.comments__pages-item.comments__pages-item--active
+                                                a(href="#").comments__pages-link 1
+                                            li.comments__pages-item
+                                                a(href="#").comments__pages-link 2
+                                            li.comments__pages-item
+                                                a(href="#").comments__pages-link 3
+                                            li.comments__pages-item
+                                                a(href="#").comments__pages-link 4
+                                            li.comments__pages-item
+                                                a(href="#").comments__pages-link 5
+                                            li.comments__pages-item
+                                                a(href="#").comments__pages-link >
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-download
+    include ../common/_modal-free-registration
+    include ../common/_modal-how-it-works

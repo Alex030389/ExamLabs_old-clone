@@ -1,0 +1,64 @@
+extends ../_template
+
+block variables
+  - var title = 'Invoice'
+  
+block content
+    .invoice-container
+        .invoice-header
+            img.invoice-header__logo-image(src="./assets/img/logo-png2.png")
+            ul.invoice__address-list
+                li.invoice__address-item Certplex Ltd.
+                li.invoice__address-item 27 Old Gloucester Street
+                li.invoice__address-item London, WC1N 3AX
+                li.invoice__address-item United Kingdom 
+
+
+        .invoice-main
+            table.invoice-main__description-table.description-table
+                tr
+                    th.description-table__title Invoice Number:
+                    td.description-table__cell #36805125
+                tr
+                    th.description-table__title Invoice Date:
+                    td.description-table__cell Mar 05, 2018
+                tr
+                    th.description-table__title Billed To:
+                    td.description-table__cell
+                        ul.description-table__list
+                            li.description-table__item Kishor Kumar Mangalpady Ambar
+                            li.description-table__item 5 Ascot Street Unit 8
+                            li.description-table__item Malvern
+                            li.description-table__item Victoria 3144 AU
+                tr
+                    th.description-table__title Note:
+                    td.description-table__cell The charges on your Credit/Debit Card Statement will appear as paid to “<b class="description-table__text-bold">MBS Tech Limited</b>” - our partner in accepting payments.
+
+            table.invoise-main__table.main-table
+                colgroup
+                    col
+                    col
+                    col
+                thead
+                    tr
+                        th.main-table__title Description
+                        th.main-table__title Quantity
+                        th.main-table__title Price
+                tbody
+                    tr
+                        td.main-table__cell.main-table__cell--bold Unlimited Access to Premium Files: Monthly Subscription Premium VCE 
+                        td.main-table__cell.main-table__cell--gray 1 @ $79.99
+                        td.main-table__cell.main-table__cell--gray $79.99
+                    tr
+                        th.main-table__cell.main-table__cell--wide.main-table__cell--gray(colspan="2") Discount
+                        td.main-table__cell.main-table__cell--bold -$32.00
+                    tr
+                        th.main-table__cell.main-table__cell--wide.main-table__cell--gray(colspan="2") Total
+                        td.main-table__cell.main-table__cell--bold $47.99
+                    tr
+                        th.main-table__cell.main-table__cell--wide.main-table__cell--gray(colspan="2") Balance Due
+                        td.main-table__cell.main-table__cell--bold $0.00
+
+        .invoice-footer
+            p.invoice-footer__text Thank you for purchasing your Certification Training resources from ExamLabs.com!
+            a.invoice-footer__link.link-true(href="http://devlabs.com/") http://devlabs.com/

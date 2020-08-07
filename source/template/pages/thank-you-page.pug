@@ -1,0 +1,33 @@
+extends ../_template
+
+block variables
+    - var title = 'Thank you page'
+
+block content
+    .wrapper
+        section.section.thank-you
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-tutorial-details
+                include ../common/_practice-line
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 Thank you for your registration
+                .container
+                    
+        include ../common/_footer
+        include ../common/_sidebar
+        include ../common/_modal-how-it-works

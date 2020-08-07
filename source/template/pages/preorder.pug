@@ -1,0 +1,156 @@
+extends ../_template
+
+block variables
+    - var title = 'Preorder'
+
+block content
+    .wrapper
+        section.section.preorder-page
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content-preorder
+                .practice-row.practice-row--preorder
+                    .container
+                        .practice__general-row
+                            .practice__title
+                                h4 practice exams:
+                            .practice__nav
+                                nav.practice__navigation
+                                    ul.practice__navigation-list
+                                        li.practice__navigation-item.practice__navigation-item--microsoft
+                                            a(href="#").practice__navigation-link Microsoft
+                                        li.practice__navigation-item.practice__navigation-item--cisco
+                                            a(href="#").practice__navigation-link Cisco
+                                        li.practice__navigation-item.practice__navigation-item--comptia
+                                            a(href="#").practice__navigation-link CompaTIA
+                                        li.practice__navigation-item.practice__navigation-item--redhat
+                                            a(href="#").practice__navigation-link RedHat
+                                        li.practice__navigation-item.practice__navigation-item--citrix
+                                            a(href="#").practice__navigation-link Citrix
+                                        li.practice__navigation-item.practice__navigation-item--hp
+                                            a(href="#").practice__navigation-link HP
+                                        li.practice__navigation-item.practice__navigation-item--ibm
+                                            a(href="#").practice__navigation-link IBM
+                                        li.practice__navigation-item.practice__navigation-item--checkpoint
+                                            a(href="#").practice__navigation-link CheckPoint
+                                        li.practice__navigation-item.practice__navigation-item--ciw
+                                            a(href="#").practice__navigation-link CIW
+                                        li.practice__navigation-item.practice__navigation-item--novell
+                                            a(href="#").practice__navigation-link Novell
+                                        li.practice__navigation-item.practice__navigation-item--vmware
+                                            a(href="#").practice__navigation-link WMware
+                                        li.practice__navigation-item.practice__navigation-item--other
+                                            a(href="#").practice__navigation-link Other
+                .information-preorder
+                    .container.container--changed.container--width-section
+                        .information__title.information__title--padding
+                            h2 Request Exam & Pre-order
+                        .upper-part-of-first-form
+            section.section.order
+                .container.container--width-section
+                    .order__first
+                        .order__title
+                            h2 Option 1: Request an Exam
+                        .order__description
+                            p Please provide the code of your exam and your email address, and we’ll let you know when your exam is available on ExamLabs.
+                        .order__form
+                            form.order__submit#form
+                                .order__label
+                                    label.order__label-line
+                                        h4 Exam Code
+                                            span *
+                                        input(type="text" placeholder="Number").order__input#number
+                                        #numberOrderError
+                                .order__label
+                                    label.order__label-line
+                                        h4 Your Email
+                                           span *
+                                        input(type="text" placeholder="Email").order__input#emailOrder
+                                        #emailOrderError
+                                .order__button.order__button--width
+                                    button(type="submit").button-submit-preorder-page.button-submit--changed Request Exam
+                                .comments__form-verification.comments__form-verification--custom.comments__form-verification--width
+                                    <label class="comments__form-label form-element">
+                                        <div class="comments__title-general">
+                                            <h4>Verification <span>*</span></h4>
+                                        </div>
+                                        <div class="comments__form-verification-general">
+                                            <div class="comments__form-verification-left">
+                                                <input autocomplete="off" name="comment[code]" data-field="code" class="comments__form-verification-input form-field" type="text">
+                                            </div>
+                                            <div class="comments__form-verification-right">
+                                                <div class="comments__form-verification-pic">
+                                                    <div class="comments__form-verification-bitmap"><ffnimage class="_ffn_img-wrapper"><img class="comments__form-verification-bitmap__img _ffn_img" data-s="http://www.devlabs.tk/captcha?cid=FGP" src="http://www.devlabs.tk/captcha?cid=FGP"></ffnimage></div>
+                                                </div>
+                                                <div class="comments__form-verification-circle animationRefresh">
+                                                    <img class="image__form-verification-circle _ffn_img" src="/static/img/icon-refresh.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="val_error"></div>
+                                    </label>
+                                    //- label.comments__form-label
+                                    //-     .comments__title-general
+                                    //-         h4 Verification
+                                    //-         span *
+                                    //-         #verificationError
+                                    //-     .comments__form-verification-general
+                                    //-         .comments__form-verification-left
+                                    //-             input(type="text").comments__form-verification-input#verificationInput
+                                    //-         .comments__form-verification-right
+                                    //-             .comments__form-verification-circle
+                                    //-                 img(src='./assets/img/icon-refresh.png').image__form-verification-circle
+                                    //-             .comments__form-verification-pic
+                                    //-                 .comments__form-verification-bitmap
+                                    //-                     img(src='./assets/img/bitmap-1.png')
+                    .order__second
+                        .order__second-general
+                            .order__second-left
+                                .order__title
+                                    h2 Option 2: Pre-Order an Exam
+                                .order__description
+                                    p You can pre-order any exam and PrepAway will arrange it for you within 4 weeks.
+                            .order__second-right
+                                .order__value
+                                    p Price
+                                .order__price
+                                    h3 $355,34
+                        .order__form.order__form--margin
+                            form.order__submit#formSecond
+                                    .order__label
+                                        label.order__label-line
+                                            h4 Exam Code
+                                                span *
+                                            input(type="text" placeholder="Exam Code").order__input#inputSecond
+                                            #inputSecondError
+                                    .order__label
+                                        label.order__label-line
+                                            h4 Your Email
+                                                span *
+                                            input(type="text" placeholder="Email").order__input#inputThird
+                                            #inputThirdError
+                                    .order__title-responsive-text
+                                        h4 $355,34
+                                    .order__button-color
+                                        button(type="submit").button-submit-preorder-page.button-submit--changed Pre-Order an Exam
+                        .order__steps
+                            .order__title.order__title--padding
+                                h2 How can I pre-order my exam?
+                            ol.steps__list
+                                li.steps__item Enter the exam code
+                                li.steps__item Prepay your exam. Get them in 4 weeks 
+                                li.steps__item Open with Avanset Exam Simulator
+                                li.steps__item.steps__item--main Start studying and pass the exam!
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_search-responsive-element
+    include ../common/_modal-how-it-works
+

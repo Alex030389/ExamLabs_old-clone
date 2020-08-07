@@ -1,0 +1,1221 @@
+extends ../_template
+
+block variables
+    - var title = 'Tutorials list'
+
+block content
+    .wrapper
+        section.section.tutotials-list
+          header.header
+              include ../common/_header
+              .container
+                .header__second
+                  include ../common/_nav
+          .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search         
+          .content-first-page
+            include ../common/_practice-line
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 My Account
+                            .breadcrumbs__text
+                                h3 My Products
+            .categories
+                .container
+                    .training-course__picture
+                        img(src="./assets/img/responsive-element-tut-list.png").training-course__img
+                    form.categories__form
+                        .categories__general
+                            ul.categories__list
+                                li.categories__item
+                                    .categories__name
+                                        h4 Vendor
+                                    .categories__select
+                                        .categories__select-wrapper
+                                            .categories__border
+                                            .categories__triangle
+                                            select.selectize
+                                                option All
+                                                option All
+                                                option All
+                                                option All
+                                                option All
+                                li.categories__item
+                                    .categories__name
+                                        h4 Rating
+                                    .categories__select
+                                        .categories__select-wrapper
+                                            .categories__border
+                                            .categories__triangle
+                                            select.selectize
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                li.categories__item
+                                    .categories__name
+                                        h4 Categories
+                                    .categories__select
+                                        .categories__select-wrapper
+                                            .categories__border
+                                            .categories__triangle
+                                            select.selectize
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                li.categories__item
+                                    .categories__name
+                                        h4 Course Duration
+                                    .categories__select
+                                        .categories__select-wrapper
+                                            .categories__border
+                                            .categories__triangle
+                                            select.selectize
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                li.categories__item
+                                    .categories__name
+                                        h4 Students
+                                    .categories__select
+                                        .categories__select-wrapper
+                                            .categories__border
+                                            .categories__triangle
+                                            select.selectize
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                                                    option All
+                        .button__apply-wrapper
+                            .button__apply
+                                button.button-apply(type="submit") Apply                                
+                    .mobile-saved-courses-block
+                        .registration-page-mobile-title 
+                            .registration-page-mobile__header-responsive 
+                                .registration-page-mobile__title 
+                                    h3 Training Courses                                   
+                            ul.practice__content-right-list-mobile
+                                    - for (let i = 0; i < 4; i++)
+                                        .practice__content-right-list-responsive-genral
+                                            - for (let i = 0; i < 2; i++)
+                                                li.practice__content-right-item-responsive
+                                                    a(href="#").practice__content-right-link    
+                                                        .practice__content-right-item-responsive
+                                                            img(src="./assets/img/block-purchased.png" data-rjs="3").practice__content-right-pic-general
+                                                            .practice__content-right-img-overplap
+                                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                                            .button-price
+                                                                a(href="#").button-price__link Purchased
+                                                            .practice__title-number-responsive
+                                                                .practice__title-name-responsive
+                                                                    h2 CCNP <br> Implementing <br> Cisco IP Routing    
+                            .button-load-more-index-page
+                                .button-load-more-index-page-pic
+                                    i.svg-sprite-to-png.svg-sprite-to-png-loadMoreNewElement
+                                a(href="#").button-load-link Load More                                            
+                    .training-course
+                        .training-course__title-tut-list
+                            h2 Training Courses
+                            .training-course__picture#picture
+                                img(src="./assets/img/responsive-element-tut-list.png").training-course__img
+                        .training-course__wrapper#responsiveWrapper
+                            .training-course__responsive-content#show
+                                .training-course__responsive-header
+                                    .training-course__responsive-picture
+                                        img(src="./assets/img/checkmark.png").training-course__responsive-img
+                                        .training-course__responsive-title
+                                            h3 Apply
+                                    .training-course__responsive-close
+                                        span.training-course__responsive-close-btn#closeBtn ×
+                                ul.training-course__responsive-content-list
+                                        li.categories__item-responsive
+                                            .categories__name
+                                                h4 Vendor
+                                            .categories__select
+                                                .categories__select-wrapper
+                                                    .categories__border
+                                                    .categories__triangle
+                                                    select.selectize
+                                                        - for (let i = 0; i < 5; i++)
+                                                            option All
+                                        li.categories__item-responsive
+                                            .categories__name
+                                                h4 Rating
+                                            .categories__select
+                                                .categories__select-wrapper
+                                                    .categories__border
+                                                    .categories__triangle
+                                                    select.selectize
+                                                        - for (let i = 0; i < 5; i++)
+                                                            option All
+                                        li.categories__item-responsive
+                                            .categories__name
+                                                h4 Categories
+                                            .categories__select
+                                                .categories__select-wrapper
+                                                    .categories__border
+                                                    .categories__triangle
+                                                    select.selectize
+                                                        - for (let i = 0; i < 5; i++)
+                                                            option All
+                                        li.categories__item-responsive
+                                            .categories__name
+                                                h4 Course Duration
+                                            .categories__select
+                                                .categories__select-wrapper
+                                                    .categories__border
+                                                    .categories__triangle
+                                                    select.selectize
+                                                        - for (let i = 0; i < 5; i++)
+                                                            option All
+                                        li.categories__item-responsive
+                                            .categories__name
+                                                h4 Students
+                                            .categories__select
+                                                .categories__select-wrapper
+                                                    .categories__border
+                                                    .categories__triangle
+                                                    select.selectize
+                                                        - for (let i = 0; i < 5; i++)
+                                                            option All
+                        .training-course__content
+                            ul.practice__content-right-list-general
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block-purchased.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/sixth-image.png").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link Purchased
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/third-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $29,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                    .training-course
+                        .training-course__title
+                            h2 Training Courses
+                            .training-course__picture#picture
+                                img(src="./assets/img/responsive-element-tut-list.png").training-course__img
+                        .training-course__wrapper#responsiveWrapper
+                            .training-course__responsive-content#show
+                                .training-course__responsive-header
+                                    .training-course__responsive-picture
+                                        img(src="./assets/img/checkmark.png").training-course__responsive-img
+                                        .training-course__responsive-title
+                                            h3 Apply
+                                    .training-course__responsive-close
+                                        span.training-course__responsive-close-btn#closeBtn ×
+                                ul.training-course__responsive-content-list
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Vendor
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Rating
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Categories
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Course Duration
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Students
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                        .training-course__content
+                            ul.practice__content-right-list-general
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block-purchased.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/sixth-image.png").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link Purchased
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/third-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $29,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                    .training-course
+                        .training-course__title
+                            h2 Training Courses
+                            .training-course__picture#picture
+                                img(src="./assets/img/responsive-element-tut-list.png").training-course__img
+                        .training-course__wrapper#responsiveWrapper
+                            .training-course__responsive-content#show
+                                .training-course__responsive-header
+                                    .training-course__responsive-picture
+                                        img(src="./assets/img/checkmark.png").training-course__responsive-img
+                                        .training-course__responsive-title
+                                            h3 Apply
+                                    .training-course__responsive-close
+                                        span.training-course__responsive-close-btn#closeBtn ×
+                                ul.training-course__responsive-content-list
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Vendor
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Rating
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Categories
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Course Duration
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                                    li.categories__item-responsive
+                                        .categories__name
+                                            h4 Students
+                                        .categories__select
+                                            .categories__select-wrapper
+                                                .categories__border
+                                                .categories__triangle
+                                                select.selectize
+                                                    - for (let i = 0; i < 5; i++)
+                                                    option All
+                        .training-course__content
+                            ul.practice__content-right-list-general
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block-purchased.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/sixth-image.png").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link Purchased
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/third-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $29,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg").practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+                                li.practice__content-right-item-tut-list-page
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png" data-rjs="3").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/second-image.jpg").practice__content-right-image-overplap
+                                            .button-price.button-price--color
+                                                .button-price__link Free
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first-tut-list
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 83 123
+                                                .practice__students-second-tut-list
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line-tut-list
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third-tut-list
+                                                    .practice__students-title-sign-in-page-tut-list
+                                                        h3 Rating
+                                                    .practice__stars
+                                                        ul.practice__stars-list-tut-list-page
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title-tut-list
+                                                    h4 4.9 (124)
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works

@@ -1,0 +1,250 @@
+extends ../_template
+
+block variables
+    - var title = 'Reseller Page'
+
+block content
+    .wrapper
+        section.section
+            header.header.header--vendor-page
+                    .header__first.header__first--padding
+                        .container.container--flex-align
+                            .header__first-left.header__first-left--width
+                                .search-responsive-element#search-element
+                                    .search-responsive-pic
+                                        img(src="assets/img/search-responsive.png").search-responsive-img
+                                .toggle-btn#toggle-btn
+                                    span.toggle-class.toggle-class-top
+                                    span.toggle-class.toggle-class-middle
+                                    span.toggle-class.toggle-class-bottom
+                                .header__first-logo.header__first-logo--margin-left
+                                    a(href="index.html").header__first__link
+                                        img(src="assets/img/logo-png2.png").header__first-img
+                                .header__first-search
+                                    form.header__first-form
+                                        label.header__first-label
+                                            input.header__first-input(type="search" placeholder="Search")
+                                            .header__first-search-img
+                                                img(src="assets/img/search.png")
+                            .header__first-right.header__first-right--width
+                                a(href="#").header__first-vendor-link 
+                                    .header__first-vendor-page
+                                        .header__first-enter-picture
+                                            .header__first-enter-image
+                                                .header__first-enter-img-second-header
+                                        .header__first-enter-name
+                                            p
+                                                | My Account
+                                a(href="sign-in.html").sign-ing
+                                    .header__first-enter-pic
+                                        img(src="assets/img/entry.png").header__first-enter-img
+                                    .header__first-enter-pic-entry
+                                        img(src="assets/img/entry.png").header__first-enter-pic-entry-img
+                                .header__first-general
+                                    .header__first-general
+                                        .header__first-basket
+                                            svg.header__first-pic
+                                                use(xlink:href="assets/img/sprite.svg#icon-cart")
+                                        .header__first-cart
+                                            h4 Cart (1)
+                    .container
+                        .header__second
+                            include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search
+            .practice-row
+                .container.container--practice-line
+                    .practice__general-row
+                        .practice__title
+                            h4 practice exams:
+                        .practice__nav
+                            nav.swiper-container.s2
+                                ul.swiper-wrapper
+                                    li.practice__navigation-item.practice__navigation-item--padding.swiper-slide
+                                        a(href="#").practice__navigation-link Microsoft
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Cisco
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link CompaTIA
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link RedHat
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Citrix
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link HP
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link IBM
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link CheckPoint
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link CIW
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Novell
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link WMware
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Other  
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 Reseller
+            .reseller-page-width.files__table-general--padding-bottom
+                .container.container--narrow
+                    .reseller-progress-title 
+                        h2 Join Our Reseller Program and Start Earning $$$
+                    ul.reseller-slider
+                        li.reseller-slider__item
+                            img.reseller-slider__image(src="assets/img/first-pic.png")
+                        li.reseller-slider__item
+                            img.reseller-slider__image(src="assets/img/first-pic1.png")
+                        li.reseller-slider__item
+                            img.reseller-slider__image(src="assets/img/second-pic.png")
+                        li.reseller-slider__item
+                            img.reseller-slider__image(src="assets/img/second-pic1.png")
+                        li.reseller-slider__item
+                            img.reseller-slider__image(src="assets/img/third-pic.png")
+                    .how-it-works-block 
+                        .how-it-works-block-wrapper
+                            .how-it-works-block__title
+                                h3 How it works
+                            ul.how-it-works-block__list 
+                                li.how-it-works-block__item
+                                    .how-it-works-block__item-pic 
+                                        .how-it-works-block__item-sign 
+                                            span 1
+                                        img(src="assets/img/icon-sq-exam-new.png") 
+                                        .how-it-works-block__item-pic-absolute-elem 
+                                            img(src="assets/img/crowd-of-users-copy-2.png")
+                                    .how-it-works-block__item-subtitle 
+                                        h3 Step 1
+                                    .how-it-works-block__item-text 
+                                        p Send your promo code to friends and student  
+                                li.how-it-works-block__item
+                                    .how-it-works-block__item-pic 
+                                        .how-it-works-block__item-sign 
+                                            span 2   
+                                        img(src="assets/img/icon-sq-settings.png")
+                                        .how-it-works-block__item-pic-absolute 
+                                            img(src="assets/img/shopping-bag-copy-2.png")  
+                                    .how-it-works-block__item-subtitle 
+                                        h3 Step 2
+                                    .how-it-works-block__item-text 
+                                        p All purchases usiung that promocode will ears you comissions
+                                li.how-it-works-block__item
+                                    .how-it-works-block__item-pic 
+                                        .how-it-works-block__item-sign 
+                                            span 3
+                                        img(src="assets/img/icon-sq-check.png")  
+                                        .how-it-works-block__item-pic-absolute 
+                                            img(src="assets/img/group-8.png").piggy
+                                    .how-it-works-block__item-subtitle 
+                                        h3 Step 3
+                                    .how-it-works-block__item-text 
+                                        p The more sales you make the more you earn  
+                            .join-reseller 
+                                a(href="#") Join Reseller       
+                    .reseller-progress-title 
+                        h2 Commissions Structure
+                    .reseller-progress.reseller-progress--margin-bottom
+                                    .reseller-progress__progress-wrapper
+                                        .reseller-progress__progress(style="width:57%")
+                                    .reseller-progress__progress-level
+                                        .progress-level__img-wrapper.progress-level__img-wrapper--active 
+                                            img(src="assets/img/20.png")
+                                        .progress-level__description
+                                            span.progress-level__green-txt 20%     
+                                        .progress-level__point.progress-level__point--current   
+                                        .progress-level__level-name
+                                            h3 Steel
+                                    .reseller-progress__progress-level
+                                        .progress-level__img-wrapper.progress-level__img-wrapper--active
+                                            img(src="assets/img/25.png")
+                                        .progress-level__description
+                                            span.progress-level__green-txt 25%
+                                        .progress-level__point.progress-level__point--current   
+                                        .progress-level__level-name
+                                            h3 Bronze 
+                                    .reseller-progress__progress-level.reseller-progress__progress-level--main
+                                        .progress-level__img-wrapper.progress-level__img-wrapper--active.progress-level__img-wrapper--main
+                                            img(src="assets/img/30.png")
+                                        .progress-level__description
+                                            span.progress-level__green-txt 30%
+                                        .progress-level__point.progress-level__point--current.progress-level__point--main
+                                        .progress-level__level-name
+                                            span Silver
+                                    .reseller-progress__progress-level
+                                        .progress-level__img-wrapper 
+                                            img(src="assets/img/35.png")
+                                        .progress-level__description
+                                            span.progress-level__green-txt 35% 
+                                        .progress-level__point   
+                                        .progress-level__level-name 
+                                            h3 Gold
+                                    .reseller-progress__progress-level
+                                        .progress-level__img-wrapper 
+                                            img(src="assets/img/40-copy.png")
+                                        .progress-level__description
+                                            span.progress-level__green-txt 40%
+                                        .progress-level__point   
+                                        .progress-level__level-name
+                                            h3 Platinum 
+                    .reseller-progress-title 
+                        h2 ExamLabs Reseller Program FAQs  
+                    ul.general-questions__acco-list-desktop#accoList
+                        li.general-questions__responsive-content
+                                    .general-questions__all-responsive
+                                        .general-questions__acco-line-element
+                                            a(href="#").general-questions__acco-trigger What exactly are VCE files?
+                                                .general-questions__acco-sign-responsive
+                                                    .general-questions__acco-sign-top-responsive
+                                                    .general-questions__acco-sign-bottom-responsive    
+                                    .general-questions__acco-content-responsive
+                                        p.
+                                            Examcollection is a #[a(href="#") community] of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well asthose looking for free information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files. Please note that #[a(href="#") Examcollection is basically] an information sharing platform: we do not sell software, neither do we support or troubleshoot it (keepreading to find out where you can get your VCE software). All we do is let people share their VCE uploads, download files and post their feedback.
+                        li.general-questions__responsive-content
+                            .general-questions__all-responsive
+                                .general-questions__acco-line-element
+                                    a(href="#").general-questions__acco-trigger Who can upload the files?
+                                        .general-questions__acco-sign-responsive
+                                            .general-questions__acco-sign-top-responsive
+                                            .general-questions__acco-sign-bottom-responsive
+                            .general-questions__acco-content-responsive
+                                p.
+                                    ExamLabs is a community of IT #[a(href="#") certification] exam takers committed to sharing their exam knowledge and experience with their peers, as well as thoselookingforfree information sources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                        li.general-questions__responsive-content
+                            .general-questions__all-responsive
+                                .general-questions__acco-line-element
+                                    a(href="#").general-questions__acco-trigger How many files can I upload/download per day?
+                                        .general-questions__acco-sign-responsive
+                                            .general-questions__acco-sign-top-responsive
+                                            .general-questions__acco-sign-bottom-responsive
+                            .general-questions__acco-content-responsive
+                                p.
+                                    ExamLabs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking forfreeinformationsources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.
+                        li.general-questions__responsive-content
+                            .general-questions__all-responsive
+                                .general-questions__acco-line-element
+                                    a(href="#").general-questions__acco-trigger What is ExamCollection.com?
+                                        .general-questions__acco-sign-responsive
+                                            .general-questions__acco-sign-top-responsive
+                                            .general-questions__acco-sign-bottom-responsive
+                            .general-questions__acco-content-responsive
+                                p.
+                                    ExamLabs is a community of IT certification exam takers committed to sharing their exam knowledge and experience with their peers, as well as those looking forfreeinformationsources to study for their IT exams. Our members share their knowledge on IT certification exams in convenient VCE files.                                     
+            include ../common/adv                           
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart  

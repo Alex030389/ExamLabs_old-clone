@@ -1,0 +1,68 @@
+.modal-sign-in {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal-button__password {
+  padding-bottom: rem(10px);
+  width: 100%;
+
+  @include phones {
+    padding-bottom: rem(30px);
+  }
+
+  h3 {
+    @include GothamPro-Medium();
+    font-size: rem(15px);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7a8ea5;
+
+    @include phones {
+      text-align: center;
+    }
+  }
+}
+
+.modal-free-registration__general {
+  border: none;
+  width: 95% !important;
+}
+
+.modal-free-registration__header--padding {
+  padding: rem(30px) rem(20px);
+  border-bottom: rem(1px) solid $border-color;
+  align-items: center;
+}
+
+.modal-free-registration__title--padding {
+  padding-bottom: 0;
+}
+
+.modal-button-account__url {
+
+  &--border {
+    border: rem(1px) solid $border-color;
+    border-radius: rem(100px);
+  }
+}
+

@@ -1,0 +1,223 @@
+extends ../_template
+
+block variables
+    - var title = 'All providers'
+
+block content
+    .wrapper
+        section.section.margin-bottom
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="Search Exam").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search    
+            .practice-row
+                .container.container--practice-line
+                    .practice__general-row
+                        .practice__title
+                            h4 practice exams:
+                        .practice__nav
+                            nav.swiper-container.s2
+                                ul.swiper-wrapper
+                                    li.practice__navigation-item.practice__navigation-item--padding.swiper-slide
+                                        a(href="#").practice__navigation-link Microsoft
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Cisco
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link CompaTIA
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link RedHat
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Citrix
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link HP
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link IBM
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link CheckPoint
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link CIW
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Novell
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link WMware
+                                    li.practice__navigation-item.swiper-slide
+                                        a(href="#").practice__navigation-link Other  
+            .information-all-prov-page.information--background-image
+                .information-all-heading 
+                    .information__title.information__title--changed
+                        h2 All providers
+                    .information__text.information__text--responsive.information__text--changed
+                        p.
+                            If you didn’t find needed provider please contact us
+                            within #[a( href="#" ) this page].
+                .container.container--changed-all-providers
+                    .information__form
+                        form.information__input
+                            input(type="search" placeholder="Search Exam" name="search").information__input-line#informationIinputLine
+                            button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search
+            .files
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 All Providers
+                .files__content
+                    .container.container--flex-another
+                        .files__content-title
+                            h2 Hot providers  
+                .files__table
+                    .container
+                        table.table-all-providers
+                            thead.table__padding-providers
+                                tr
+                                    th
+                                        h5 Vendors
+                            - for (let i = 0; i < 1; i++)
+                                tbody.table-flex
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__square
+                                                        img(src="./assets/img/adobe-logo.png" alt='Alcatel')
+                                                .files__table-text
+                                                    h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__width
+                                                        img(src="./assets/img/logo-aci.png" alt='Alcatel')
+                                                .files__table-text
+                                                        h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__square
+                                                        img(src="./assets/img/adobe-logo.png" alt='Alcatel')
+                                                .files__table-text
+                                                    h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__width
+                                                        img(src="./assets/img/logo-aci.png" alt='Alcatel')
+                                                .files__table-text
+                                                        h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__square
+                                                        img(src="./assets/img/adobe-logo.png" alt='Alcatel')
+                                                .files__table-text
+                                                    h4 3 exams  
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__square
+                                                        img(src="./assets/img/adobe-logo.png" alt='Alcatel')
+                                                .files__table-text
+                                                    h4 3 exams  
+                                tbody.table-flex
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__square
+                                                        img(src="./assets/img/adobe-logo.png" alt='Alcatel')
+                                                .files__table-text
+                                                    h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__width
+                                                        img(src="./assets/img/logo-aci.png" alt='Alcatel')
+                                                .files__table-text
+                                                        h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__square
+                                                        img(src="./assets/img/adobe-logo.png" alt='Alcatel')
+                                                .files__table-text
+                                                    h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .logo__wrapper
+                                                    .logo__width
+                                                        img(src="./assets/img/logo-aci.png" alt='Alcatel')
+                                                .files__table-text
+                                                        h4 3 exams                    
+
+                        .files__content
+                            .files__content-title.files__content-title--margin-top
+                                h2 Certification Providers
+                        .files__table
+                            table.table-all-providers
+                                thead.table__padding-providers
+                                    tr
+                                        th
+                                            h5 Vendors
+                                tbody.table-flex
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .files__table-title
+                                                    h3 ACAMS
+                                                .files__table-text
+                                                    h4 3 exams
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .files__table-title
+                                                    h3 ACFE
+                                                .files__table-text
+                                                    h4 Exams Amount
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .files__table-title
+                                                    h3 ACSM
+                                                .files__table-text
+                                                    h4 Exams Amount
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .files__table-title
+                                                    h3 Admission Tests
+                                                .files__table-text
+                                                    h4 Exams Amount
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .files__table-title
+                                                    h3 Adobe
+                                                .files__table-text
+                                                    h4 Exams Amount
+                                    tr.table-block
+                                        td.table-block__height
+                                            a(href="#").table-link
+                                                .files__table-title
+                                                    h3 Ahima
+                                                .files__table-text
+                                                    h4 Exams Amount
+                include ../common/_responsive_content-all-providers
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works

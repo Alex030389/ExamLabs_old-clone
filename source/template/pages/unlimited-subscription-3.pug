@@ -1,0 +1,266 @@
+extends ../_template
+
+block variables
+    - var title = 'Unlimited Subscription 3'
+
+block content
+    .wrapper
+        section.section.margin-bottom.margin-bottom--no-footer
+            header.header
+                include ../common/_header-empty          
+            .content-tutorial-details.content-tutorial-details--padding-top
+                .files__content.files__content-next
+                    .container
+                        .files__title-vendor.files__title-vendor--responsive
+                            h2 ExamLabs Premium Subscription
+                        .files__table-general  
+                            .content-general.content-general--direction
+                                .files__table-general-block
+                                    .files__table-left-unlim
+                                        .content-microsoft
+                                            .content-microsoft__left.content-microsoft__left--padding
+                                                .content-microsoft__block-height.content-microsoft__block--margin
+                                                    .content-microsoft__block-center-width
+                                                        .content-microsoft__block-center-title 
+                                                            h3 Did you know that you could have 
+                                                                p.heading-green Unlimited Access to the ExamLabs Premium databese for ine year?
+                                                        .first-screen__left-offer-files-text
+                                                            p With an Unlimited Access Annual Membership, You Can:   
+                                                        ul.content-microsoft__block-list
+                                                            each item in ['Have wrry-free access to the most up-to-date questions', 'Cataloged, Easily Navigated Database', 'ExamLabs Certified Safe Files', 'Have the resources to plan out your studying schedule for multiple exams', 'Recelve any new questions released for downloadded VCE files']
+                                                                li.content-microsoft__block-item
+                                                                    .content-microsoft__block-picture
+                                                                        img(src="assets/img/tick.png").content-microsoft__block-pic
+                                                                    .content-microsoft__block-title
+                                                                        h4 #{item}
+                                    .files__table-right-unlim
+                                        .content-microsoft__right-elem.swiper-container
+                                            ul.content-microsoft__right-list
+                                                - for (let i = 0; i < 5; i++)
+                                                    li.content-microsoft__right-item
+                                                        img(src="assets/img/Image_Spring_17_4.jpg")
+                        section.special-offer
+                            h2.special-offer__heading <span class="heading-green">As a Thank You,</span> ExamLabs is offering you special pricing!
+                            .special-offer__content-wrapper
+                                .special-offer__board
+                                    h3.special-offer__board-title Annual Membership
+                                    .special-offer__reduced
+                                        span Reduced Monthly Rate
+                                        .special-offer__price
+                                            span.special-offer__old-price <sup>$</sup><span class="special-offer__old-price-sum">34.99</span>
+                                            span.special-offer__new-price <sup>$</sup>17.49
+                                        span Reduced Total Cost
+                                        .special-offer__price
+                                            span.special-offer__old-price <sup>$</sup><span class="special-offer__old-price-sum">419.88</span>
+                                            span.special-offer__new-price <sup>$</sup>209,94
+                                .special-offer__label
+                                    span.special-offer__save Save
+                                    span.special-offer__sum $73.65
+                                    .special-offer__bottom
+                                        span on <br> an
+                                        .special-offer__bottom-right
+                                            span.special-offer__bottom-right-upper Annual
+                                            span Membership
+                                .special-offer__percent
+                                    span.special-offer__percent-large.text-gradient Get 50% OFF
+                                    span Your Membership Today!
+                            p.special-offer__agitation <span class="text-gradient">Pay $209.94</span> and Get 12 Months of Unlimited Access to Premium Files!
+                .cart__content.cart__content-next
+                    .cart__title
+                        .container.container--width-95
+                            h2 Secure Billing Information
+                            .your-cart-responsive
+                                h3 Your Cart
+                    .cart__general
+                        .container.container--flex-second
+                            .cart__left.cart__left--padding
+                                form(id="pay-form" action="#" method="post")
+                                    .cart__form
+                                        .cart__form-general
+                                            .cart__form-left
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 Full name 
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field(name="pay[full_name]" data-field="full_name" id="stripe_name" type="text")
+                                                    .val_error
+                                            .cart__form-right
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 Email 
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field(value="sam@testking.com" disabled="disabled" name="pay[email]" data-field="email" type="email")
+                                                    .val_error
+                                        .cart__user-place
+                                            .cart__user-country-new
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 Country 
+                                                            span *
+                                                    .cart__form-input-line-new
+                                                        .categories__select
+                                                            .categories__select-wrapper-card
+                                                                .categories__border-card
+                                                                .categories__triangle
+                                                                select.selectize.form-field(name="pay[country_id]" data-field="country_id" id="stripe_country")
+                                                                    option(value) Select
+                                                                    option(value="1") Afghanistan
+                                                                    option(value="2") Albania
+                                                                    option(value="3") Algeria
+                                                                    option(value="4") American Samoa
+                                                                    option(value="5") Andorra
+                                                                    option(value="6") Angola
+                                                                    option(value="7") Afghanistan
+                                                                    option(value="8") Albania
+                                                                    option(value="9") Algeria
+                                                                    option(value="10") American Samoa
+                                                                    option(value="11") Andorra
+                                                                    option(value="12") Angola
+                                                        .val_error
+                                            .cart__user-state
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 State/Province  
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field(name="pay[state]" data-field="state" id="stripe_state" type="text")
+                                                    .val_error
+                                            .cart__user-city
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 City 
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field(name="pay[city]" data-field="city" id="stripe_city" type="text")
+                                                    .val_error
+                                        .cart__user-address
+                                            .cart__user-address-line
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 Address 
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field(name="pay[address]" data-field="address" id="stripe_address" type="text")
+                                                    .val_error
+                                            .cart__user-zip
+                                                label.cart__form-label.form-element
+                                                    .cart__form-title
+                                                        h4 Zip/Postal 
+                                                            span *
+                                                    .cart__form-input-line
+                                                        input.cart__form-input.form-field.address_zip(name="pay[zip]" data-field="zip" id="stripe_zip" type="text")
+                                                    .val_error
+                                    .card__information
+                                        .card__title
+                                            h2 Credit Card Information
+                                        .card__form
+                                            .card__form-number
+                                                .card__form-general
+                                                    .card__form-card-number
+                                                        label.card__form-label-card
+                                                            .card__form-title.form-element
+                                                                h4 Card Number 
+                                                                    span *
+                                                                .card__form-input-line
+                                                                    input.card__form-input.form-field.card-number(name="pay[card_number]" data-field="card_number" type="text" placeholder="0000 0000 0000 0000" maxlength="19")
+                                                                    .card__input-pic
+                                                                        i.general-sprite.general-sprite-icon-lock-grey
+                                                                .val_error
+                                                    .cart__user-place-general-block
+                                                        .cart__user-place.cart__user-place--width
+                                                            .cart__user-country
+                                                                label.cart__form-label-date.form-element
+                                                                    .cart__form-title
+                                                                        h4 Expiration date 
+                                                                            span *
+                                                                    .cart__form-input-line.cart__form-input-line--width
+                                                                        .categories__select
+                                                                            .categories__select-wrapper-card
+                                                                                .categories__border-card.categories__border-card--position
+                                                                                .categories__triangle
+                                                                                select.selectize.form-field(data-field="card_expired_month" id="card-expiry-month" name="pay[card_expired_month]")
+                                                                                    option 1
+                                                                                    option 2
+                                                                                    option 3
+                                                                                    option 4
+                                                                                    option 5
+                                                                                    option 6
+                                                                                    option 7
+                                                                                    option 8
+                                                                                    option 9
+                                                                                    option 10
+                                                                                    option 11
+                                                                                    option 12
+                                                    .cart__user-place-general-block
+                                                        .cart__user-place
+                                                            .cart__user-country.form-element
+                                                                label.cart__form-label-year
+                                                                    .cart__form-title-hidden
+                                                                        br
+                                                                    .cart__form-input-line.cart__form-input-line--width
+                                                                        .categories__select
+                                                                            .categories__select-wrapper-card
+                                                                                .categories__border-card.categories__border-card--position
+                                                                                .categories__triangle
+                                                                                select.selectize.form-field(name="pay[card_expired_year]" data-field="card_expired_year" id="card-expiry-year")
+                                                                                    option 19
+                                                                                    option 20
+                                                                                    option 21
+                                                                                    option 22
+                                                                                    option 23
+                                                                                    option 24
+                                                                                    option 25
+                                                                                    option 26
+                                                                                    option 27
+                                                                                    option 28
+                                                                .val_error
+                                                    .card__form-title.form-element.card__form-title--width
+                                                        label.cart__form-label-security
+                                                            h4 Security Code (CVV)
+                                                                span *
+                                                            .card__form-input-line.card__form-input-line--width-50
+                                                                input.cart__form-input.form-field(name="pay[card_cvv]" data-field="card_cvv" id="card-cvv" type="text" maxlength="4")
+                                                                .card__form-security-pic
+                                                                    i.general-sprite.general-sprite-icon-card
+                                                            .val_error--general-wrapper
+                                                                .val_error
+                                            .card__form-security
+                                                label.card__form-label-second.form-element
+                                                    .val_error
+                                                    .checkbox.form-element
+                                                        .checkbox-line
+                                                            label.checkbox-label
+                                                                input.checkbox-input.form-field.accept-billing-policy(data-domain="Devlabs.tk" data-field="accept_billing_policy" type="checkbox" name="checkbox-test")
+                                                                span.checkbox-img
+                                                                .checkbox-desc
+                                                                    p I have read and agree to ExamLabs.com 
+                                                                        a(href="#" id="billing-policy-modal") Billing Policy
+                                                .button-card
+                                                    button.button-submit.button-submit--card(type="submit") Get Unlimited Premium VCE Files
+                                                    p.payment-error
+                                .skip__link-wrapper
+                                    a.skip__link(href="#") Skip
+                            .card__right.card__right-next.cart__right--padding
+                                <div class="card__pay-methods-right-elem">
+                                    <div class="card__pay-logos-elems">
+                                        <div class="card__pay-pic-elem"><img class="card__pay-img" src="assets/img/visa-logo.png"></div>
+                                        <div class="card__pay-pic-elem"><img class="card__pay-img" src="assets/img/mastercard-logo.png"></div>
+                                        <div class="card__pay-pic-elem"><img class="card__pay-img" src="assets/img/maestrocard-logo.png"></div>
+                                        <div class="card__pay-pic-elem"><img class="card__pay-img" src="assets/img/american-express-card-logo.png"></div>
+                                        <div class="card__pay-pic-solo-elem"><img class="card__pay-img" src="assets/img/solo-logo.png"></div>
+                                        <div class="card__pay-pic-elem-jcb"><img class="card__pay-img" src="assets/img/jcb-logo.png"></div>
+                                    </div>
+                                    <div class="card__pay-text">
+                                        <p>Your purchase with Exam-Labs is safe and fast. Your products will be available for immediate download after your payment has been received.</p>
+                                    </div>
+                                </div>
+                                section.help
+                                    h3.help__heading Need Help? Contact Us
+                                    a.help__link(href="#") Customer Support
+            include ../common/_sidebar                                                                 
+
+
+                                    
+                                

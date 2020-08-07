@@ -1,0 +1,110 @@
+extends ../_template
+
+block variables
+  - var title = 'File Download Page'
+
+block content
+    .wrapper
+        section.section.first-screen
+            header.header
+                include ../common/_header
+                .header__second
+                    .container
+                        include ../common/_nav
+            .content-first-page
+                include ../common/_practice-line
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home
+                            .breadcrumbs__text
+                                h3 Microsoft Certifications
+                            .breadcrumbs__text
+                                h3 70-743  
+            .download-file 
+                .container
+                    .download-file__general 
+                        .download-file__title 
+                            h1 Your File is Been Downloaded
+                        .download-file__subtitle    
+                            h2 Your file cisco.selftestengine.200-125.v2018-11-14.by.carol.571q.ete is downloading...
+                        .download-file__bottom-title#discountPopup
+                            h3 * If download process hasn't started automatically, please click here: #[a(href="#") Download cisco.selftestengine.200-125.v2018-11-14.by.carol.571q.ete] 
+                    .download-file__wrapper
+                        .download-file__left 
+                            .download-file__title 
+                                h3 You need Avanset VCE Software to open Exam Files!
+                            .download-file__text 
+                                p Visual CertExam Software is a test simulator designed concretely for exam preparation. It turns the boring preparation process into dynamic and interactive exam test. VCE allows you to create, edit,and take practice tests in an environment very similar to an actual exam.  
+                            .download-file__pic 
+                                .download-file__img
+                                    .download-file__pic-title 
+                                        h3 Avanset VCE Software avaliable on the Windows, MacOs, iOS, and Android.
+                                    .download-file__wrapper-gen-files       
+                                        .download-file__left-side 
+                                            .button-element.button--position.button--margin-bottom
+                                                a(href="#").button__link-new Windows
+                                        .download-file__right-side
+                                            .button-element.button--position.button--margin-bottom
+                                                a(href="#").button__link-mac Mac
+                                    .download-file__pic-second 
+                                        .download-file__pic-second-left 
+                                            a(href="#")
+                                                img(src="./assets/img/app-store-badge.svg", alt="Mac")
+                                        .download-file__pic-second-right    
+                                            a(href="#")
+                                                img(src="./assets/img/google-play-badge.png", alt="Google Play")       
+                        .download-file__right    
+                            .download-file__title 
+                                h3 Try Premium File With 20% to Pass 70-346 Exam 100%  
+                            .download-file__text 
+                                p Free file is just a sample and will not cover the full exam pool of questions. You need to buy premium to avoid risk of failing. 
+                            .download-file__right-content
+                                .download-file__general-block.download-file__general-block--position
+                                    .download-file__left-block.download-file__left-block--width 
+                                        .content-microsoft__block-verify.content-microsoft__block-verify--position 
+                                            img(src="./assets/img/icon-verify.png").content-microsoft__block-img
+                                            .content-microsoft__block-heading.content-microsoft__block-heading--margin
+                                                h4 Verified by experts 
+                                        .download-file__left-pic 
+                                            img(src="./assets/img/one-element-bundle-correct.png")
+                                            .download-file__left-empty-elem.download-file__left-empty-elem--position
+                                                img(src="./assets/img/empty-elem.png")  
+                                                .content-microsoft__block-empty-elem-content  
+                                                    span You save 
+                                                    span $73.65  
+                                        .content-microsoft__block-link-elem-href 
+                                            a(href="#") Get unlimited Access to All Premium Files          
+                                    .download-file__center-block.download-file__center-block--width
+                                        .download-file__center-block-general-wrapper
+                                            .content-microsoft__block-heading 
+                                                h2 300-320 Premium Bundle
+                                            ul.content-microsoft__block-list
+                                                li.content-microsoft__block-item
+                                                    .content-microsoft__block-title.content-microsoft__block-title--checked
+                                                        h4 Premium File 719 Questions &amp; Answers
+                                                li.content-microsoft__block-item
+                                                    .content-microsoft__block-title.content-microsoft__block-title--checked
+                                                        h4 Last Update: Dec 07, 2018
+                                        .download-file__right-block-wrapper
+                                            .download-file__right-block 
+                                                .download-file__right-block-price 
+                                                    h3 $58.31
+                                                    span $34.99
+                                                .content-microsoft__block-two.content-microsoft__block-two--margin 
+                                                    a(href="#").content-microsoft__block-link Download Now
+                                                .convinced.convinced--margin-top 
+                                                    a(href="#") Not convinced?      
+        include ../common/_footer
+        include ../common/_sidebar
+        include ../common/_search-responsive-element
+        include ../common/_modal-download
+        include ../common/_modal-vip-subs
+        include ../common/_modal-popup-download
+        include ../common/_modal-contact-form
+        include ../common/_modal-how-it-works
+        include ../common/_modal-download-two
+        include ../common/_modal-add-to-cart
+        include ../common/_modal-download-two    

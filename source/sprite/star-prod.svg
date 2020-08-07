@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-star-outline" fill="#2B2C30" fill-rule="nonzero">
+            <path d="M8,12.0161018 L10.8674238,13.0882343 L10.7828329,9.85430871 L12.7309552,7.19207647 L9.68512612,6.2480154 L8,3.66267742 L6.31487388,6.2480154 L3.26904475,7.19207647 L5.21716713,9.85430871 L5.13257623,13.0882343 L8,12.0161018 Z M8,14.151332 L3.05572809,16 L3.2,10.4844582 L0,6.11145618 L5.03343685,4.55133196 L8,0 L10.9665631,4.55133196 L16,6.11145618 L12.8,10.4844582 L12.9442719,16 L8,14.151332 Z" id="Star"></path>
+        </g>
+    </g>
+</svg>

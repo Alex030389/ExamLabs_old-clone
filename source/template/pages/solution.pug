@@ -1,0 +1,135 @@
+extends ../_template
+
+block variables
+    - var title = 'Solutions'
+
+block content
+    .wrapper
+        section.section.solution
+            header.header
+                include ../common/_header
+                .container
+                    .header__second
+                        include ../common/_nav
+            .header-search-element.visually-hidden 
+                .container
+                    form.information__input
+                        input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                        button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search            
+            .content
+                include ../common/_practice-line
+            .problems
+                .breadcrumbs
+                    .container
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                .breadcrumbs__link
+                                    a(href='index.html').breadcrumbs__url Home
+                                .breadcrumbs__text
+                                    h3 Solution
+                .container
+                    .problems__general
+                        .problems__left
+                            .problems__title
+                                h2 There was a problem accepting <br> your payment :(
+                            .problems__desc
+                                p The credit card processor declined your payment. <br> There are several alternatives for completing your transaction.
+                            .problems__heading
+                                h2 Option 1: Secondary Payment Processor
+                            .problems__option
+                                .problems__option-left
+                                    .problems__option-left-desc
+                                        p Try your Card through a Secondary Bank.  This option is only valid for Visa, Mastercard and American Express cards. <br><span>Your problem may be caused by incorrect credit card information. Please check your typing. If your payment fails again - please try Other payment methods.</span>
+                                .problems__option-right
+                                    .problems__option-left-pay-methods-responsive
+                                        .card__pay-pic-visa-size
+                                            img(src="./assets/img/visa-logo.png").card__pay-img
+                                        .card__pay-pic-master-card-size
+                                            img(src="./assets/img/mastercard-logo.png").card__pay-img
+                                        .card__pay-pic-american-express-size
+                                            img(src="./assets/img/american-express-card-logo.png").card__pay-img
+                                    .problems__option-button
+                                        a(href="#").problems__option-link Pay with Card
+                            .problems__option-left-pay-methods
+                                .card__pay-pic-visa-size
+                                    img(src="./assets/img/visa-logo.png").card__pay-img
+                                .card__pay-pic-master-card-size
+                                    img(src="./assets/img/mastercard-logo.png").card__pay-img
+                                .card__pay-pic-american-express-size
+                                    img(src="./assets/img/american-express-card-logo.png").card__pay-img
+                            .problems__heading
+                                h2 Option 2: Re-try Previous Payment Processor
+                            .problems__option
+                                .problems__option-left
+                                    .problems__option-left-desc
+                                        p Before trying your card again for payment it is highly recommended that you inform your bank that you are going to make an online purchase from ExamLabs.com for $69.99. Ask the bank to authorize the transaction as you are trying to make a purchase again. Make sure that you are filling all the information correctly.
+                                .problems__option-right
+                                    .problems__option-left-pay-methods-responsive
+                                        .card__pay-pic-visa-size
+                                            img(src="./assets/img/visa-logo.png").card__pay-img
+                                        .card__pay-pic-master-card-size
+                                            img(src="./assets/img/mastercard-logo.png").card__pay-img
+                                        .card__pay-pic-maestro-card-size
+                                            img(src="./assets/img/maestrocard-logo.png").card__pay-img
+                                        .card__pay-pic-american-express-size
+                                            img(src="./assets/img/american-express-card-logo.png").card__pay-img
+                                        .card__pay-pic-solo-size
+                                            img(src="./assets/img/solo-logo.png").card__pay-img
+                                        .card__pay-pic-jcb-size
+                                            img(src="./assets/img/jcb-logo.png").card__pay-img
+                                    .problems__option-button.problems__option-button--color
+                                        a(href="#").problems__option-link Proceed
+                            .problems__option-left-pay-methods
+                                .card__pay-pic-visa-size
+                                    img(src="./assets/img/visa-logo.png").card__pay-img
+                                .card__pay-pic-master-card-size
+                                    img(src="./assets/img/mastercard-logo.png").card__pay-img
+                                .card__pay-pic-maestro-card-size
+                                    img(src="./assets/img/maestrocard-logo.png").card__pay-img
+                                .card__pay-pic-american-express-size
+                                    img(src="./assets/img/american-express-card-logo.png").card__pay-img
+                                .card__pay-pic-solo-size
+                                    img(src="./assets/img/solo-logo.png").card__pay-img
+                                .card__pay-pic-jcb-size
+                                    img(src="./assets/img/jcb-logo.png").card__pay-img
+                        .problems__right
+                            .problems__right-title
+                                    h2 Your cart (13)
+                            .problems__right-first
+                                    .problems__right-text
+                                        h4 Subtotal
+                                        h3 $139.98
+                                    .problems__right-question
+                                        h4 Do you have coupon?
+                                    .problems__right-total
+                                        h3 Total price
+                                        h4 $139.98
+                            .problems__right-second
+                                    .problems__right-second-title
+                                        h3 80-743 Premius VCE File
+                                        h4 $69.99
+                                    .problems__right-second-company
+                                        h3 Microsoft
+                                    .categories__select-wrapper-card
+                                        .categories__border-card
+                                        select.selectize
+                                            option 30 Days (Free)
+                                    .problems__right-second-heading
+                                        h4 Remove
+                            .problems__right-third
+                                .problems__right-second-title
+                                        h3 80-743 Premius VCE File
+                                        h4 $69.99
+                                .problems__right-second-company
+                                        h3 Microsoft
+                                .categories__select-wrapper-card
+                                    .categories__border-card
+                                    select.selectize
+                                            option 30 Days (Free)
+                                .problems__right-second-heading
+                                        h4 Remove
+                                .problems__right-button
+                                    a(href="#").card__right-button-link Show more (11)
+        include ../common/_footer
+    include ../common/_sidebar
+    include ../common/_modal-how-it-works

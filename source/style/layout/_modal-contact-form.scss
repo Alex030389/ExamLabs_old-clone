@@ -1,0 +1,292 @@
+.modal-contact-form {
+  position: fixed;
+  background-color: rgba(106, 110, 132, .5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 99;
+
+  &--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    box-shadow: 0 rem(5px) rem(8px) 0 rgba(0, 0, 0, .2), 0 rem(7px) rem(20px) 0 rgba(0, 0, 0, .17);
+    animation-name: modalopen;
+    animation-duration: .6s;
+    border-radius: rem(10px);
+
+    @include desktop {
+      width: 60%;
+    }
+
+    @include laptop {
+      width: 70%;
+    }
+
+    @include tablets {
+      width: 80%;
+    }
+
+    @include phones {
+      width: 95%;
+    }
+  }
+}
+
+.comments__form-all {
+  padding: rem(35px) rem(30px);
+}
+
+.comments__form-all {
+
+  @include phones {
+    padding-bottom: 0 !important;
+  }
+}
+
+.comments__form-all--flex {
+  justify-content: space-between;
+}
+
+.comments__form-lines--width {
+  width: 48% !important;
+
+  &.comments__form-lines {
+    padding-right: 0;
+  }
+}
+
+.comments__form-input--width {
+  &.comments__form-input {
+    width: 100%;
+  }
+}
+
+.comments__form-general--box-shadow {
+  &.comments__form-general {
+    box-shadow: none;
+  }
+}
+
+.comments__title--center {
+  padding-top: rem(20px);
+  padding-right: rem(20px);
+  padding-left: rem(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    width: 100%;
+  }
+
+  &.comments__title {
+    text-align: center;
+  }
+}
+
+.comments__title--padding  {
+  padding-bottom: rem(10px);
+
+  @include phones {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.comments__form-verification--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__form-label--width {
+  width: 100%;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.comments__form-general--width-second {
+  width: 100%;
+  border: rem(1px) solid #d9e0ec;
+  background: #fff;
+  border-bottom-left-radius: rem(10px);
+  border-bottom-right-radius: rem(10px);
+}
+
+.comments__form-verification--center {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding: rem(35px) rem(30px);
+}
+
+.comments__form-verification-general--width {
+  width: 100%;
+}
+
+.comments__form-verification-left {
+  width: 100%;
+
+  @include tablets {
+    border-top-left-radius: rem(10px);
+    border-bottom: rem(1px) solid $border-color;
+    border-bottom-left-radius: rem(10px);
+  }
+}
+
+.button-modal {
+  text-align: center;
+  border-top: rem(1px) solid $border-color;
+  padding: rem(35px) rem(30px);
+}
+
+.button-modal__submit {
+  border: none;
+  outline: none;
+  width: rem(270px);
+  height: rem(54px);
+  border-radius: rem(100px);
+  background-color: #0fc962;
+  @include GothamPro-Medium();
+  font-size: rem(15px);
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.comments__heading {
+  text-align: center;
+  padding: rem(30px);
+  padding-bottom: 0;
+}
+
+.comments__form-field {
+  padding: rem(35px) 0;
+  padding-top: 0;
+  padding-bottom: 0 !important;
+}
+
+.modal-sign-up__header-btn {
+  color: #ccc !important;
+}
+
+.comments__form--padding {
+  @include tablets {
+    padding: rem(20px) !important;
+  }
+}
+
+.comments__form-lines--width {
+  width: 48% !important;
+
+  @include tablets {
+    width: 100% !important;
+  }
+}
+
+.modal-contact-form-general {
+  width: 100%;
+  border: 0.0625rem solid #d9e0ec;
+  background: #fff;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.contact__form-label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 0.625rem;
+  padding-bottom: rem(10px);
+}
+
+.contact__form-label {
+  padding-bottom: rem(10px);
+
+  span {
+    color: red;
+  }
+
+  h4 {
+    font-family: GothamPro;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #7a8ea5;
+    padding-bottom: rem(10px);
+  }
+}
+
+.modal-contact__form-all {
+  display: flex;
+  justify-content: space-between;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+
+.modal-contact__form-field {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+
+.modal-contact-form__heading {
+  padding-bottom: rem(30px);
+  padding-left: rem(20px);
+  padding-top: rem(30px);
+  text-align: center;
+
+  h4 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.93;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7a8ea5;
+  }
+}
+
+.comments__form-verification-bitmap {
+
+  img {
+    height: 47px;
+
+    @include tablets {
+      height: 44px;
+    }
+
+    @include phones {
+      height: 40px;
+    }
+  }
+}
+
+.comments__form-verification-circle--active {
+  transform: rotate(360deg);
+  transition: transform .3s;
+}
+

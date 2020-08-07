@@ -1,0 +1,178 @@
+extends ../_template
+
+block variables
+  - var title = 'NEW NEW FILES'
+
+block content
+  .wrapper
+      section.section
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        header.header
+            include ../common/_header
+        .header-search-element.visually-hidden 
+          .container
+              form.information__input
+                input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search  
+        .container
+          .header__second
+            include ../common/_nav         
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line
+        .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home     
+                            .breadcrumbs__text
+                                h3 New Files   
+        .files__content
+            .container
+                .files__table-general.files__table-general--padding-bottom
+                    <div class="search-page__general-block">
+                        <div class="free-registration__left-search">
+                            <div class="free-registration__title free-registration__title--position">
+                                <h2>Search Results for "wer"</h2>
+                            </div>
+                            <div class="practice__heading-responsive practice__heading-responsive--padding">
+                                <h2>Search Results for "wer"</h2>
+                            </div>
+                            <div class="free-registration__form-field">
+                                <form class="modal-free-registration__form search-form" method="get" action="http://www.devlabs.tk/search">
+                                    <label class="modal-free-registration__label">
+                                        <input class="modal-free-registration__input modal-free-registration__input--glass search-input" name="q" placeholder="Refine your search" type="search">
+                                        button.button-submit-search(type="submit")
+                                            svg#svgElementFocus.button-svg-search-elem
+                                                use(xlink:href='./assets/img/sprite.svg#group-35')
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="free-registration__list-of-questions">
+                                <div class="item-elements">
+                                    <div class="item-elements__text">
+                                        <h4>No items were found</h4>
+                                    </div>
+                                </div>
+                                <div id="er" class="item-elements__title">
+                                    <h2>Request Exam</h2>
+                                </div>
+                                <div class="item-elements__form">
+                                    <form class="comments__form" id="form-request" data-v='{"required":[{"field":"exam_code","message":"Please fill in `Exam code` field."},{"field":"code","message":"Please fillin `Verification code` field."},{"field":"email","message":"Please fill in `{field}` field."}],"lengthMin":[{"field":"exam_code","message":"Your exam code should contain atleast 3 characters."}]}' method="post" action="http://www.devlabs.tk/search#er">
+                                        <div class="comments__form-all comments__form-all--padding-top comments__form-all--notify">
+                                            <div class="comments__form-lines">
+                                                <label class="comments__form-label-line form-element">
+                                                    <h4>Exam code / number <span>*</span></h4>
+                                                    <input class="comments__form-input form-field" value="" name="exam[exam_code]" data-field="exam_code" placeholder="Write code" id="nameInput" type="text">
+                                                    <div class="val_error"></div>
+                                                </label>
+                                            </div>
+                                            <div class="comments__form-lines">
+                                                <label class="comments__form-label-line form-element">
+                                                    <h4>Email <span>*</span></h4>
+                                                    <input class="comments__form-input form-field" value="" name="exam[email]" data-field="email" placeholder="" id="emailInput" type="email">
+                                                    <div class="val_error"></div>
+                                                </label>
+                                            </div>
+                                            <div class="comments__form-lines comments__form-lines--notify">
+                                                <p>Be sure you have the correct exam code  and don't forget to put your email, so we can get in touch with you as soon as we find the exam you're looking for.</p>
+                                            </div>
+                                        </div>
+                                        <div class="comments__form-field">
+                                            <label class="comments__form-label-general form-element">
+                                                <div class="comments__title-general-padding">
+                                                    <h4>Comment</h4>
+                                                </div>
+                                                <textarea class="comments__textarea-field form-field" name="exam[comment]"  data-field="comment" id="textArea"></textarea>
+                                                <div class="val_error"></div>
+                                            </label>
+                                        </div>
+                                        <div class="comments__form-verification">
+                                            <label class="comments__form-label form-element">
+                                                <div class="comments__title-general">
+                                                    <h4>Verification</h4><span>*</span>
+                                                </div>
+                                                <div class="comments__form-verification-general">
+                                                    <div class="comments__form-verification-left">
+                                                        <input class="comments__form-verification-input form-field" name="exam[code]" data-field="code" id="verificationInput" autocomplete="off" type="text">
+                                                    </div>
+                                                    <div class="comments__form-verification-right">
+                                                        <div class="comments__form-verification-circle" id="animation"></div>
+                                                        <div class="comments__form-verification-pic">
+                                                            <img class="comments__form-verification-bitmap" data-s="http://www.devlabs.tk/captcha?cid=EREQUEST" src="http://www.devlabs.tk/captcha?cid=EREQUEST">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="val_error"></div>
+                                            </label>
+                                            <button class="button-submit" type="submit">Send request</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments__pages-exam-det-quest-correct-page">
+                            <ul class="comments__pages-list comments__pages-list--padding-bottom"></ul>
+                        </div>
+                    </div>                                                        
+                    .vendor__table-right
+                            .first-screen__title-exam-det
+                                h3 Hot Training Courses
+                            ul.practice__content-right-list-index
+                                li.practice__content-right-item-elem
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)                        
+                            .content-microsoft__right-pic
+                                a(href="#").content-microsoft__right-link
+                                    img(src="./assets/img/avanset-new.png").content-microsoft__right-img       
+            include ../common/adv                           
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                
+
+
+               
+                      

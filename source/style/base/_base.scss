@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: GothamPro,  Arial, Helvetica, sans-serif;
+  font-display: auto;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.body--active {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
+}
+
+.body--modal {
+  overflow: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
+}
+
+input {
+  outline: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: rem(1px);
+  margin: rem(-1px);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: rem(1px);
+  white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+// Remove tap highlight on iOS
+input,
+textarea,
+button,
+select,
+label,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+a {
+  color: #2b8aeb;
+  text-decoration: none;
+  outline: none;
+}
+
+// Removing input background color for Chrome autocomplete 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset opacity .8;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input color
+input::placeholder {
+  opacity: 1;
+}
+
+iframe {
+  border: none;
+  outline: none;
+  margin-bottom: rem(30px);
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+select {
+  outline: none;
+}
+
+// input {
+//   -webkit-appearance: none !important;
+//   border-radius: 0 !important;
+// }

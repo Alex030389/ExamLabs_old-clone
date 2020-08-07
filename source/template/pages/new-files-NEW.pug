@@ -1,0 +1,266 @@
+extends ../_template
+
+block variables
+  - var title = 'NEW NEW FILES'
+
+block content
+  .wrapper
+      section.section
+        .content-first-page-resonsive
+            include ../common/_practice-line
+        header.header
+            include ../common/_header
+        .header-search-element.visually-hidden 
+          .container
+              form.information__input
+                input(type="search" placeholder="Search" name="search").information__input-line#informationIinputLine
+                button(type='submit').information__button-submit.information__button-submit-focus#buttonElementFocus Search  
+        .container
+          .header__second
+            include ../common/_nav         
+        .content-first-page-wrap-none
+          .content-first-page
+            include ../common/_practice-line
+        .breadcrumbs
+                .container
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            .breadcrumbs__link
+                                a(href='index.html').breadcrumbs__url Home     
+                            .breadcrumbs__text
+                                h3 New Files   
+        .files__content
+            .container
+                .files__table-general.files__table-general--padding-bottom
+                    .files__table-left-vendor
+
+                        .files__table-cell.files__table-cell--border.files__table-cell--border--first
+                            table.new-files__table
+                                colgroup
+                                    col.col-1
+                                    col.col-2
+                                    col.col-3
+                                    col.col-4
+                                    col.col-5
+                                thead.new-files__table-header
+                                    tr.new-files__table-row
+                                        th.new-files__title Vendor
+                                        th.new-files__title Exam
+                                        th.new-files__title.new-files__title--file-name File Name
+                                        th.new-files__title Size
+                                        th.new-files__title Added
+                                tbody.new-files__table-body
+                                    tr.new-files__table-row
+                                        td.new-files__vendor-logo(rowspan="3")
+                                            .logo__width
+                                                img(src="assets/img/logo-alcatel-lucent.png" alt="Vendor Name")
+                                        td.new-files__exam-name-cell
+                                            a.new-files__exam-name-desktop.color(href="#") apple.156.9l0-012.v1.by.emily.vce
+                                        td.new-files__file-name-cell
+                                            a.new-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce
+                                        td.new-files__size 326.2 KB
+                                        td.new-files__date May 21, 2019
+                                    tr.new-files__table-row
+                                        td.new-files__exam-name-cell
+                                            a.new-files__exam-name-desktop.color(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce.4a0-100.v2019-05-21.by.grande.43q.vce
+                                        td.new-files__file-name-cell
+                                            a.new-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100
+                                        td.new-files__size 326.2 KB
+                                        td.new-files__date May 21, 2019
+                                    tr.new-files__table-row
+                                        td.new-files__exam-name-cell
+                                            a.new-files__exam-name-desktop.color(href="#") 9L0-012
+                                        td.new-files__file-name-cell
+                                            a.new-files__file-name-desktop(href="#") apple.156.9l0-012.v1.by.emily.vce
+                                        td.new-files__size 611.4 KB
+                                        td.new-files__date May 21, 2019
+
+                        .files__table-cell.files__table-cell--border
+                            table.new-files__table
+                                colgroup
+                                    col.col-1
+                                    col.col-2
+                                    col.col-3
+                                    col.col-4
+                                    col.col-5
+                                thead.new-files__table-header
+                                    tr.new-files__table-row
+                                        th.new-files__title Vendor
+                                        th.new-files__title Exam
+                                        th.new-files__title.new-files__title--file-name File Name
+                                        th.new-files__title Size
+                                        th.new-files__title Added
+                                tbody.new-files__table-body
+                                    tr.new-files__table-row
+                                        td.new-files__vendor-logo(rowspan="3")
+                                            .logo__width
+                                                img(src="http://placehold.it/150x200" alt="Vendor Name")
+                                        td.new-files__exam-name-cell
+                                            a.new-files__exam-name-desktop.color(href="#") name
+                                        td.new-files__file-name-cell
+                                            a.new-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100
+                                        td.new-files__size 326.2 KB
+                                        td.new-files__date May 21, 2019
+                                    tr.new-files__table-row
+                                        td.new-files__exam-name-cell
+                                            a.new-files__exam-name-desktop.color(href="#") apple.156.9l0-012.v1.by.emily.vce
+                                        td.new-files__file-name-cell
+                                            a.new-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce.4a0-100.v2019-05-21.by.grande.43q.vce
+                                        td.new-files__size 326.2 KB
+                                        td.new-files__date May 21, 2019
+                                    tr.new-files__table-row
+                                        td.new-files__exam-name-cell
+                                            a.new-files__exam-name-desktop.color(href="#") name
+                                        td.new-files__file-name-cell
+                                            a.new-files__file-name-desktop(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by
+                                        td.new-files__size 326.2 KB
+                                        td.new-files__date September 21, 2019
+
+
+                        .files__table-cell--mobile
+                            ul.new-files__list
+                                li.new-files__item
+                                    h3.new-files__vendor-name Alcatel-Lucent
+                                    ul.new-files__files-list
+                                        li.new-files__files-item
+                                            .new-files__exam-wrapper
+                                                h4.new-files__exam-title Exam
+                                                a.new-files__exam-name.color(href="#") 4A0-100
+                                            .new-files__file-wrapper
+                                                h4.new-files__file-title File Name
+                                                a.new-files__file-name(href="#") cisco.ccnp.routing.switching.selftestengine.300-101.v2019-01-28.by.rebecca.458q.vce
+                                            .file-info
+                                                span.new-files__file-size 326.2 KB
+                                                span.new-files__file-upload-date May 21, 2019
+                                        li.new-files__files-item
+                                            .new-files__exam-wrapper
+                                                h4.new-files__exam-title Exam
+                                                a.new-files__exam-name.color(href="#") 4A0-100
+                                            .new-files__file-wrapper
+                                                h4.new-files__file-title File Name
+                                                a.new-files__file-name(href="#") alcatel-lucent.test.4a0-100.v2019-05-21.by.grande.43q.vce
+                                            .file-info
+                                                span.new-files__file-size 326.2 KB
+                                                span.new-files__file-upload-date May 21, 2019
+                                li.new-files__item
+                                    h3.new-files__vendor-name Apple
+                                    ul.new-files__files-list
+                                        li.new-files__files-item
+                                            .new-files__exam-wrapper
+                                                h4.new-files__exam-title Exam
+                                                a.new-files__exam-name.color(href="#") 9L0-012
+                                            .new-files__file-wrapper
+                                                h4.new-files__file-title File Name
+                                                a.new-files__file-name(href="#") apple.156.9l0-012.v1.by.emily.vce
+                                            .file-info
+                                                span.new-files__file-size 611.4 KB
+                                                span.new-files__file-upload-date May 21, 2019
+
+                        .practice__general-responsive-element
+                            - for (let i = 0; i < 10; i++)
+                                .practice__general-all
+                                    .practice__general-responsive-header
+                                        .logo__wrapper
+                                            .logo__wrapper-title 
+                                                h3 Junuar 15, 2019
+                                    .practice__general-responsive-body
+                                        .practice__general-responsive-body-left.practice__general-responsive-body-left--padding-top
+                                            .practice__general-responsive-body-heading
+                                                .vendor-title-talbe
+                                                    h4 Microsoft
+                                                    h5 JN0-347
+                                        .practice__general-responsive-body-middle
+                                            .practice__general-responsive-body-heading
+                                                h4 Q & A
+                                                h5 5
+                                        .practice__general-responsive-body-right
+                                            .practice__general-responsive-body-heading
+                                                h4 Downloads
+                                                h5 12515
+                                    .practice__general-responsive-links
+                                        .practice__general-responsive-files-names
+                                            h4 File Name
+                                        .practice__general-responsive-url
+                                            a(href="#").practice__general-responsive-links adobe<wbr>.braindumps.<wbr>9a0-389.v2018-01-29.<wbr>by.<wbr>brin..                                                              
+                                    .practice__general-responsive-header
+                                        .logo__wrapper
+                                            .logo__wrapper-title 
+                                                h3 Junuar 15, 2019
+                                    .practice__general-responsive-body
+                                        .practice__general-responsive-body-left.practice__general-responsive-body-left--padding-top
+                                            .practice__general-responsive-body-heading.practice__general-responsive-body-heading--element
+                                                .vendor-title-talbe
+                                                    h4 Microsoft
+                                                    h5 JN0-347
+                                        .practice__general-responsive-body-middle
+                                            .practice__general-responsive-body-heading
+                                                h4 Q & A
+                                                h5 5
+                                        .practice__general-responsive-body-right
+                                            .practice__general-responsive-body-heading
+                                                h4 Downloads
+                                                h5 12515
+                                    .practice__general-responsive-links
+                                        .practice__general-responsive-files-names
+                                            h4 File Name
+                                        .practice__general-responsive-url
+                                            a(href="#").practice__general-responsive-links adobe<wbr>.braindumps.<wbr>9a0-389.v2018-01-29.<wbr>by.<wbr>brin..                                                              
+                    .vendor__table-right
+                            .first-screen__title-exam-det
+                                h3 Hot Training Courses
+                            ul.practice__content-right-list-index
+                                li.practice__content-right-item-elem
+                                    .practice__content-right-img
+                                        a(href="#").practice__content-right-link
+                                            img(src="./assets/img/block.png").practice__content-right-pic-general
+                                            .practice__content-right-img-overplap
+                                                img(src="./assets/img/first-image.jpg" alt='Info Block').practice__content-right-image-overplap
+                                            .button-price
+                                                .button-price__link $25,99
+                                            .practice__title-number
+                                                h4 70-463
+                                                .practice__title-name
+                                                    h2 CompTIA Security+
+                                            span.line
+                                            .practice__students-general
+                                                .practice__students-first
+                                                    .practice__students-title
+                                                        h3 Students
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 83
+                                                .practice__students-second
+                                                    .practice__students-title
+                                                        h3 Duration
+                                                    .practice__line
+                                                    .practice__quantity
+                                                        h4 2.5h
+                                                .practice__students-third
+                                                    .practice__students-title-sign-in-page
+                                                        h3 Rating
+                                                        h4 4.9 (124)
+                                                    .practice__stars
+                                                        ul.practice__stars-list
+                                                            - for (let i = 0; i < 5; i++)
+                                                                li.practice__stars-itme
+                                                                    .practice__stars-pic
+                                                                        .practice__stars-img
+                                                .practice__stars-title
+                                                    h4 4.9 (124)                        
+                            .content-microsoft__right-pic
+                                a(href="#").content-microsoft__right-link
+                                    img(src="./assets/img/avanset-new.png").content-microsoft__right-img       
+            include ../common/adv                           
+            include ../common/_footer
+            include ../common/_sidebar
+            include ../common/_modal-download
+            include ../common/_modal-vip-subs
+            include ../common/_modal-popup-download
+            include ../common/_modal-contact-form
+            include ../common/_modal-how-it-works
+            include ../common/_modal-download-two
+            include ../common/_modal-add-to-cart                                
+
+
+               
+                      
