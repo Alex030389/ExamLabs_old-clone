@@ -24209,7 +24209,7 @@ th {
 .margin-bottom {
   margin-bottom: 18.7rem;
   &--no-footer {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem !important;
   }
 }
 
@@ -24228,6 +24228,10 @@ th {
 @media screen and (max-width:768px) {
   .margin-bottom {
     margin-bottom: 26.6rem;
+
+    &--no-footer {
+      margin-bottom: 5.5rem !important;
+    }
   }
 }
 
@@ -55389,6 +55393,16 @@ input[type="text"].coupon__field:focus {
   }
 }
 
+.paynow-wrap-btn {
+  text-align: center;
+}
+
+.paynow-btn {
+  display: inline-block;
+  max-width: 350px;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .profile-invoices-responsive__header {
     margin: 0 -2.6%;
@@ -56107,6 +56121,10 @@ input[type="text"].coupon__field:focus {
 .skip__link-wrapper {
   display: flex;
   padding-top: 1.25rem;
+  
+  @media (max-width: 1200px) {
+    padding-top: 2.5rem; 
+  } 
 }
 
 .skip__link {
@@ -56120,14 +56138,6 @@ input[type="text"].coupon__field:focus {
   }
 }
 
-@media (max-width: 1200px) {
-  .skip__link-wrapper {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 2rem;
-  }
-}
 
 .subscription__list {
   &--thanks {
